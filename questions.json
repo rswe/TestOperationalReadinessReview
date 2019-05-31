@@ -18,11 +18,15 @@
 				"Type" : "Option",
 				"QuestionText" : "Does the service have Service Level Agreements (either external or an internal commitment)?",
 				"Answers" : [
-					{"Answer" : "Yes, and the SLA(s) have effective concequences", "Score" : 1},
+					{"Answer" : "Yes, and the SLA(s) have effective consequences", "Score" : 1},
 					{"Answer" : "Yes, but there are no concequences", "Score" : 0.5},
 					{"Answer" : "No", "Score" : 0}
 					]
-			},			
+			},		
+			{
+				"Type" : "Banner",
+				"QuestionText" : "More info about previous question TEST TEST.<br><br>Next line. These questions are intended to be completed for one team (typically reporting to the same line manager and usually consisting of between 5 and 15 people)."
+			},	
 			{
 				"Type" : "Option",
 				"QuestionText" : "Does the team regularly meet to discuss what is working well, what isn't working well and what they can improve, and the top improvement items are implemented?"
