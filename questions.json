@@ -29,7 +29,15 @@
 			},		
 			{
 				"Type" : "Banner",
-				"QuestionText" : "SLIs - Early warning before SLAs exceeded. Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
+				"QuestionText" : "SLIs (Service Level Incicators) - Early warning before SLAs exceeded. Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Does the team have SLIs (Service Level Incicators) - Early warning before SLAs exceeded?",
+				"Answers" : [
+					{"Answer" : "Yes, taken from monitoring, and there are actionable alerts if the service degrates", "Score" : 1},
+					{"Answer" : "No", "Score" : 0}
+					]
 			},
 
 			{
