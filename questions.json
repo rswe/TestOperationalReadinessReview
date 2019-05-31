@@ -6,7 +6,7 @@
 		"Questions" : [
 			{
 				"Type" : "Banner",
-				"QuestionText" : "The goal of this questionaire is to help you assess the DevOps maturity of your team and to help you understand what might be the appropriate next steps for you on your DevOps journey.<br><br>These questions are intended to be completed for one team (typically reporting to the same line manager and usually consisting of between 5 and 15 people)."
+				"QuestionText" : "The goal of this questionaire is to help you assess the Production Readiness maturity of your service and to help you understand what might be the appropriate next steps for you on your Production Readiness journey.<br><br>These questions are intended to be completed for one team (typically reporting to the same line manager and usually consisting of between 5 and 15 people)."
 			}
 		]
 	},
@@ -16,18 +16,13 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have a new, potentially shippable, version of the product available every 1-2 weeks?"
-			},
-			{
-				"Type" : "Checkbox",
-				"QuestionText" : "Which of the following are measured by the team (tick all that apply)?",
+				"QuestionText" : "Does the service have Service Level Agreements (either external or an internal commitment)?",
 				"Answers" : [
-					{"Answer" : "Elapsed lead time to deliver valuable changes (from initial request to production)", "Score" : 0.5},
-					{"Answer" : "Frequency of deployments into production", "Score" : 0.5},
-					{"Answer" : "Change failure rate", "Score" : 0.5},
-					{"Answer" : "Time to restore service after a failure", "Score" : 0.5}
+					{"Answer" : "Yes, and the SLA(s) have effective concequences", "Score" : 1},
+					{"Answer" : "Yes, but there are no concequences", "Score" : 0.5},
+					{"Answer" : "No", "Score" : 0}
 					]
-			},
+			},			
 			{
 				"Type" : "Option",
 				"QuestionText" : "Does the team regularly meet to discuss what is working well, what isn't working well and what they can improve, and the top improvement items are implemented?"
