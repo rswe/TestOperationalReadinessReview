@@ -15,6 +15,10 @@
 		"SpiderPos" : 1,
 		"Questions" : [
 			{
+				"Type" : "Banner",
+				"QuestionText" : "Prioritise SLO/SLA appropriately. Helps identify how much effort to allocate for reliability of each service. Important for microservices for teams to reliably build dependencies on your service."
+			},
+			{
 				"Type" : "Option",
 				"QuestionText" : "Does the service have Service Level Agreements (either external or an internal commitment)?",
 				"Answers" : [
@@ -25,8 +29,9 @@
 			},		
 			{
 				"Type" : "Banner",
-				"QuestionText" : "More info about previous question TEST TEST.<br><br>Next line. These questions are intended to be completed for one team (typically reporting to the same line manager and usually consisting of between 5 and 15 people)."
-			},	
+				"QuestionText" : "SLIs - Early warning before SLAs exceeded. Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
+			},
+
 			{
 				"Type" : "Option",
 				"QuestionText" : "Does the team regularly meet to discuss what is working well, what isn't working well and what they can improve, and the top improvement items are implemented?"
