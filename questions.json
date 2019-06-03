@@ -23,17 +23,17 @@
 				"QuestionText" : "Does the service have Service Level Agreements (either external or an internal commitment)?",
 				"Answers" : [
 					{"Answer" : "Yes, and the SLA(s) have effective consequences", "Score" : 1},
-					{"Answer" : "Yes, but there are no concequences", "Score" : 0.5},
+					{"Answer" : "Yes, but there are no consequences", "Score" : 0.5},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},		
 			{
 				"Type" : "Banner",
-				"QuestionText" : "SLIs (Service Level Incidators) - Early warning before SLAs exceeded. Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
+				"QuestionText" : "SLIs (Service Level Indicators) - Early warning before SLAs exceeded. Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have SLIs (Service Level Incidators) - Early warning before SLAs exceeded?",
+				"QuestionText" : "Does the team have SLIs (Service Level Indicators) - Early warning before SLAs exceeded?",
 				"Answers" : [
 					{"Answer" : "Yes, taken from monitoring, and there are actionable alerts if the service degrades", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -79,7 +79,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Disaster Recovery plan is documented and date of last and next DR Test noted?",
+				"QuestionText" : "Disaster Recovery plan is documented, and date of last and next DR Test noted?",
 				"Answers" : [
 					{"Answer" : "Yes including RTO (recovery time objective) and RPO (recovery point objective)", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -143,18 +143,66 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Avoid Single Points of Failure (SPOF) / How does your system withstand component failures?",
+				"QuestionText" : "Avoid Single Points of Failure (SPOF) / Does your system withstand component failures?",
 				"Answers" : [
-					{"Answer" : "All key dependencies automated increase on approach to capacity", "Score" : 1},
-					{"Answer" : "Manual changes required, always completed before impact", "Score" : 0.25},
-					{"Answer" : "On occassion, capacity limits are hit before being extended", "Score" : 0}
+					{"Answer" : "All relevant key dependencies have no SPOF that could cause SLAs / SLOs to be breached", "Score" : 1},
+					{"Answer" : "SPOFs exist that could impact SLAs / SLOs should they fail", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "On-boarding new developers: Ensure staff reacting to incidents are skilled to troubleshoot all the tech stack by: <ul>    <li>    <div>Standardise on&nbsp; libraries, languages for easier developer onboarding and Production troubleshooting</div>    </li>    <li>    <div>Spot duplicate code and refactor</div>    </li>    <li>    <div>Look for opportunities to implement good design patterns</div>    </li>    <li>    <div>Know your licenses - OpenSource Permissive (MIT/Apache) vs Copy Left (GNU/MPL) etc</div>    </li>    </ul>"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Do you effectively ensure staff reacting to incidents are skilled to troubleshoot all the tech stack?",
+				"Answers" : [
+					{"Answer" : "All the above ", "Score" : 1},
+					{"Answer" : "2 or more of the above", "Score" : 0.25},
+					{"Answer" : "1 or less of the above", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Security Best Practice Review"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Is Security always be a top priority? e.g. all of the following as a minimum? <ul><li>Ensure no credentials stored in app</li><li><div>Ensure no credentials stored in app</div></li><li><div>Code defensively for OWASP e.g. SQL injections, XSS attacks etc</div></li><li><div>Leverage Static Analysis Tools</div></li><li>Code check-in validation</li></ul>"			
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Meeting industry best practice regarding security of application and platform?",
+				"Answers" : [
+					{"Answer" : "All regulations complied with", "Score" : 1},
+					{"Answer" : "Unsure or not demonstrated regulations are complied with", "Score" : 0}
 					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have methods in place for asynchronous communication (for example Kanban Board, JIRA, Slack, Circuit)?"
+				"QuestionText" : "Penetration Testing passed (if required)?"			
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Secret / Key Management reviewed as effective and compliant?"			
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Sys Admin Authentication reviewed as effective and compliant?"			
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Continuous Improvement: Obtain Peer Review / Fresh eyes. Kaizen (small, ongoing positive improvements of working practices) for architecture, code review, interviewing etc. Consider rotating developers off projects every few months to gain fresh eyes on projects. Easier when pushing small batches."
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Continuous Improvement for the above?",
+				"Answers" : [
+					{"Answer" : "All", "Score" : 1},
+					{"Answer" : "1", "Score" : 0.25},
+					{"Answer" : "None", "Score" : 0}
+					]
 			}
-			
 		]
 	},
 	{
