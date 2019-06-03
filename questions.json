@@ -210,125 +210,102 @@
 		"SpiderPos" : 3,
 		"Questions" : [
 			{
-				"Type" : "Option",
-				"SubCategory" : "Environments",
-				"QuestionText" : "Are development and test environments consistent with production environments?"
+				"Type" : "Banner",
+				"QuestionText" : "Insight"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Is the provisioning, configuration and management of infrastructure (e.g. networks, storage, etc.) automated (for example by using Infrastructure as Code)?",
+				"SubCategory" : "Insight",
+				"QuestionText" : "Visualisations - how do you know what's going on. Dashboards show the right things that may go wrong?"			
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Insight",
+				"QuestionText" : "Dashboard health - viable dashboard? (false positives low)"			
+			},	
+			{
+				"Type" : "Option",
+				"SubCategory" : "Insight",
+				"QuestionText" : "Are development and test environments consistent with production environments?"
+			},
+			{
+				"Type" : "Checkbox",
+				"SubCategory" : "Insight",
+				"QuestionText" : "Ensure Developers are, for Prod & Non-Production environments with same tools (tick all that apply)?",
 				"Answers" : [
-					{"Answer" : "Yes", "Score" : 1},
-					{"Answer" : "Partially", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
+					{"Answer" : "Able to build Dashboards", "Score" : 0.25},
+					{"Answer" : "Building Dashboards", "Score" : 0.25},
+					{"Answer" : "Early insight into what is coming to Prod", "Score" : 0.25},
+					{"Answer" : "Close Feedback loops: Site Reliability engineers / lead Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25}
 					]
 			},
 			{
 				"Type" : "Checkbox",
-				"SubCategory" : "Environments",
-				"QuestionText" : "For which of these is the configuration and management of environments automated (tick all that apply)?",
+				"SubCategory" : "Customer",
+				"QuestionText" : "Analytics / Read User Monitoring (RUM): Customer focused monitoring?  Understand how customers use software / where they fall out of process / where they get frustrated",
 				"Answers" : [
-					{"Answer" : "Virtual machines", "Score" : 0.5},
-					{"Answer" : "Networks", "Score" : 0.5},
-					{"Answer" : "Operating systems", "Score" : 0.5},
-					{"Answer" : "Security elements", "Score" : 0.5},
-					{"Answer" : "The application stacks", "Score" : 0.5},
-					{"Answer" : "The applications", "Score" : 0.5}
-					]
+					{"Answer" : "Tools in place", "Score" : 0.25},
+					{"Answer" : "Metrics monitored have adequate coverage", "Score" : 0.25},
+					{"Answer" : "Using percentiles to expose where users are experiencing issues (averages hide issues) e.g. have alarms for: 99, 90, 75, vs steady state e.g. mean, median as relevant?", "Score" : 0.25},
+					{"Answer" : "Close Feedback loops: Site Reliability engineers / lead Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25},
+					{"Answer" : "Real User Monitoring (RUM) active - e.g. javascript in browser reporting real user experience e.g. includes page load times, DNS issues, traffic bottlenecks etc", "Score" : 0.25}
+				]
 			},
 			{
-				"Type" : "Option",
-				"SubCategory" : "Environments",
-				"QuestionText" : "Are the required environments (e.g. dev, test, integration) available in line with demand (i.e. at the right time or in a way that doesn’t incur delay to activity)?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Environments",
-				"QuestionText" : "Is the provisioning, configuration and management of environments automated?",
+				"Type" : "Checkbox",
+				"SubCategory" : "Code",
+				"QuestionText" : "STM (Synthetic Transaction Monitoring) / APM (Application Performance Monitoring) / Log Analytics (tick all that apply)?",
 				"Answers" : [
-					{"Answer" : "Yes, and scaling is automatic", "Score" : 2},
-					{"Answer" : "Yes, but scaling is manual", "Score" : 1},
-					{"Answer" : "No", "Score" : 0}
-					]
+					{"Answer" : "Tools in place", "Score" : 0.25},
+					{"Answer" : "Metrics monitored have adequate coverage", "Score" : 0.25},
+					{"Answer" : "Synthetic Monitoring - Automated testing to measure performance?", "Score" : 0.25},
+					{"Answer" : "Visibility into how app is performing internally e.g. how long are certain relevant calls to resources taking?", "Score" : 0.25},
+					{"Answer" : "Metrics trending up or down visible and alerted where relevant?", "Score" : 0.25},
+					{"Answer" : "The tools indicate what part of the app is generating the highest number of errors?", "Score" : 0.25}
+				]
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Testing",
-				"QuestionText" : "Does the team have a high degree of automated unit tests in place (testing individual modules)?",
+				"SubCategory" : "Code",
+				"QuestionText" : "Effective error and performance logging (instrumentation) is built into the application, noting needs above?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Code",
+				"QuestionText" : "Continuously improve: Learn from system under inspection - Each system should have a 'heartbeat' that appears off when unhealthy?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Code",
+				"QuestionText" : "Database: DBA monitoring proactively identifying issues before they become impacting incidents?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Code",
+				"QuestionText" : "Configuration 'Drift Management' in place?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Core",
+				"QuestionText" : "Effective Service and Infrastructure monitoring in place?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Security",
+				"QuestionText" : "Monitoring effective for Auditing and Compliance for effective Governance, including Threat Detection?"
+			},
+			{
+				"Type" : "Checkbox",
+				"SubCategory" : "Team",
+				"QuestionText" : "Teams access to each of the above (tick all that apply)?",
 				"Answers" : [
-					{"Answer" : "Yes, automated tests are in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated tests are in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
+					{"Answer" : "Insight", "Score" : 0.5},
+					{"Answer" : "Customer ", "Score" : 0.5},
+					{"Answer" : "Code", "Score" : 0.5},
+					{"Answer" : "Core", "Score" : 0.5},
+					{"Answer" : "Security", "Score" : 0.5}
 					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Testing",
-				"QuestionText" : "Does the team have a high degree of automated integration tests in place (testing the interaction of modules with each other)?",
-				"Answers" : [
-					{"Answer" : "Yes, automated tests are in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated tests are in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Testing",
-				"QuestionText" : "Does the team have a high degree of automated system tests in place (confirming overall system functionality meets requirements)?",
-				"Answers" : [
-					{"Answer" : "Yes, automated tests are in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated tests are in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Testing",
-				"QuestionText" : "Does the team have a high degree of automated performance tests in place?",
-				"Answers" : [
-					{"Answer" : "Yes, automated tests are in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated tests are in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Static Analysis",
-				"QuestionText" : "Does the team complete automated scanning of source code assets?",
-				"Answers" : [
-					{"Answer" : "Yes, automated scanning is in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated scanning is in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Static Analysis",
-				"QuestionText" : "Does the team complete automated scanning of binaries?",
-				"Answers" : [
-					{"Answer" : "Yes, automated scanning is in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated scanning is in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Static Analysis",
-				"QuestionText" : "Is code automatically scanned for quality during a build?",
-				"Answers" : [
-					{"Answer" : "Yes, automated scanning is in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated scanning is in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Does failure to meet coding standards or security rules trigger a break in the build?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Is automation code developed with the same rigor as product code (e.g. testing, source control)?"
-			}			
+			}		
 		]
 	},
 	{
