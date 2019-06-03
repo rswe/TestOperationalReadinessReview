@@ -58,7 +58,7 @@
 						<i class="far fa-chart-bar fa-stack-1x"></i>
 					</span>
 					<h2>Understand Where You Are</h2>
-					<p class="text-justify">Our set of carefully designed questions across 7 different areas will help you quickly establish your current level of DevOps maturity.</p>
+					<p class="text-justify">Our set of carefully designed questions across 7 different areas will help you quickly establish your current level of Operational Readiness.</p>
 					<p class="text-justify">You can view the results online as well as downloading them in CSV format for more detailed analysis.</p>
 				</div><!-- /.col-lg-4 -->
 			
@@ -68,7 +68,7 @@
 						<i class="fas fa-shoe-prints fa-stack-1x"></i>
 					</span>
 					<h2>Identify Your Next Steps</h2>
-					<p class="text-justify">For each area we have identified a range of free or commercially available books, videos, blog posts, white papers and websites that will help you take the next steps on your DevOps journey.</p>
+					<p class="text-justify">For each area we have identified a range of free or commercially available books, videos, blog posts, white papers and websites that will help you take the next steps on your Operational Readiness.</p>
 				</div><!-- /.col-lg-4 -->
 		  
 
