@@ -100,65 +100,48 @@
 					]
 			},
 			{
-				"Type" : "Option",
-				"QuestionText" : "Are dependencies identfied and visualised? e.g. Third-party systems, monitoring, networking",
-				"Answers" : [
-					{"Answer" : "Yes with diagrams", "Score" : 1},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
 				"Type" : "Banner",
 				"QuestionText" : "Highly Available & Redundant"
 			},
 			{
 				"Type" : "Option",
+				"QuestionText" : "Manual Runbook / Automated solution in place for all in scope failures of: location / region or individual service within each / Components. e.g. consider running across multiple AZs/Regions, Application Architecture. What happens when: <ul><li>Machine dies, rack fails, or cluster goes offline</li><li>Network fails between two datacenters</li><li>For each type of server that talks to other servers (its backends):</li><li>How to detect when backends die, and what to do when they die</li><li>How to terminate or restart without affecting clients or users</li><li>Load balancing, rate-limiting, timeout, retry and error handling behaviour</li></ul>",
+				"Answers" : [
+					{"Answer" : "Yes", "Score" : 1},
+					{"Answer" : "No", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Able to handle spike of traffic? For each component, traffic volume, launch spikes.",
+				"Answers" : [
+					{"Answer" : "Yes e.g. using relevant mitigation such as Sizing, Auto-scaling, Containers, serverless architecture etc", "Score" : 1},
+					{"Answer" : "No", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "How will we know when we need more capacity?",
+				"Answers" : [
+					{"Answer" : "Alert or automated increase safely in advance", "Score" : 1},
+					{"Answer" : "Manual scheduled regular checks", "Score" : 0.25},
+					{"Answer" : "No", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "How quickly can we add more capacity?",
+				"Answers" : [
+					{"Answer" : "All key dependencies automated increase on approach to capacity", "Score" : 1},
+					{"Answer" : "", "Score" : 0.25},
+					{"Answer" : "No", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
 				"QuestionText" : "Does the team have methods in place for asynchronous communication (for example Kanban Board, JIRA, Slack, Circuit)?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Do people on the team have mechanisms to collaborate with people outside of the team?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Are people on the team willing to work outside their usual specialism?",
-				"Answers" : [
-					{"Answer" : "Everyone on the team is willing to do this", "Score" : 1},
-					{"Answer" : "Some people on the team are willing to do this", "Score" : 0.5},
-					{"Answer" : "Generally people on the team prefer not to do this", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Do people on the team have a preference towards the most immediate (information rich) comunication method available (e.g. voice call rather than email)?",
-				"Answers" : [
-					{"Answer" : "Everyone on the team does", "Score" : 1},
-					{"Answer" : "Most people on the team do", "Score" : 0.5},
-					{"Answer" : "Most people on the team do not", "Score" : 0}
-					]					
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Is there sufficient opportunity for people on the team to meet face to face?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "How frequently are there misunderstandings between members of the team?",
-				"Answers" : [
-					{"Answer" : "Hardly ever", "Score" : 1},
-					{"Answer" : "Fairly frequently (at least once per week)", "Score" : 0.5},
-					{"Answer" : "Very frequently (at least once per day)", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Do people on the team share their ideas/concerns with the rest of the team and are they fairly represented?",
-				"Answers" : [
-					{"Answer" : "Yes, always", "Score" : 1},
-					{"Answer" : "Yes, most of the time", "Score" : 0.5},
-					{"Answer" : "Hardly ever", "Score" : 0}
-					]
 			}
+			
 		]
 	},
 	{
