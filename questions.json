@@ -325,37 +325,28 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the architecture of the application consist of loosely coupled components (choose the most accurate description)?",
-				"Answers" : [
-					{"Answer" : "The application is built from a number of stateless components with scaling and resilience provided at the application layer (full MicroServices)", "Score" : 3},
-					{"Answer" : "The application is made up of several separate components but relies on external solutions to provide availability and scalability", "Score" : 2},
-					{"Answer" : "The application is largely monolithic but made up of code modules that can be worked on independently and then re-compiled into a single unit", "Score" : 1},
-					{"Answer" : "The application is built up of monolithic code and can only be changed in its entirety as part of a release schedule", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Checkbox",
-				"QuestionText" : "Does the architecture enable development, testing and other QA activities to be representative and performed independently of each another without impacting production (tick all that apply)?",
-				"Answers" : [
-					{"Answer" : "There are fully separate development, test and QA environments", "Score" : 0.5},
-					{"Answer" : "Environments are regularly re-built or synchronised (at least monthly)", "Score" : 0.5},
-					{"Answer" : "The 3 environments are similar at all levels (resilience, performance, security, dependencies)", "Score" : 0.5},
-					{"Answer" : "Each environment can be torn down and rebuilt without affecting other environments", "Score" : 0.5},
-					{"Answer" : " Environment specific configuration items are decoupled from the code in order to accelerate rebuilds", "Score" : 0.5}
-					]
+				"SubCategory" : "Logging",
+				"QuestionText" : "Consistent Log Format? Consider JSON"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the architecture enable the deployment of services independently of one another?",
-				"Answers" : [
-					{"Answer" : "Yes, every element of functionality can be updated individually and applied to the application", "Score" : 2},
-					{"Answer" : "Partially, some elements can be updated independently, but there are certain core components that need to be updated together in order to maintain functionality", "Score" : 1},
-					{"Answer" : "No, updates to the system need to be performed together in a formal release cycle", "Score" : 0}
-					]
+				"SubCategory" : "Logging",
+				"QuestionText" : "Log levels: User Log Levels correctly [INFO/WARN/CRIT] inc UTC & microseconds? "
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are all application logs written to a central log repository automatically with the configuration included in the environment design to allow portability between environments?"
+				"SubCategory" : "Logging",
+				"QuestionText" : "Add context for your logging? e.g. transaction / correlation ids"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Logging",
+				"QuestionText" : "Logging of behaviours? For pattern analysis such as destinations, frequency/periodicity of identified risk incidents, and/or volumes exchanged, which indicate whether the behaviour exceeds a specified baseline"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Logging",
+				"QuestionText" : "Application (and other sources of logs) are periodically reviewed to consider how analytics will be used on this data?"
 			}
 		]
 	},
