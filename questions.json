@@ -29,11 +29,11 @@
 			},		
 			{
 				"Type" : "Banner",
-				"QuestionText" : "SLIs (Service Level Incdicators) - Early warning before SLAs exceeded. Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
+				"QuestionText" : "SLIs (Service Level Incidators) - Early warning before SLAs exceeded. Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have SLIs (Service Level Incdicators) - Early warning before SLAs exceeded?",
+				"QuestionText" : "Does the team have SLIs (Service Level Incidators) - Early warning before SLAs exceeded?",
 				"Answers" : [
 					{"Answer" : "Yes, taken from monitoring, and there are actionable alerts if the service degrates", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -54,7 +54,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do Operations / Site Reliability Engineers have the ability (skills) to make tomorrow better than today e.g. including consulting for Devs, contribution to application and infrastructure architecture, monitoring and CI/CD Pipeilne?",
+				"QuestionText" : "Do Operations / Site Reliability Engineers have the ability (skills) to make tomorrow better than today e.g. including consulting for Devs, contribution to application and infrastructure architecture, monitoring and CI/CD Pipelines?",
 				"Answers" : [
 					{"Answer" : "Yes, all of the above", "Score" : 1},
 					{"Answer" : "Yes, but only 1 of the items above", "Score" : 0.25},
@@ -93,12 +93,23 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are knowledge and interests shared within the team and with other teams within the organisation (for example via communities of interest)?",
+				"QuestionText" : "Are dependencies identfied and visualised? e.g. Third-party systems, monitoring, networking",
 				"Answers" : [
-					{"Answer" : "Yes", "Score" : 1},
-					{"Answer" : "Yes, but only within the team", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 1}
+					{"Answer" : "Yes with diagrams", "Score" : 1},
+					{"Answer" : "No", "Score" : 0}
 					]
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Are dependencies identfied and visualised? e.g. Third-party systems, monitoring, networking",
+				"Answers" : [
+					{"Answer" : "Yes with diagrams", "Score" : 1},
+					{"Answer" : "No", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Highly Available & Redundant"
 			},
 			{
 				"Type" : "Option",
