@@ -2,41 +2,25 @@
 	"//" : "Copyright 2018 Atos SE and Worldline",
 	"//" : "Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE)",
 	
-	"Team Agility" : {
-		"Advice" : "A great place to start is by reading the Agile Manifesto. Scrum is a popular Agile software development framework which is a great approach when setting up a new team if there isn't already an existing way of working. Kanban is an evolutionary method for improving a team's agility, and works well when the team already has an existing way of working in place.",
+	"Service Levels" : {
+		"Advice" : "A great place to start is by reading the reading the Google SRE guides and books",
 		"Links" : [
 			{
 				"Type" : "Website",
-				"Text" : "Agile Manifesto",
-				"Href" : "http://agilemanifesto.org/"
+				"Text" : "Google SRE Fundamentals",
+				"Href" : "https://cloud.google.com/blog/products/gcp/sre-fundamentals-slis-slas-and-slos"
 			},
 			{
 				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (0:43)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "The Systems Thinking Approach to Introducing Kanban - David Anderson (1:31)",
-				"Href" : "https://vimeo.com/46272041"
+				"Text" : "SLIs, SLOs, SLAs, oh my! (class SRE implements DevOps)",
+				"Href" : "https://www.youtube.com/watch?v=tEylFyxbDLE"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "The Scrum Guide by Ken Schwaber and Jeff Sutherland",
-				"Href" : "http://www.scrumguides.org/index.html"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364",
+				"Text" : "Site Reliability Engineering by Betsy Beyer et al",
+				"Href" : "https://www.amazon.co.uk/Site-Reliability-Engineering-Betsy-Beyer/dp/149192912X",
 				"Paid" : "Yes"
 			},
-			{
-				"Type" : "Book",
-				"Text" : "Kanban: Successful Evolutionary Change for Your Technology Business by David Anderson",
-				"Href" : "https://www.amazon.com/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402",
-				"Paid" : "Yes"
-			}
 		]
 	},
 	"Collaboration" : {
