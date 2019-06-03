@@ -29,59 +29,61 @@
 			},		
 			{
 				"Type" : "Banner",
-				"QuestionText" : "SLIs (Service Level Incicators) - Early warning before SLAs exceeded. Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
+				"QuestionText" : "SLIs (Service Level Incdicators) - Early warning before SLAs exceeded. Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have SLIs (Service Level Incicators) - Early warning before SLAs exceeded?",
+				"QuestionText" : "Does the team have SLIs (Service Level Incdicators) - Early warning before SLAs exceeded?",
 				"Answers" : [
 					{"Answer" : "Yes, taken from monitoring, and there are actionable alerts if the service degrates", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
-
 			{
-				"Type" : "Option",
-				"QuestionText" : "Does the team regularly meet to discuss what is working well, what isn't working well and what they can improve, and the top improvement items are implemented?"
+				"Type" : "Banner",
+				"QuestionText" : "SLOs (Service Level Objectives), with consequences give common incentives across team(s). Realistic reliability goals. <br><br>Longer timeframe than SLI’s. Define your Error Budget.<br><br>Error Budgets & Error Budget Policy (consequences) <ul><li>Must be set at the appropriate levels</li><li>Too high and costs can rise rapidly</li><li>Smaller error budget which can impede change</li><li>Too low and your customers will be unhappy</li><ul>"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team take actions to ensure that the team does not create or experience bottlenecks with/for other teams?",
+				"QuestionText" : "Are there Service Level Objectives with consequences?",
 				"Answers" : [
-					{"Answer" : "Yes, and the actions are effective", "Score" : 1},
-					{"Answer" : "Yes, but the actions are not always effective", "Score" : 0.5},
+					{"Answer" : "Yes, and the consequences are effective", "Score" : 1},
+					{"Answer" : "Yes, but the consequences are not always effective", "Score" : 0.5},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are any work items that are blocked swiftly identified and then people collaborate to rectify the situation?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Is there a clearly defined mechanism for prioritising the backlog?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Does the team work on the highest priority items in the backlog?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Are the most experienced team members allocated last so they can help others develop cross functional skills and be free to focus on the most business critical or complex problems?"
-			},
-			{
-				"Type" : "Checkbox",
-				"QuestionText" : "Does the team have fast feedback loops in place (tick all that apply)?",
+				"QuestionText" : "Do Operations / Site Reliability Engineers have the ability (skills) to make tomorrow better than today e.g. including consulting for Devs, contribution to application and infrastructure architecture, monitoring and CI/CD Pipeilne?",
 				"Answers" : [
-					{"Answer" : "From testers: usually less than 1 day", "Score" : 0.5},
-					{"Answer" : "From the product owner: usually less than 3 days", "Score" : 0.5},
-					{"Answer" : "From customers: usually less than 2 weeks", "Score" : 0.5},
-					{"Answer" : "From end users: usually less than 2 weeks", "Score" : 0.5}
+					{"Answer" : "Yes, all of the above", "Score" : 1},
+					{"Answer" : "Yes, but only 1 of the items above", "Score" : 0.25},
+					{"Answer" : "No", "Score" : 0}
 					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are there proactive steps taken to ensure there is no major dependency on \"super heroes\" (e.g. pair programming, mob learning, real options)?"
+				"QuestionText" : "Do Operations / Site Reliability Engineers have the ability to regulate workload e.g. TOIL (Manual, Repetitive, Automatable, reactive, Lacks enduring value)?",
+				"Answers" : [
+					{"Answer" : "Yes, TOIL bounded to <50% of Operations for Site Reliability Engineers / Key Operations staff", "Score" : 1},
+					{"Answer" : "No", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Is a shared responsibility model successfully used to handover systems to Site Reliability Engineers / Operations?",
+				"Answers" : [
+					{"Answer" : "Yes, we ensure a Production Readiness Review is completed and the Platform is safe to operate before handover", "Score" : 1},
+					{"Answer" : "No", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Disaster Recovery plan is documented and date of last and next DR Test noted?",
+				"Answers" : [
+					{"Answer" : "Yes including RTO (recovery time objective) and RPO (recovery point objective)", "Score" : 1},
+					{"Answer" : "No", "Score" : 0}
+					]
 			}
 		]
 	},
