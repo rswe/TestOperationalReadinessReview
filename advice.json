@@ -19,6 +19,12 @@
 				"Type" : "Website",
 				"Text" : "12-Factor App",
 				"Href" : "https://12factor.net/"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Site Reliability Engineering by Betsy Beyer et al",
+				"Href" : "https://www.amazon.co.uk/Site-Reliability-Engineering-Betsy-Beyer/dp/149192912X",
+				"Paid" : "Yes"
 			}
 		]
 	},
