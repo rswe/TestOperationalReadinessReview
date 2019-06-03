@@ -35,7 +35,7 @@
 				"Type" : "Option",
 				"QuestionText" : "Does the team have SLIs (Service Level Incidators) - Early warning before SLAs exceeded?",
 				"Answers" : [
-					{"Answer" : "Yes, taken from monitoring, and there are actionable alerts if the service degrates", "Score" : 1},
+					{"Answer" : "Yes, taken from monitoring, and there are actionable alerts if the service degrades", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
@@ -131,6 +131,19 @@
 			{
 				"Type" : "Option",
 				"QuestionText" : "How quickly can we add more capacity?",
+				"Answers" : [
+					{"Answer" : "All key dependencies automated increase on approach to capacity", "Score" : 1},
+					{"Answer" : "Manual changes required, always completed before impact", "Score" : 0.25},
+					{"Answer" : "On occassion, capacity limits are hit before being extended", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Avoid Single Points of Failure (SPOF) / Ensure your system withstands component failures: <ul><li>Be sure services are running in clusters scaled across locations/AZs/Regions etc.</li><li>SSL certs?</li><li>Service dependencies:</li><li>Graceful degradation, how to avoid accidentally overrunning third-party services</li><li>Playing nice with syndicated partners, mail systems, services</li><li>Dependencies such as queuing systems, streaming systems, workflows, and load balancers are loosely coupled.</li><li>When a component's dependencies are unhealthy, the component itself does not report as unhealthy. It can continue to serve requests in a degraded manner.</li><li>Tooling if critical</li><li>Heartbeats monitored have no SPOF</li><li>Replication & Backups</li><li>etc</li></ul>"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Avoid Single Points of Failure (SPOF) / How does your system withstand component failures?",
 				"Answers" : [
 					{"Answer" : "All key dependencies automated increase on approach to capacity", "Score" : 1},
 					{"Answer" : "Manual changes required, always completed before impact", "Score" : 0.25},
