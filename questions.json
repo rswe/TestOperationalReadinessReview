@@ -355,112 +355,48 @@
 		"SpiderPos" : 5,
 		"Questions" : [
 			{
+				"Type" : "Banner",
+				"QuestionText" : "Documentation for your App and Platform"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Stored your documentation close to your code e.g. Readme links to wiki / alternative including how to install, troubleshoot?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "What does the code do?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "How to install & run it?"
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Standard Operating Procedures"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Standard Operating Procedures",
+				"QuestionText" : "How to interact with it (stop, start, restart)?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Standard Operating Procedures",
+				"QuestionText" : "How to configure it?"
+			},
+			{
 				"Type" : "Checkbox",
-				"SubCategory" : "CI",
-				"QuestionText" : "Does the team manage their source code in a central source control system (tick all that apply)?",
+				"SubCategory" : "Standard Operating Procedures",
+				"QuestionText" : "How to troubleshoot it?",
 				"Answers" : [
-					{"Answer" : "We have a common code repository (e.g. Git based repo)", "Score" : 0.5},
-					{"Answer" : "We have a defined branching structure", "Score" : 0.5},
-					{"Answer" : "We have defined repository structure", "Score" : 0.5},
-					{"Answer" : "Our structure and branching strategy are aligned to our Dev, Test, and Prod environments (enabling a smooth flow between environments)", "Score" : 0.5}
+					{"Answer" : "Standard Operating Procedures", "Score" : 0.5},
+					{"Answer" : "Application Run Books - Set actions (documentation and automated solutions for resolving issues) ", "Score" : 0.5},
+					{"Answer" : "Application Run Books - particularly for out of hours scenarios.", "Score" : 0.5}
 					]
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "CI",
-				"QuestionText" : "How frequently do developers integrate their changes into a shared mainline (trunk)?",
-				"Answers" : [
-					{"Answer" : "Code is integrated at least once per day", "Score" : 2},
-					{"Answer" : "Code is integrated at least weekly", "Score" : 1},
-					{"Answer" : "Code is integrated infrequently but at least once a month", "Score" : 0.5},
-					{"Answer" : "Code is integrated on an ad hoc basis when the developer feels it is ready to share", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Code Review",
-				"QuestionText" : "Is there a defined code review and approval process?",
-				"Answers" : [
-					{"Answer" : "We have a targeted code review process that is appropriate and ensures code is published in a timely manner", "Score" : 1},
-					{"Answer" : "We have a code review process but the process incurs delays and hinders deployments", "Score" : 0.5},
-					{"Answer" : "We have no code review process and bugs can frequently be integrated into the mainline (trunk)", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "CD",
-				"QuestionText" : "Whenever code is integrated with a shared mainline (trunk), are automated processes triggered?",
-				"Answers" : [
-					{"Answer" : "Yes, an automated build of the software is triggered into a production-like environment, automated tests are then triggered and software is available to be automatically deployed into production", "Score" : 2},
-					{"Answer" : "Yes, an automated build of the software is triggered into a production-like environment, manual tests are then performed before the release is manually deployed into production", "Score" : 1},
-					{"Answer" : "Yes, an automated build of the software is triggered, however this build is then manually deployed into the relevant environments (QA and Prod)", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "CI",
-				"QuestionText" : "Is highest priority always given to fixing a broken build?",
-				"Answers" : [
-					{"Answer" : "Yes, builds are fixed / rolled back within 10 minutes", "Score" : 2},
-					{"Answer" : "Yes, builds are fixed / rolled back  within 1 hour", "Score" : 1},
-					{"Answer" : "Yes, builds are fixed / rolled back  within a day", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "CI",
-				"QuestionText" : "Are adequate notifications in place to communicate the build status and failures to the team (e.g. automated e-mails, slack, circuit)?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "CD",
-				"QuestionText" : "Is it possible to roll back the application cleanly and reliably?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Refactoring",
-				"QuestionText" : "Does the team practice regular refactoring of their code?",
-				"Answers" : [
-					{"Answer" : "Yes, code is often updated independently of new functions or features to ensure technical debt is minimised", "Score" : 1},
-					{"Answer" : "No, code is only updated to enable new features or functionality", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Refactoring",
-				"QuestionText" : "Is time allocated/dedicated to refactoring in order to improve code quality and reduce technical debt?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Refactoring",
-				"QuestionText" : "Are there sufficient automated tests in place to enable developers to refactor with confidence?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "TDD",
-				"QuestionText" : "How widely does the team practice Test Driven Development (TDD), ensuring that automated tests are developed in advance of new features?", 
-				"Answers" : [
-					{"Answer" : "All product code is developed using TDD", "Score" : 2},
-					{"Answer" : "Some product code is developed using TDD", "Score" : 1},
-					{"Answer" : "TDD is not used at all", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "TDD",
-				"QuestionText" : "Is a standard test framework (such as JUnit) used by the team?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "TDD",
-				"QuestionText" : "Is the refactoring step of the TDD cycle usually applied?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "TDD",
-				"QuestionText" : "Are mocks/stubs/simulators used to ensure that tests can be run quickly, frequently and repeatably?"
+				"QuestionText" : "Metrics and Dashboards are available?"
 			}
 		]
 	},
@@ -470,103 +406,51 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"SubCategory" : "Organisation Structure",
-				"QuestionText" : "Is the team a cross functional delivery team comprising of development, testing and operations expertise?"
+	     		"QuestionText" : "Can you have someone else manage hosting your alerting? Non-core, leverage 3rd party managed service if possible"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Are incentives for people on the team (both financial and non-financial) aligned to overall team results?"
+				"QuestionText" : "Alerts adjusted to appropriate level for application/platform? e.g. IF can auto-recover e.g. VM restarting, then do not alert (but do notify for later review)"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Organisation Structure",
-				"QuestionText" : "Are those responsible for designing, developing, testing and operating the application all part of the same team?"
+				"QuestionText" : "Auto-scaling alert avoidance - avoiding alerts from high CPU/Memory if auto-scaling (where by design)?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have accountability for the product throughout its life-cycle (introduction, growth, maturity, decline)?"
+				"QuestionText" : "Alerts calibated correctly e.g. Verify if needs to be fixed now and is Actionable? Avoiding getting people out of bed unless required"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Culture",
-				"QuestionText" : "Does the team have a culture of experimentation and innovation?"
+				"QuestionText" : "Tickets created for relevant alerts? - Implemented auto-ticket creation where relevant - including non-urgent actions?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Culture",
-				"QuestionText" : "Does the team have a high trust culture which enables autonomy?"
+				"QuestionText" : "Build Proper Escalation Paths For Alerts? e.g. tools with built in capability (PagerDuty etc), Primary => Secondary => Team => Management"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Do people involved in developing and running the application have aligned incentives and goals?"
+				"QuestionText" : "P1 paging escalations e.g. P1 Auto escalate where not Acknowledged?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have a say in what they work on (e.g. self selection days)?"
+				"QuestionText" : "Review alerts/acknowledgements - Review alerts periodically that have been acknowledged or silenced beyond a tolerable threshold?"
 			},
 			{
-				"Type" : "Option",
-				"SubCategory" : "Organisation Structure",
-				"QuestionText" : "Does the organisation's structure catalyse and support a DevOps approach?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Is there a team charter that describes how the team behaves and works together?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Is there a clear vision and purpose for the product?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Are all the product's stakeholders identified and engaged?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Is the team aligned and incentivised to a measurable business outcome?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Do management and the wider organisation see the value in protecting time for continuous improvement?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Does the team have enough time to learn new technologies, tools and practices?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Organisation Structure",
-				"QuestionText" : "How frequently is there interaction between the business and the development team?",
-				"Answers" : [
-					{"Answer" : "Business users are embedded within the team", "Score" : 2},
-					{"Answer" : "The team meets with the business at least every week", "Score" : 1},
-					{"Answer" : "The team meets with the business at least every month", "Score" : 0.5},
-					{"Answer" : "Rarely or not at all", "Score" : 0}
+				"Type" : "Checkbox",
+				"SubCategory" : "Standard Operating Procedures",
+				"QuestionText" : "Alerting in place for:",
+				"Answers": [
+					{"Answer" : "Infrastructure ", "Score" : 1},
+					{"Answer" : "Application ", "Score" : 1},
+					{"Answer" : "Database", "Score" : 0.5},
+					{"Answer" : "Security", "Score" : 1},
+					{"Answer" : "Network", "Score" : 0.5}
 					]
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Culture",
-				"QuestionText" : "Do senior stakeholders buy into and support the DevOps approach?",
-				"Answers" : [
-					{"Answer" : "Yes, we rarely have issues with business cases or bureaucratic processes", "Score" : 2},
-					{"Answer" : "Yes, there is buy-in and understanding, but business processes are still too rigid", "Score" : 1},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Culture",
-				"QuestionText" : "Do members of the team practice continuous learning?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Culture",
-				"QuestionText" : "Does the team have a feedback culture (where people are happy to quickly share negative and positive feedback)?"
+				"QuestionText" : "Team(s) responsible for each of the above clearly identified and responsible?"
 			}
 		]
 	},
@@ -575,35 +459,24 @@
 		"SpiderPos" : 7,
 		"Questions" : [
 			{
-				"Type" : "Checkbox",
-				"QuestionText" : "Has the organisation standardised on a set of tooling standards (tick all that apply)?",
-				"Answers" : [
-					{"Answer" : "We have a defined set of CI/CD tooling that is universally used", "Score" : 1},
-					{"Answer" : "We have defined code repository tooling and standardised usage processes for them (e.g. branching pattern)", "Score" : 1},
-					{"Answer" : "We have defined monitoring tooling", "Score" : 1},
-					{"Answer" : "We have defined patching/upgrade tooling and processes (e.g. immutable vs. mutable)", "Score" : 1}
-					]
+				"Type" : "Banner",
+				"QuestionText" : "Run Load Tests & Understand Limits"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Has the organisation standardised on a set of application stacks/development languages?",
-				"Answers" : [
-					{"Answer" : "Yes, with a sufficient portfolio of options to meet our development needs", "Score" : 2},
-					{"Answer" : "Yes, but with an insufficient portfolio of options to meet our development needs", "Score" : 1},
-					{"Answer" : "No, any team can choose any stack/language without constraint", "Score" : 0}
-					]
+				"QuestionText" : "Before a service goes live, you know where your breaking points are?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do you make the best use of SaaS (Software as a Service) for utility applications (i.e. ones not used for competitive advantage such as version control)?"
+				"QuestionText" : "You know the bare minimum number of instances needed to run your average throughput?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "As much as makes sense, do you use PaaS (Platform as a Service)?"
+				"QuestionText" : "You Know maximum throughput you can handle with current architecture?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "As much as makes sense, do you use IaaS (Infrastructure as a Service)?"
+				"QuestionText" : "You calculate throughput per instance ratio (scale unit) so you can accurately setup proper auto-scaling in a cost optimised way?"
 			}
 		]
 	}
@@ -613,35 +486,24 @@
 		"SpiderPos" : 8,
 		"Questions" : [
 			{
-				"Type" : "Checkbox",
-				"QuestionText" : "Has the organisation standardised on a set of tooling standards (tick all that apply)?",
-				"Answers" : [
-					{"Answer" : "We have a defined set of CI/CD tooling that is universally used", "Score" : 1},
-					{"Answer" : "We have defined code repository tooling and standardised usage processes for them (e.g. branching pattern)", "Score" : 1},
-					{"Answer" : "We have defined monitoring tooling", "Score" : 1},
-					{"Answer" : "We have defined patching/upgrade tooling and processes (e.g. immutable vs. mutable)", "Score" : 1}
-					]
+				"Type" : "Option",
+				"QuestionText" : "Adopted Automated Testing early? e.g. Test Driven Development (TDD): Build a Test first, fails. Develop code to is passes. Refector/optimise code. Repeat. <ul><li><div>Builds confidence in code released</div></li><li><div>Allowed more testing of app in less time</div></li><li><div>Manual testing can become error prone</div></li></ul>"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Has the organisation standardised on a set of application stacks/development languages?",
-				"Answers" : [
-					{"Answer" : "Yes, with a sufficient portfolio of options to meet our development needs", "Score" : 2},
-					{"Answer" : "Yes, but with an insufficient portfolio of options to meet our development needs", "Score" : 1},
-					{"Answer" : "No, any team can choose any stack/language without constraint", "Score" : 0}
-					]
+				"QuestionText" : "Can you confirm the level of test/code coverage? e.g. how much of solution been tested?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do you make the best use of SaaS (Software as a Service) for utility applications (i.e. ones not used for competitive advantage such as version control)?"
+				"QuestionText" : "Have you automated common testing tasks & integrated into build process?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "As much as makes sense, do you use PaaS (Platform as a Service)?"
+				"QuestionText" : "Integrated UI tests automated?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "As much as makes sense, do you use IaaS (Infrastructure as a Service)?"
+				"QuestionText" : "Can you confirm how many critical or high-priority bugs are still open? (Watch out for the 're-prioritising bug severity downwards' trick in order to meet the quality goals!)?"
 			}
 		]
 	}
@@ -651,35 +513,61 @@
 		"SpiderPos" : 9,
 		"Questions" : [
 			{
-				"Type" : "Checkbox",
-				"QuestionText" : "Has the organisation standardised on a set of tooling standards (tick all that apply)?",
+				"Type" : "Option",
+				"QuestionText" : "Artifact repository tool in use?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Automated application deployment (consider how fast to deploy, and roll back)?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Outage required for changes?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Platform Deployment tools / process confirmed?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Automated database deployment?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Understand what changes to the database are needed to support new code releases (check all that apply)?",
 				"Answers" : [
-					{"Answer" : "We have a defined set of CI/CD tooling that is universally used", "Score" : 1},
-					{"Answer" : "We have defined code repository tooling and standardised usage processes for them (e.g. branching pattern)", "Score" : 1},
-					{"Answer" : "We have defined monitoring tooling", "Score" : 1},
-					{"Answer" : "We have defined patching/upgrade tooling and processes (e.g. immutable vs. mutable)", "Score" : 1}
+					{"Answer" : "Avoid removing columns/changing type of columns, only made additions to reduce risk", "Score" : 0.5},
+					{"Answer" : "Test migrations against test copies of database", "Score" : 1},
+					{"Answer" : "Keep revision history of database migrations for reference", "Score" : 0.5},
+					{"Answer" : "Snapshot databases before doing migrations", "Score" : 1}
 					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Has the organisation standardised on a set of application stacks/development languages?",
+				"QuestionText" : "Speed up and reduce risk for deployments / experiments (check all that apply)?",
 				"Answers" : [
-					{"Answer" : "Yes, with a sufficient portfolio of options to meet our development needs", "Score" : 2},
-					{"Answer" : "Yes, but with an insufficient portfolio of options to meet our development needs", "Score" : 1},
-					{"Answer" : "No, any team can choose any stack/language without constraint", "Score" : 0}
+					{"Answer" : "Canary Pools e.g. direct % of traffic to new version of app, then increase % gradually", "Score" : 0.5},
+					{"Answer" : "Blue/Green deployments (switch from one to the other)", "Score" : 1}
 					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do you make the best use of SaaS (Software as a Service) for utility applications (i.e. ones not used for competitive advantage such as version control)?"
+				"QuestionText" : "Able to use Dark Deploys & Feature Flags (check all that apply)?",
+				"Answers" : [
+					{"Answer" : "Using 3rd party Feature Flag solution?", "Score" : 0.5},
+					{"Answer" : "Opt In - Test new features with selected users?", "Score" : 0.5},
+					{"Answer" : "Kill Switch - Disable poorly performing features?", "Score" : 0.5},
+					{"Answer" : "Scalable Roll Outs - Do % roll outs of new features?", "Score" : 1},
+					{"Answer" : "Block Users - Prevent selected users from features?", "Score" : 0.5}
+					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "As much as makes sense, do you use PaaS (Platform as a Service)?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "As much as makes sense, do you use IaaS (Infrastructure as a Service)?"
+				"QuestionText" : "Test and compare new features / Continuous usability and user experience testing?",
+				"Answers" : [
+					{"Answer" : "Run A/B Tests?", "Score" : 0.5},
+					{"Answer" : "Sunset Old Features - Safely decommission old features?", "Score" : 0.5}
+					]
 			}
 		]
 	}
