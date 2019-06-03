@@ -93,7 +93,7 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are dependencies identfied and visualised? e.g. Third-party systems, monitoring, networking",
+				"QuestionText" : "Are dependencies identified and visualised? e.g. Third-party systems, monitoring, networking",
 				"Answers" : [
 					{"Answer" : "Yes with diagrams", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -105,7 +105,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Manual Runbook / Automated solution in place for all in scope failures of: location / region or individual service within each / Components. e.g. consider running across multiple AZs/Regions, Application Architecture. What happens when: <ul><li>Machine dies, rack fails, or cluster goes offline</li><li>Network fails between two datacenters</li><li>For each type of server that talks to other servers (its backends):</li><li>How to detect when backends die, and what to do when they die</li><li>How to terminate or restart without affecting clients or users</li><li>Load balancing, rate-limiting, timeout, retry and error handling behaviour</li></ul>",
+				"QuestionText" : "Manual Runbook / Automated solution in place for all in scope failures of: location / region or individual service within each / Components. e.g. consider running across multiple AZs/Regions, Application Architecture. What happens when: <ul><li>Machine dies, rack fails, or cluster goes offline</li><li>Network fails between two datacentres</li><li>For each type of server that talks to other servers (its backends):</li><li>How to detect when backends die, and what to do when they die</li><li>How to terminate or restart without affecting clients or users</li><li>Load balancing, rate-limiting, timeout, retry and error handling behaviour</li></ul>",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -134,7 +134,7 @@
 				"Answers" : [
 					{"Answer" : "All key dependencies automated increase on approach to capacity", "Score" : 1},
 					{"Answer" : "Manual changes required, always completed before impact", "Score" : 0.25},
-					{"Answer" : "On occassion, capacity limits are hit before being extended", "Score" : 0}
+					{"Answer" : "On occasion, capacity limits are hit before being extended", "Score" : 0}
 					]
 			},
 			{
@@ -151,7 +151,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "On-boarding new developers: Ensure staff reacting to incidents are skilled to troubleshoot all the tech stack by: <ul>    <li>    <div>Standardise on&nbsp; libraries, languages for easier developer onboarding and Production troubleshooting</div>    </li>    <li>    <div>Spot duplicate code and refactor</div>    </li>    <li>    <div>Look for opportunities to implement good design patterns</div>    </li>    <li>    <div>Know your licenses - OpenSource Permissive (MIT/Apache) vs Copy Left (GNU/MPL) etc</div>    </li>    </ul>"
+				"QuestionText" : "On-boarding new developers: Ensure staff reacting to incidents are skilled to troubleshoot all the tech stack by: <ul>    <li>    <div>Standardise on&nbsp;libraries, languages for easier developer onboarding and Production troubleshooting</div>    </li>    <li>    <div>Spot duplicate code and refactor</div>    </li>    <li>    <div>Look for opportunities to implement good design patterns</div>    </li>    <li>    <div>Know your licenses - Open Source Permissive (MIT/Apache) vs Copy Left (GNU/MPL) etc</div>    </li>    </ul>"
 			},
 			{
 				"Type" : "Option",
@@ -168,7 +168,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Is Security always be a top priority? e.g. all of the following as a minimum? <ul><li>Ensure no credentials stored in app</li><li><div>Ensure no credentials stored in app</div></li><li><div>Code defensively for OWASP e.g. SQL injections, XSS attacks etc</div></li><li><div>Leverage Static Analysis Tools</div></li><li>Code check-in validation</li></ul>"			
+				"QuestionText" : "Is Security always a top priority? e.g. all of the following as a minimum? <ul><li>Ensure no credentials stored in app</li><li><div>Ensure no credentials stored in app</div></li><li><div>Code defensively for OWASP e.g. SQL injections, XSS attacks etc</div></li><li><div>Leverage Static Analysis Tools</div></li><li>Code check-in validation</li></ul>"			
 			},
 			{
 				"Type" : "Option",
