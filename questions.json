@@ -222,12 +222,7 @@
 				"Type" : "Option",
 				"SubCategory" : "Insight",
 				"QuestionText" : "Dashboard health - viable dashboard? (false positives low)"			
-			},	
-			{
-				"Type" : "Option",
-				"SubCategory" : "Insight",
-				"QuestionText" : "Are development and test environments consistent with production environments?"
-			},
+			},		
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Insight",
@@ -240,6 +235,10 @@
 					]
 			},
 			{
+				"Type" : "Banner",
+				"QuestionText" : "Customer"
+			},
+			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Customer",
 				"QuestionText" : "Analytics / Read User Monitoring (RUM): Customer focused monitoring?  Understand how customers use software / where they fall out of process / where they get frustrated",
@@ -250,6 +249,10 @@
 					{"Answer" : "Close Feedback loops: Site Reliability engineers / lead Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25},
 					{"Answer" : "Real User Monitoring (RUM) active - e.g. javascript in browser reporting real user experience e.g. includes page load times, DNS issues, traffic bottlenecks etc", "Score" : 0.25}
 				]
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Code"
 			},
 			{
 				"Type" : "Checkbox",
@@ -290,9 +293,17 @@
 				"QuestionText" : "Effective Service and Infrastructure monitoring in place?"
 			},
 			{
+				"Type" : "Banner",
+				"QuestionText" : "Security"
+			},
+			{
 				"Type" : "Option",
 				"SubCategory" : "Security",
 				"QuestionText" : "Monitoring effective for Auditing and Compliance for effective Governance, including Threat Detection?"
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Team / access"
 			},
 			{
 				"Type" : "Checkbox",
