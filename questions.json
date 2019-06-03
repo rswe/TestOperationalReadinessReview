@@ -123,8 +123,8 @@
 				"Type" : "Option",
 				"QuestionText" : "How will we know when we need more capacity?",
 				"Answers" : [
-					{"Answer" : "Alert or automated increase safely in advance", "Score" : 1},
-					{"Answer" : "Manual scheduled regular checks", "Score" : 0.25},
+					{"Answer" : "Alert or automated increase safely in advance with regular Load Testing identifying capacity requirements before Production (daily/weekly)", "Score" : 1},
+					{"Answer" : "Manual scheduled regular checks (monthly/quarterly)", "Score" : 0.25},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
@@ -133,8 +133,8 @@
 				"QuestionText" : "How quickly can we add more capacity?",
 				"Answers" : [
 					{"Answer" : "All key dependencies automated increase on approach to capacity", "Score" : 1},
-					{"Answer" : "", "Score" : 0.25},
-					{"Answer" : "No", "Score" : 0}
+					{"Answer" : "Manual changes required, always completed before impact", "Score" : 0.25},
+					{"Answer" : "On occassion, capacity limits are hit before being extended", "Score" : 0}
 					]
 			},
 			{
