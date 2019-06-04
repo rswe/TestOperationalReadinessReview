@@ -29,27 +29,33 @@
 		]
 	},
 	"Monitoring" : {
-		"Advice" : "Consider whether you have the tools necessary to enable effective communication within and outside of the team. Also think about how effective the team's interpersonal habits are for enabling a fast, low-friction and precise exchange of ideas and emotions.",
+		"Advice" : "Monitoring aka \"observability\" is the key foundation to great ops - the more information you have about your applications the faster you can find what's wrong, or about to go wrong, and prevent it or fix it.",
 		"Links" : [
 			{
-				"Type" : "Blog",
-				"Text" : "Cultivate Communities of Practice by Mike Cohn",
-				"Href" : "https://www.mountaingoatsoftware.com/blog/cultivate-communities-of-practice"
+				"Type" : "Book",
+				"Text" : "The Practice of Cloud System Administration: DevOps and SRE Practices for Web Services by Thomas A. Limoncelli, Strata R. Chalup and Christina J. Hogan (Chapter 16 and 17)",
+				"Href" : "https://www.amazon.com/Practice-Cloud-System-Administration-Practices/dp/032194318X/",
+				"Paid" : "Yes"
 			},
 			{
-				"Type" : "Video",
-				"Text" : "DevOpsChat: Collaboration Tools Interview with Ryan Bryers and Adrian Hepworth (0:22)",
-				"Href" : "https://www.youtube.com/watch?v=pF8Y4amhBtA"
+				"Type" : "Website",
+				"Text" : "Azure Monitoring",
+				"Href" : "https://docs.microsoft.com/en-us/azure/azure-monitor/overview"
+			},	
+			{
+				"Type" : "Website",
+				"Text" : "Azure Monitoring Best Practices",
+				"Href" : "https://docs.microsoft.com/en-us/azure/architecture/best-practices/monitoring"
 			},
 			{
-				"Type" : "Video",
-				"Text" : "DevOpsChat: Team = Product Interview with Jim and Michele McCarthy (0:39)",
-				"Href" : "https://www.youtube.com/watch?v=Rs1tdql6Hb0"
+				"Type" : "Website",
+				"Text" : "AWS CloudWatch",
+				"Href" : "https://aws.amazon.com/cloudwatch/"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Software For Your Head by Jim and Michele McCarthy",
-				"Href" : "https://liveingreatness.com/software-for-your-head-book/"
+				"Text" : "Web Operations by John Allspaw and Jesse Robbins, (Chapter 6)",
+				"Href" : "https://www.amazon.co.uk/Web-Operations-Keeping-Data-Time/dp/1449377440"
 			}
 		]
 	},
