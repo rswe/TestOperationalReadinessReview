@@ -154,7 +154,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "SPOF",
-				"QuestionText" : "Avoid Single Points of Failure (SPOF) for key dependencies that could cause SLAs / SLOs to be breached. Does your system withstand component failures?",
+				"QuestionText" : "Avoid Single Points of Failure (SPOF) for key dependencies that could cause SLAs / SLOs to be breached. Does your system withstand component failures? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Services are running in clusters scaled across locations/AZs/Regions with data replication (where applicable)", "Score" : 0.5},
 					{"Answer" : "SSL cert expiry monitored", "Score" : 1},
@@ -166,12 +166,12 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "On-boarding new developers: Ensure staff reacting to incidents are skilled to troubleshoot all the tech stack by: <ul>    <li>    <div>Standardise on libraries, languages for easier developer onboarding and Production troubleshooting</div>    </li>    <li>    <div>Spot duplicate code and refactor</div>    </li>    <li>    <div>Look for opportunities to implement good design patterns</div>    </li>    <li>    <div>Know your licenses - Open Source Permissive (MIT/Apache) vs Copy Left (GNU/MPL) etc</div>    </li>    </ul>"
+				"QuestionText" : "On-boarding new developers"
 			},
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "On-boarding staff",
-				"QuestionText" : "Do you effectively ensure staff reacting to incidents are skilled to troubleshoot all the tech stack?",
+				"QuestionText" : "Do you effectively ensure staff reacting to incidents are skilled to troubleshoot all the tech stack? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Standardise on libraries, languages for easier developer onboarding and Production troubleshooting", "Score" : 0.5},
 					{"Answer" : "Spot duplicate code and refactor", "Score" : 0.5},
@@ -183,15 +183,11 @@
 				"Type" : "Banner",
 				"QuestionText" : "Security Best Practice Review"
 			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Security",
-				"QuestionText" : "Is Security always a top priority? e.g. all of the following as a minimum? <ul><li>Ensure no credentials stored in app</li><li><div>Ensure no credentials stored in app</div></li><li><div>Code defensively for OWASP e.g. SQL injections, XSS attacks etc</div></li><li><div>Leverage Static Analysis Tools</div></li><li>Code check-in validation</li></ul>"			
-			},
+			
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Security",
-				"QuestionText" : "Is Security always a top priority? e.g. all of the following as a minimum?",
+				"QuestionText" : "Is Security always a top priority? e.g. all of the following as a minimum? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Ensure no credentials stored in app", "Score" : 0.5},
 					{"Answer" : "Code defensively for OWASP e.g. SQL injections, XSS attacks etc", "Score" : 0.5},
