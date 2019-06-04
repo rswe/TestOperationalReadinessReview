@@ -159,9 +159,9 @@
 					{"Answer" : "Services are running in clusters scaled across locations/AZs/Regions with data replication (where applicable)", "Score" : 0.5},
 					{"Answer" : "SSL cert expiry monitored", "Score" : 1},
 					{"Answer" : "When a component's dependencies are unhealthy, the component itself does not report as unhealthy. It can continue to serve requests in a degraded manner.", "Score" : 0.5},
-					{"Answer" : "Service dependencies: Graceful degradation, avoid accidentally overrunning third-party services", "Score" : 0.5},
-					{"Answer" : "Service dependencies: Playing nice with syndicated partners, mail systems, services", "Score" : 0.5},
-					{"Answer" : "Service dependencies: Queuing systems, streaming systems, workflows, and load balancers are loosely coupled.", "Score" : 1}
+					{"Answer" : "Loose coupling of Queuing systems, streaming systems, workflows, load balancers etc", "Score" : 1},
+					{"Answer" : "Graceful degradation, avoid accidentally overrunning third-party services", "Score" : 0.5},
+					{"Answer" : "Playing nice with syndicated partners, mail systems, services", "Score" : 0.5}
 					]
 			},
 			{
@@ -424,7 +424,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Monitoring - Security",
-				"QuestionText" : "Monitoring effective for Auditing and Compliance for effective Governance, including Threat Detection?"
+				"QuestionText" : "Governance - Monitoring effective for Auditing and Compliance, including Threat Detection?"
 			},
 			{
 				"Type" : "Banner",
@@ -460,11 +460,6 @@
 				"Type" : "Option",
 				"SubCategory" : "Logging",
 				"QuestionText" : "Add context for your logging? e.g. transaction / correlation ids"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Logging",
-				"QuestionText" : "Logging of behaviours? For pattern analysis such as destinations, frequency/periodicity of identified risk incidents, and/or volumes exchanged, which indicate whether the behaviour exceeds a specified baseline"
 			},
 			{
 				"Type" : "Option",
