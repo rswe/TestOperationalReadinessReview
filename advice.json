@@ -33,6 +33,16 @@
 			}
 		]
 	},
+	"Monitoring - Code" : {
+		"Advice" : "Code Monitoring",
+		"Links" : [
+			{
+				"Type" : "Website",
+				"Text" : "Google SRE Fundamentals",
+				"Href" : "https://cloud.google.com/blog/products/gcp/sre-fundamentals-slis-slas-and-slos"
+			}
+		]
+	},
 	"Architecture Design Review" : {
 		"Advice" : "A \"Designed-for-Operability\" approach implies that operability features need to be designed into the Architecture of the application.  The right architectural decisions can make requirmenents like availability and redundancy easy or hard to implement. ",
 		"Links" : [
