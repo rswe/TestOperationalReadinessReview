@@ -270,17 +270,14 @@
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Documentation",
-				"QuestionText" : "Stored your documentation close to your code e.g. Readme links to wiki / alternative including how to install, troubleshoot?"
+				"QuestionText" : "Stored your documentation close to your code e.g. Readme in code and links to wiki / alternative including how to install, troubleshoot?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Documentation",
 				"QuestionText" : "What does the code do?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Documentation",
 				"QuestionText" : "How to install & run it?"
 			},
 			{
@@ -289,17 +286,14 @@
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Documentation",
 				"QuestionText" : "How to interact with it (stop, start, restart)?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Documentation",
 				"QuestionText" : "How to configure it?"
 			},
 			{
 				"Type" : "Checkbox",
-				"SubCategory" : "Documentation",
 				"QuestionText" : "How to troubleshoot it?",
 				"Answers" : [
 					{"Answer" : "Standard Operating Procedures", "Score" : 0.5},
@@ -309,7 +303,6 @@
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Documentation",
 				"QuestionText" : "Metrics and Dashboards are available?"
 			}
 		]
