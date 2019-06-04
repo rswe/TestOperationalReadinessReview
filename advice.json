@@ -28,7 +28,7 @@
 			}
 		]
 	},
-	"Monitoring" : {
+	"Observability" : {
 		"Advice" : "Monitoring aka \"observability\" is the key foundation to great ops - the more information you have about your applications the faster you can find what's wrong, or about to go wrong, and prevent it or fix it.",
 		"Links" : [
 			{
@@ -132,7 +132,7 @@
 			}
 		]
 	},
-	"Alerting" : {
+	"Testing" : {
 		"Advice" : "Automated testing enables tests to be run quickly and frequently. It enables new features to be added with a high degree of confidence that existing functionality will not be broken. As such it is a key enabler for delivering software frequently in smaller increments.",
 		"Links" : [
 			{
@@ -194,7 +194,7 @@
 			}
 		]
 	},
-	"Testing": {
+	"Old - Architecture Advice": {
 		"Advice" : "Navigating the many and various options for optimising architecture for DevOps can be bewildering! It is important to bear in mind that there are no \"right\" answers. The agility and functionality of Public Cloud environments make them ideal for building DevOps focused architectures and a good starting point for reading matter is the Cloud Providers’ own guides. Beyond that there are various books, videos and vendor tool documentation that are useful sources of information.",
 		"Links" : [
 			{
