@@ -6,7 +6,7 @@
 		"Questions" : [
 			{
 				"Type" : "Banner",
-				"QuestionText" : "The goal of this questionaire is to help you assess the Production Readiness maturity of your service and to help you understand what might be the appropriate next steps for you on your Production Readiness journey.<br><br>These questions are intended to be completed for one team (typically reporting to the same line manager and usually consisting of between 5 and 15 people)."
+				"QuestionText" : "The goal of this questionnaire is to help you assess the Production Readiness maturity of your service and to help you understand what might be the appropriate next steps for you on your Production Readiness journey.<br><br>These questions are intended to be completed for one team (typically reporting to the same line manager and usually consisting of between 5 and 15 people)."
 			}
 		]
 	},
@@ -280,7 +280,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Code",
-				"QuestionText" : "Database: DBA monitoring proactively identifying issues before they become impacting incidents?"
+				"QuestionText" : "Database: DBA monitoring proactive in identifying issues before they become impacting incidents?"
 			},
 			{
 				"Type" : "Option",
@@ -418,7 +418,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Alerts calibated correctly e.g. Verify if needs to be fixed now and is Actionable? Avoiding getting people out of bed unless required"
+				"QuestionText" : "Alerts calibrated correctly e.g. Verify if needs to be fixed now and is Actionable? Avoiding getting people out of bed unless required"
 			},
 			{
 				"Type" : "Option",
@@ -487,7 +487,7 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"QuestionText" : "Adopted Automated Testing early? e.g. Test Driven Development (TDD): Build a Test first, fails. Develop code to is passes. Refector/optimise code. Repeat. <ul><li><div>Builds confidence in code released</div></li><li><div>Allowed more testing of app in less time</div></li><li><div>Manual testing can become error prone</div></li></ul>"
+				"QuestionText" : "Adopted Automated Testing early? e.g. Test Driven Development (TDD): Build a Test first, fails. Develop code to is passes. Refactor/optimise code. Repeat. <ul><li><div>Builds confidence in code released</div></li><li><div>Allowed more testing of app in less time</div></li><li><div>Manual testing can become error prone</div></li></ul>"
 			},
 			{
 				"Type" : "Option",
