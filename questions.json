@@ -555,7 +555,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Integrated UI tests automated?"
+				"QuestionText" : "Integrated UI tests automation?"
 			},
 			{
 				"Type" : "Option",
