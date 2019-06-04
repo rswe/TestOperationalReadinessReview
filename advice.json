@@ -33,13 +33,80 @@
 			}
 		]
 	},
+	"Monitoring - Core" : {
+		"Advice" : "Core Monitoring",
+		"Links" : [
+			{
+				"Type" : "Book",
+				"Text" : "Complete Web Monitoring by alistair Croll and Sean Power",
+				"Href" : "https://www.amazon.co.uk/Complete-Web-Monitoring-performance-communities/dp/0596155131",
+				"Paid" :"Yes" 
+			}
+		]
+	},
 	"Monitoring - Code" : {
 		"Advice" : "Code Monitoring",
 		"Links" : [
 			{
-				"Type" : "Website",
-				"Text" : "Google SRE Fundamentals",
-				"Href" : "https://cloud.google.com/blog/products/gcp/sre-fundamentals-slis-slas-and-slos"
+				"Type" : "Book",
+				"Text" : "Complete Web Monitoring by alistair Croll and Sean Power",
+				"Href" : "https://www.amazon.co.uk/Complete-Web-Monitoring-performance-communities/dp/0596155131",
+				"Paid" :"Yes" 
+			}
+		]
+	},
+	"Monitoring - Customer" : {
+		"Advice" : "Monitoring - Customer",
+		"Links" : [
+			{
+				"Type" : "Book",
+				"Text" : "Complete Web Monitoring by alistair Croll and Sean Power",
+				"Href" : "https://www.amazon.co.uk/Complete-Web-Monitoring-performance-communities/dp/0596155131",
+				"Paid" :"Yes" 
+			}
+		]
+	},
+	"Monitoring - Security" : {
+		"Advice" : "Monitoring - Security",
+		"Links" : [
+			{
+				"Type" : "Book",
+				"Text" : "Complete Web Monitoring by alistair Croll and Sean Power",
+				"Href" : "https://www.amazon.co.uk/Complete-Web-Monitoring-performance-communities/dp/0596155131",
+				"Paid" :"Yes" 
+			}
+		]
+	},
+	"Monitoring - Insight" : {
+		"Advice" : "Monitoring - Insight",
+		"Links" : [
+			{
+				"Type" : "Book",
+				"Text" : "Complete Web Monitoring by alistair Croll and Sean Power",
+				"Href" : "https://www.amazon.co.uk/Complete-Web-Monitoring-performance-communities/dp/0596155131",
+				"Paid" :"Yes" 
+			}
+		]
+	},
+	"Logging" : {
+		"Advice" : "Logging",
+		"Links" : [
+			{
+				"Type" : "Book",
+				"Text" : "Complete Web Monitoring by alistair Croll and Sean Power",
+				"Href" : "https://www.amazon.co.uk/Complete-Web-Monitoring-performance-communities/dp/0596155131",
+				"Paid" :"Yes" 
+			}
+		]
+	},
+	"Alerting" : {
+		"Advice" : "Alerting",
+		"Links" : [
+			{
+				"Type" : "Book",
+				"Text" : "Complete Web Monitoring by alistair Croll and Sean Power",
+				"Href" : "https://www.amazon.co.uk/Complete-Web-Monitoring-performance-communities/dp/0596155131",
+				"Paid" :"Yes" 
 			}
 		]
 	},
