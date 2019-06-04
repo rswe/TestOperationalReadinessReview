@@ -234,27 +234,22 @@
 		"Questions" : [
 			{
 				"Type" : "Banner",
-				"SubCategory" : "Expected Throughput",
 				"QuestionText" : "Run Load Tests & Understand Limits"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Expected Throughput",
 				"QuestionText" : "Before a service goes live, you know where your breaking points are?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Expected Throughput",
 				"QuestionText" : "You know the bare minimum number of instances needed to run your average throughput?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Expected Throughput",
 				"QuestionText" : "You Know maximum throughput you can handle with current architecture?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Expected Throughput",
 				"QuestionText" : "You calculate throughput per instance ratio (scale unit) so you can accurately setup proper auto-scaling in a cost optimised way?"
 			}
 		]
