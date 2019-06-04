@@ -20,6 +20,7 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Service Levels",
 				"QuestionText" : "Does the service have Service Level Agreements (either external or an internal commitment) e.g. contractual?",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 1},
@@ -28,10 +29,12 @@
 			},		
 			{
 				"Type" : "Banner",
+				"SubCategory" : "Service Levels",
 				"QuestionText" : "SLIs (Service Level Indicators). Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes, for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Service Levels",
 				"QuestionText" : "Does the team have SLIs (Service Level Indicators)?",
 				"Answers" : [
 					{"Answer" : "Yes, taken from monitoring, and there are actionable alerts if the service degrades", "Score" : 1},
@@ -44,6 +47,7 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Service Levels",
 				"QuestionText" : "Are there Service Level Objectives with consequences?",
 				"Answers" : [
 					{"Answer" : "Yes, and the consequences are effective", "Score" : 1},
@@ -53,6 +57,7 @@
 			},
 			{
 				"Type" : "Checkbox",
+				"SubCategory" : "Make tomorrow better than today",
 				"QuestionText" : "Do Site Reliability Engineers / key Operations staff have the ability (skills) to make tomorrow better than today (tick all that apply)?",
 				"Answers" : [
 						{"Answer" : "Consulting for Devs", "Score" : 0.5},
@@ -64,6 +69,7 @@
 
 			{
 				"Type" : "Option",
+				"SubCategory" : "Make tomorrow better than today",
 				"QuestionText" : "Do Operations / Site Reliability Engineers have the ability to regulate workload e.g. TOIL (Manual, Repetitive, Automatable, reactive, Lacks enduring value)?",
 				"Answers" : [
 					{"Answer" : "Yes, TOIL bounded to <50% of Operations for Site Reliability Engineers / Key Operations staff", "Score" : 1},
@@ -72,6 +78,7 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Make tomorrow better than today",
 				"QuestionText" : "Is a shared responsibility model successfully used to handover systems to Site Reliability Engineers / Operations?",
 				"Answers" : [
 					{"Answer" : "Yes, we ensure a Operational Readiness Review is completed and the Platform is safe to operate before handover", "Score" : 1},
@@ -80,6 +87,7 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "DR",
 				"QuestionText" : "Disaster Recovery plan is documented, and date of last and next DR Test noted?",
 				"Answers" : [
 					{"Answer" : "Yes including RTO (recovery time objective) and RPO (recovery point objective)", "Score" : 1},
@@ -93,7 +101,12 @@
 		"SpiderPos" : 2,
 		"Questions" : [
 			{
+				"Type" : "Banner",
+				"QuestionText" : "Highly Available & Redundant"
+			},
+			{
 				"Type" : "Option",
+				"SubCategory" : "Highly Available and Redundant",
 				"QuestionText" : "Are dependencies identified and visualised? e.g. Third-party systems, monitoring, networking",
 				"Answers" : [
 					{"Answer" : "Yes with diagrams", "Score" : 1},
@@ -101,11 +114,8 @@
 					]
 			},
 			{
-				"Type" : "Banner",
-				"QuestionText" : "Highly Available & Redundant"
-			},
-			{
 				"Type" : "Option",
+				"SubCategory" : "Highly Available and Redundant",
 				"QuestionText" : "Location / region or individual service within each / Components. e.g. consider running across multiple AZs/Regions and Application Architecture. <br><br>Automated resolution in place for all in-scope failure scenarios including the following where relevant?:<br><br><ul><li>Machine dies, rack fails, or cluster goes offline</li><li>Network fails between two datacentres</li><li>For each type of server that talks to other servers (its backends):<ul><li>How to detect when backends die, and what to do when they die</li><li>How to terminate or restart without affecting clients or users</li><li>Load balancing, rate-limiting, timeout, retry and error handling behaviour</li></ul></li></ul>",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 1},
@@ -114,6 +124,7 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Highly Available and Redundant",
 				"QuestionText" : "Able to handle spike of traffic? For each component, traffic volume, launch spikes.",
 				"Answers" : [
 					{"Answer" : "Yes e.g. using relevant mitigation such as Sizing, Auto-scaling, Containers, serverless architecture etc", "Score" : 1},
@@ -122,6 +133,7 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Highly Available and Redundant",
 				"QuestionText" : "How will we know when we need more capacity?",
 				"Answers" : [
 					{"Answer" : "Alert or automated increase safely in advance with regular Load Testing identifying capacity requirements before Production (daily/weekly)", "Score" : 1},
@@ -131,6 +143,7 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Highly Available and Redundant",
 				"QuestionText" : "How quickly can we add more capacity?",
 				"Answers" : [
 					{"Answer" : "All key dependencies automate increase on approach to capacity", "Score" : 1},
@@ -144,6 +157,7 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "SPOF",
 				"QuestionText" : "Avoid Single Points of Failure (SPOF) / Does your system withstand component failures?",
 				"Answers" : [
 					{"Answer" : "All relevant key dependencies have no SPOF that could cause SLAs / SLOs to be breached", "Score" : 1},
@@ -156,6 +170,7 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "On-boarding staff",
 				"QuestionText" : "Do you effectively ensure staff reacting to incidents are skilled to troubleshoot all the tech stack?",
 				"Answers" : [
 					{"Answer" : "All the above ", "Score" : 1},
@@ -169,10 +184,12 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Security",
 				"QuestionText" : "Is Security always a top priority? e.g. all of the following as a minimum? <ul><li>Ensure no credentials stored in app</li><li><div>Ensure no credentials stored in app</div></li><li><div>Code defensively for OWASP e.g. SQL injections, XSS attacks etc</div></li><li><div>Leverage Static Analysis Tools</div></li><li>Code check-in validation</li></ul>"			
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Security",
 				"QuestionText" : "Meeting industry best practice regarding security of application and platform?",
 				"Answers" : [
 					{"Answer" : "All regulations complied with", "Score" : 1},
@@ -181,22 +198,27 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Security",
 				"QuestionText" : "Penetration Testing passed (if required)?"			
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Security",
 				"QuestionText" : "Secret / Key Management reviewed as effective and compliant?"			
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Security",
 				"QuestionText" : "Sys Admin Authentication reviewed as effective and compliant?"			
 			},
 			{
 				"Type" : "Banner",
+				"SubCategory" : "Security",
 				"QuestionText" : "Continuous Improvement: Obtain Peer Review / Fresh eyes. Kaizen (small, ongoing positive improvements of working practices) for architecture, code review, interviewing etc. Consider rotating developers off projects every few months to gain fresh eyes on projects. Easier when pushing small batches."
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Security",
 				"QuestionText" : "Continuous Improvement for the above?",
 				"Answers" : [
 					{"Answer" : "All", "Score" : 1},
