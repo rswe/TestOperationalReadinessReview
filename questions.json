@@ -116,7 +116,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Highly Available and Redundant",
-				"QuestionText" : "Location / region or individual service within each / Components. e.g. consider Application Architecture and running across multiple AZs/Regions. <br><br>Automated resolution in place for all in-scope failure scenarios including the following where relevant?:<br><br><ul><li>Machine dies, rack fails, or cluster goes offline</li><li>Network fails between two Data Centres</li><li>For each type of server that talks to other servers (its backends):<ul><li>How to detect when backends die, and what to do when they die</li><li>How to terminate or restart without affecting clients or users</li><li>Load balancing, rate-limiting, timeout, retry and error handling behaviour</li></ul></li></ul>",
+				"QuestionText" : "Location / region or individual service within each / Components. e.g. consider Application Architecture and running across multiple AZs/Regions. <br><br>Automated resolution in place for all in-scope failure scenarios including (but not limited to) the following where relevant?:<br><br><ul><li>Machine dies, rack fails, or cluster goes offline</li><li>Network fails between two Data Centres</li><li>For each type of server that talks to other servers (its backends):<ul><li>How to detect when backends die, and what to do when they die</li><li>How to terminate or restart without affecting clients or users</li><li>Load balancing, rate-limiting, timeout, retry and error handling behaviour</li></ul></li></ul>",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
