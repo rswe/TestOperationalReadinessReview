@@ -541,7 +541,13 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Can you confirm the level of test/code coverage? e.g. how much of solution been tested?"
+				"QuestionText" : "Can you confirm the level of test coverage/code coverage? e.g. how much of solution been tested? Noting the number is very much context dependent",
+				"Answers": [
+					{"Answer" : "70% or more", "Score" : 1},
+					{"Answer" : "20%-69%", "Score" : 1},
+					{"Answer" : "< 20%", "Score" : 0.75},
+					{"Answer" : "Not measured", "Score" : 0}
+					]
 			},
 			{
 				"Type" : "Option",
