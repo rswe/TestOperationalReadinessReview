@@ -58,7 +58,7 @@
 						<i class="far fa-chart-bar fa-stack-1x"></i>
 					</span>
 					<h2>Understand Where You Are</h2>
-					<p class="text-justify">Our set of carefully designed questions across 9 different areas will help you quickly establish your current level of Operational Readiness.</p>
+					<p class="text-justify">Our set of carefully designed questions across 7 different areas will help you quickly establish your current level of Operational Readiness.</p>
 					<p class="text-justify">You can view the results online as well as downloading them in CSV format for more detailed analysis.</p>
 				</div><!-- /.col-lg-4 -->
 			
@@ -93,7 +93,7 @@
 			<section class="jumbotron text-center border border-primary bg-dark mt-2">
 				<div class="container">
 					<h1 class="jumbotron-heading">Meet The Team</h1>
-					<p class="lead">This tool was created by members of the DevOpsGroup Community with contributions from many other practitioners across DevOpsGroup and Worldline globally. You can find out more about the core team below.	</p>
+					<p class="lead">This tool was created by members of DevOpsGroup with contributions from many other practitioners. You can find out more about the core team below.	</p>
 				</div>
 			</section>
 		  
@@ -105,100 +105,39 @@
 					
 						<div class="card bg-transparent text-center">
 							<div class="text-center">
-								<img class="rounded-circle border border-primary mb-2" src="team-photos/CBH.jpg" alt="Generic placeholder image" width="140" height="140">
+								<img class="rounded-circle border border-primary mb-2" src="team-photos/devopsguys_team_steve_thair_004_low_res-square.jpg" alt="Generic placeholder image" width="140" height="140">
 							</div>
 							<div class="card-body pb-0 pt-0">
-								<h6>Chris Baynham-Hughes</h6>	
-								<p class="small">Head of UK Business Development RedHat Emerging Technologies & DevOps at Atos</p>
+								<h6>Steve Thair</h6>	
+								<p class="small">CTO at DevOpsGroup</p>
 							</div>
 							<div class="card-footer text-center pt-0">
-								<?=RenderLinkedInLink('https://www.linkedin.com/in/chrisbh/')?>
-								<?=RenderTwitterLink('https://twitter.com/OnlyChrisBH')?>	
+								<?=RenderLinkedInLink('https://www.linkedin.com/in/stephenthair/')?>
+								<?=RenderTwitterLink('https://twitter.com/TheOpsMgr')?>	
 							</div>
 						</div>
 
 	
 						<div class="card bg-transparent text-center">
 							<div class="text-center">
-								<img class="rounded-circle border border-primary mb-2" src="team-photos/JC.jpg" alt="Generic placeholder image" width="140" height="140">
+								<img class="rounded-circle border border-primary mb-2" src="team-photos/RichardSweeney.png" alt="Generic placeholder image" width="140" height="140">
 							</div>
 							
 							<div class="card-body  pb-0 pt-0">
-								<h6>John Chatterton</h6>
-								<p class="small">Principal Enterprise Architect</p>
+								<h6>Richard Sweeney</h6>
+								<p class="small">DevOps Consultant</p>
 							</div>
 							<div class="card-footer text-center pt-0">
-								<?=RenderLinkedInLink('https://www.linkedin.com/in/john-chatterton-73940a9/')?>
+								<?=RenderLinkedInLink('https://www.linkedin.com/in/richard-sweeney-014b883/')?>
 							</div>
 						</div>
-
-		
-						<div class="card bg-transparent text-center">
-							<div class="text-center">
-								<img class="rounded-circle border border-primary mb-2" src="team-photos/DD.jpg" alt="Generic placeholder image" width="140" height="140">
-							</div>
-							<div class="card-body  pb-0 pt-0">
-								<h6>David Daly</h6>								
-								<p class="small">Global Deal Assurance Manager at Worldline</p>
-							</div>
-							<div class="card-footer text-center pt-0">
-								<?=RenderLinkedInLink('https://www.linkedin.com/in/david-daly-fbcs-citp-7a84775/')?>
-								<?=RenderTwitterLink('https://twitter.com/DavidDalyWL')?>
-							</div>
-						</div>
-					
+				
 
 					</div>
 					
 				</div>
 			</div>
-			<div class="row mt-4">
 				
-				<div class="col-lg-2"></div>
-				<div class="col-lg-8">
-					
-					<div class="card-deck">
-					
-						<div class="card bg-transparent text-center">
-							<div class="text-center">
-								<img class="rounded-circle border border-primary mb-2" src="team-photos/PT.jpg" alt="Generic placeholder image" width="140" height="140">
-							</div>
-							<div class="card-body pb-0 pt-0">
-								<h6>Panagiotis Tamtamis</h6>	
-								<p class="small">Senior Software Engineer at Atos</p>
-							</div>
-							<div class="card-footer text-center pt-0">
-								<?=RenderLinkedInLink('https://www.linkedin.com/in/panagiotis-tamtamis-2441a419/')?>
-								<?=RenderTwitterLink('https://twitter.com/PTamis')?>	
-							</div>
-						</div>
-
-	
-						<div class="card bg-transparent text-center">
-							<div class="text-center">
-								<img class="rounded-circle border border-primary mb-2" src="team-photos/DU.jpg" alt="Generic placeholder image" width="140" height="140">
-							</div>
-							
-							<div class="card-body  pb-0 pt-0">
-								<h6>Dan Usher</h6>
-								<p class="small">Head of Transformation, Digital Self Service at Worldline UK&I</p>
-							</div>
-							<div class="card-footer text-center pt-0">
-								<?=RenderLinkedInLink('https://www.linkedin.com/in/daniel-usher-49198310/')?>
-								<?=RenderTwitterLink('https://twitter.com/UsherDL')?>
-							</div>
-						</div>
-					
-
-					</div>
-					
-				
-				</div><!-- /.col-lg-12 -->
-				<div class="col-lg-2"></div>
-			</div><!-- /.row -->
-		
-		
-	
 	</div><!-- /.col-lg-8 -->
 	
 	</div><!-- /.row -->
