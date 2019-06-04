@@ -81,7 +81,7 @@
 				"SubCategory" : "Make tomorrow better than today",
 				"QuestionText" : "Is a shared responsibility model successfully used to handover systems to Site Reliability Engineers / Operations?",
 				"Answers" : [
-					{"Answer" : "Yes, we ensure a Operational Readiness Review is completed and the Platform is safe to operate before handover", "Score" : 1},
+					{"Answer" : "Yes, we ensure an Operational Readiness Review is completed and the Platform is safe to operate before handover", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
@@ -177,7 +177,6 @@
 					{"Answer" : "Design for operations. Design your application so that the operations team has the tools they need.", "Score" : 1},
 					{"Answer" : "Use managed services. When possible, use platform as a service (PaaS) rather than infrastructure as a service (IaaS).", "Score" : 1},
 					{"Answer" : "Use the best data store for the job. Pick the storage technology that is the best fit for your data and how it will be used.", "Score" : 1},
-					{"Answer" : "Design for operations. Design your application so that the operations team has the tools they need.", "Score" : 1},
 					{"Answer" : "Design for evolution. All successful applications change over time. An evolutionary design is key for continuous innovation.", "Score" : 1},
 					{"Answer" : "Build for the needs of business. Every design decision must be justified by a business requirement.", "Score" : 1}
 					]
@@ -352,12 +351,12 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Monitoring - Insight",
-				"QuestionText" : "Ensure Developers are, for Prod & Non-Production environments with same tools (tick all that apply)?",
+				"QuestionText" : "In Prod & Non-Production environments with same tools, Ensure Developers are (tick all that apply)?",
 				"Answers" : [
 					{"Answer" : "Able to build Dashboards", "Score" : 0.25},
 					{"Answer" : "Building Dashboards", "Score" : 0.25},
-					{"Answer" : "Early insight into what is coming to Prod", "Score" : 0.25},
-					{"Answer" : "Close Feedback loops: Site Reliability engineers / lead Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25}
+					{"Answer" : "Providing Operations with early insight into what is coming to Prod", "Score" : 0.25},
+					{"Answer" : "Also - close Feedback loops: Site Reliability engineers / lead Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25}
 					]
 			},
 			{
@@ -389,7 +388,7 @@
 					{"Answer" : "Metrics monitored have adequate coverage", "Score" : 0.25},
 					{"Answer" : "Synthetic Monitoring - Automated testing to measure performance?", "Score" : 0.25},
 					{"Answer" : "Visibility into how app is performing internally e.g. how long are certain relevant calls to resources taking?", "Score" : 0.25},
-					{"Answer" : "Metrics trending up or down visible and alerted where relevant?", "Score" : 0.25},
+					{"Answer" : "Metrics trending up or down visible and alerted where critical?", "Score" : 0.25},
 					{"Answer" : "The tools indicate what part of the app is generating the highest number of errors?", "Score" : 0.25}
 				]
 			},
@@ -434,7 +433,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Monitoring - Team",
-				"QuestionText" : "Teams access to each of the above (tick all that apply)?",
+				"QuestionText" : "Teams access to each of the above monitoring (tick all that apply)?",
 				"Answers" : [
 					{"Answer" : "Insight", "Score" : 0.5},
 					{"Answer" : "Customer ", "Score" : 0.5},
@@ -470,7 +469,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Logging",
-				"QuestionText" : "Application (and other sources of logs) are periodically reviewed to consider how analytics will be used on this data?"
+				"QuestionText" : "Application (and other sources of logs) is periodically reviewed to consider how analytics will be used on this data?"
 			},
 			{
 				"Type" : "Banner",
