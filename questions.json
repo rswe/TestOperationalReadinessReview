@@ -6,7 +6,7 @@
 		"Questions" : [
 			{
 				"Type" : "Banner",
-				"QuestionText" : "The goal of this questionaire is to help you assess the Production Readiness maturity of your service and to help you understand what might be the appropriate next steps for you on your Production Readiness journey.<br><br>These questions are intended to be completed for one team (typically reporting to the same line manager and usually consisting of between 5 and 15 people)."
+				"QuestionText" : "The goal of this questionnaire is to help you assess the Operational Readiness maturity of your service and to help you understand what might be the appropriate next steps for you on your Operational Readiness journey.<br><br>These questions are intended to be completed for one team (typically reporting to the same line manager and usually consisting of between 5 and 15 people)."
 			}
 		]
 	},
@@ -20,20 +20,22 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the service have Service Level Agreements (either external or an internal commitment)?",
+				"SubCategory" : "Service Levels",
+				"QuestionText" : "Does the service have Service Level Agreements (either external or an internal commitment) e.g. contractual?",
 				"Answers" : [
-					{"Answer" : "Yes, and the SLA(s) have effective consequences", "Score" : 1},
-					{"Answer" : "Yes, but there are no consequences", "Score" : 0.5},
+					{"Answer" : "Yes", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},		
 			{
 				"Type" : "Banner",
-				"QuestionText" : "SLIs (Service Level Indicators) - Early warning before SLAs exceeded. Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
+				"SubCategory" : "Service Levels",
+				"QuestionText" : "SLIs (Service Level Indicators). Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes, for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have SLIs (Service Level Indicators) - Early warning before SLAs exceeded?",
+				"SubCategory" : "Service Levels",
+				"QuestionText" : "Does the team have SLIs (Service Level Indicators)?",
 				"Answers" : [
 					{"Answer" : "Yes, taken from monitoring, and there are actionable alerts if the service degrades", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -41,10 +43,11 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "SLOs (Service Level Objectives), with consequences give common incentives across team(s). Realistic reliability goals. <br><br>Longer timeframe than SLI’s. Define your Error Budget.<br><br>Error Budgets & Error Budget Policy (consequences) <ul><li>Must be set at the appropriate levels</li><li>Too high and costs can rise rapidly</li><li>Smaller error budget which can impede change</li><li>Too low and your customers will be unhappy</li><ul>"
+				"QuestionText" : "SLOs (Service Level Objectives), with consequences, give common incentives across team(s). Early warning before SLAs exceeded. Realistic reliability goals. <br><br>Longer timeframe than SLI’s. <br><br>Define your Error Budgets & Error Budget Policy (consequences) <ul><li>Must be set at the appropriate levels</li><li>Too high and costs can rise rapidly</li><li>Smaller error budget which can impede change</li><li>Too low and your customers will be unhappy</li><ul>"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Service Levels",
 				"QuestionText" : "Are there Service Level Objectives with consequences?",
 				"Answers" : [
 					{"Answer" : "Yes, and the consequences are effective", "Score" : 1},
@@ -53,16 +56,20 @@
 					]
 			},
 			{
-				"Type" : "Option",
-				"QuestionText" : "Do Operations / Site Reliability Engineers have the ability (skills) to make tomorrow better than today e.g. including consulting for Devs, contribution to application and infrastructure architecture, monitoring and CI/CD Pipelines?",
+				"Type" : "Checkbox",
+				"SubCategory" : "Make tomorrow better than today",
+				"QuestionText" : "Do Site Reliability Engineers / key Operations staff have the ability (skills) to make tomorrow better than today (tick all that apply)?",
 				"Answers" : [
-					{"Answer" : "Yes, all of the above", "Score" : 1},
-					{"Answer" : "Yes, but only 1 of the items above", "Score" : 0.25},
-					{"Answer" : "No", "Score" : 0}
-					]
+						{"Answer" : "Consulting for Devs", "Score" : 0.5},
+						{"Answer" : "Contribution to application and infrastructure architecture", "Score" : 0.5},
+						{"Answer" : "Monitoring", "Score" : 0.5},
+						{"Answer" : "CI/CD Pipelines", "Score" : 0.5}
+						]
 			},
+
 			{
 				"Type" : "Option",
+				"SubCategory" : "Make tomorrow better than today",
 				"QuestionText" : "Do Operations / Site Reliability Engineers have the ability to regulate workload e.g. TOIL (Manual, Repetitive, Automatable, reactive, Lacks enduring value)?",
 				"Answers" : [
 					{"Answer" : "Yes, TOIL bounded to <50% of Operations for Site Reliability Engineers / Key Operations staff", "Score" : 1},
@@ -71,14 +78,16 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Make tomorrow better than today",
 				"QuestionText" : "Is a shared responsibility model successfully used to handover systems to Site Reliability Engineers / Operations?",
 				"Answers" : [
-					{"Answer" : "Yes, we ensure a Production Readiness Review is completed and the Platform is safe to operate before handover", "Score" : 1},
+					{"Answer" : "Yes, we ensure a Operational Readiness Review is completed and the Platform is safe to operate before handover", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "DR",
 				"QuestionText" : "Disaster Recovery plan is documented, and date of last and next DR Test noted?",
 				"Answers" : [
 					{"Answer" : "Yes including RTO (recovery time objective) and RPO (recovery point objective)", "Score" : 1},
@@ -92,7 +101,12 @@
 		"SpiderPos" : 2,
 		"Questions" : [
 			{
+				"Type" : "Banner",
+				"QuestionText" : "Highly Available & Redundant"
+			},
+			{
 				"Type" : "Option",
+				"SubCategory" : "Highly Available and Redundant",
 				"QuestionText" : "Are dependencies identified and visualised? e.g. Third-party systems, monitoring, networking",
 				"Answers" : [
 					{"Answer" : "Yes with diagrams", "Score" : 1},
@@ -100,12 +114,9 @@
 					]
 			},
 			{
-				"Type" : "Banner",
-				"QuestionText" : "Highly Available & Redundant"
-			},
-			{
 				"Type" : "Option",
-				"QuestionText" : "Manual Runbook / Automated solution in place for all in scope failures of: location / region or individual service within each / Components. e.g. consider running across multiple AZs/Regions, Application Architecture. What happens when: <ul><li>Machine dies, rack fails, or cluster goes offline</li><li>Network fails between two datacentres</li><li>For each type of server that talks to other servers (its backends):</li><li>How to detect when backends die, and what to do when they die</li><li>How to terminate or restart without affecting clients or users</li><li>Load balancing, rate-limiting, timeout, retry and error handling behaviour</li></ul>",
+				"SubCategory" : "Highly Available and Redundant",
+				"QuestionText" : "Location / region or individual service within each / Components. e.g. consider Application Architecture and running across multiple AZs/Regions. <br><br>Automated resolution in place for all in-scope failure scenarios including (but not limited to) the following where relevant?:<br><br><ul><li>Machine dies, rack fails, or cluster goes offline</li><li>Network fails between two Data Centres</li><li>For each type of server that talks to other servers (its backends):<ul><li>How to detect when backends die, and what to do when they die</li><li>How to terminate or restart without affecting clients or users</li><li>Load balancing, rate-limiting, timeout, retry and error handling behaviour</li></ul></li></ul>",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -113,6 +124,7 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Highly Available and Redundant",
 				"QuestionText" : "Able to handle spike of traffic? For each component, traffic volume, launch spikes.",
 				"Answers" : [
 					{"Answer" : "Yes e.g. using relevant mitigation such as Sizing, Auto-scaling, Containers, serverless architecture etc", "Score" : 1},
@@ -121,57 +133,71 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Highly Available and Redundant",
 				"QuestionText" : "How will we know when we need more capacity?",
 				"Answers" : [
 					{"Answer" : "Alert or automated increase safely in advance with regular Load Testing identifying capacity requirements before Production (daily/weekly)", "Score" : 1},
 					{"Answer" : "Manual scheduled regular checks (monthly/quarterly)", "Score" : 0.25},
-					{"Answer" : "No", "Score" : 0}
+					{"Answer" : "Ad-hoc", "Score" : 0}
 					]
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Highly Available and Redundant",
 				"QuestionText" : "How quickly can we add more capacity?",
 				"Answers" : [
-					{"Answer" : "All key dependencies automated increase on approach to capacity", "Score" : 1},
+					{"Answer" : "All key dependencies automate increase on approach to capacity", "Score" : 1},
 					{"Answer" : "Manual changes required, always completed before impact", "Score" : 0.25},
 					{"Answer" : "On occasion, capacity limits are hit before being extended", "Score" : 0}
 					]
 			},
 			{
-				"Type" : "Banner",
-				"QuestionText" : "Avoid Single Points of Failure (SPOF) / Ensure your system withstands component failures: <ul><li>Be sure services are running in clusters scaled across locations/AZs/Regions etc.</li><li>SSL certs?</li><li>Service dependencies:</li><li>Graceful degradation, how to avoid accidentally overrunning third-party services</li><li>Playing nice with syndicated partners, mail systems, services</li><li>Dependencies such as queuing systems, streaming systems, workflows, and load balancers are loosely coupled.</li><li>When a component's dependencies are unhealthy, the component itself does not report as unhealthy. It can continue to serve requests in a degraded manner.</li><li>Tooling if critical</li><li>Heartbeats monitored have no SPOF</li><li>Replication & Backups</li><li>etc</li></ul>"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Avoid Single Points of Failure (SPOF) / Does your system withstand component failures?",
+				"Type" : "Checkbox",
+				"SubCategory" : "SPOF",
+				"QuestionText" : "Avoid Single Points of Failure (SPOF) for key dependencies that could cause SLAs / SLOs to be breached. Does your system withstand component failures? (tick all that apply)",
 				"Answers" : [
-					{"Answer" : "All relevant key dependencies have no SPOF that could cause SLAs / SLOs to be breached", "Score" : 1},
-					{"Answer" : "SPOFs exist that could impact SLAs / SLOs should they fail", "Score" : 0}
+					{"Answer" : "Services are running in clusters scaled across locations/AZs/Regions with data replication (where applicable)", "Score" : 0.5},
+					{"Answer" : "SSL cert expiry monitored", "Score" : 1},
+					{"Answer" : "When a component's dependencies are unhealthy, the component itself does not report as unhealthy. It can continue to serve requests in a degraded manner.", "Score" : 0.5},
+					{"Answer" : "Service dependencies: Graceful degradation, avoid accidentally overrunning third-party services", "Score" : 0.5},
+					{"Answer" : "Service dependencies: Playing nice with syndicated partners, mail systems, services", "Score" : 0.5},
+					{"Answer" : "Service dependencies: Queuing systems, streaming systems, workflows, and load balancers are loosely coupled.", "Score" : 1}
 					]
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "On-boarding new developers: Ensure staff reacting to incidents are skilled to troubleshoot all the tech stack by: <ul>    <li>    <div>Standardise on&nbsp;libraries, languages for easier developer onboarding and Production troubleshooting</div>    </li>    <li>    <div>Spot duplicate code and refactor</div>    </li>    <li>    <div>Look for opportunities to implement good design patterns</div>    </li>    <li>    <div>Know your licenses - Open Source Permissive (MIT/Apache) vs Copy Left (GNU/MPL) etc</div>    </li>    </ul>"
+				"QuestionText" : "On-boarding new developers"
 			},
 			{
-				"Type" : "Option",
-				"QuestionText" : "Do you effectively ensure staff reacting to incidents are skilled to troubleshoot all the tech stack?",
+				"Type" : "Checkbox",
+				"SubCategory" : "On-boarding staff",
+				"QuestionText" : "Do you effectively ensure staff reacting to incidents are skilled to troubleshoot all the tech stack? (tick all that apply)",
 				"Answers" : [
-					{"Answer" : "All the above ", "Score" : 1},
-					{"Answer" : "2 or more of the above", "Score" : 0.25},
-					{"Answer" : "1 or less of the above", "Score" : 0}
+					{"Answer" : "Standardise on libraries, languages for easier developer onboarding and Production troubleshooting", "Score" : 0.5},
+					{"Answer" : "Spot duplicate code and refactor", "Score" : 0.5},
+					{"Answer" : "Look for opportunities to implement good design patterns", "Score" : 1},
+					{"Answer" : "Know your licenses - Open Source Permissive (MIT/Apache) vs Copy Left (GNU/MPL) etc", "Score" : 0.25}
 					]
 			},
 			{
 				"Type" : "Banner",
 				"QuestionText" : "Security Best Practice Review"
 			},
+			
 			{
-				"Type" : "Option",
-				"QuestionText" : "Is Security always a top priority? e.g. all of the following as a minimum? <ul><li>Ensure no credentials stored in app</li><li><div>Ensure no credentials stored in app</div></li><li><div>Code defensively for OWASP e.g. SQL injections, XSS attacks etc</div></li><li><div>Leverage Static Analysis Tools</div></li><li>Code check-in validation</li></ul>"			
+				"Type" : "Checkbox",
+				"SubCategory" : "Security",
+				"QuestionText" : "Is Security always a top priority? e.g. all of the following as a minimum? (tick all that apply)",
+				"Answers" : [
+					{"Answer" : "Ensure no credentials stored in app", "Score" : 0.5},
+					{"Answer" : "Code defensively for OWASP e.g. SQL injections, XSS attacks etc", "Score" : 0.5},
+					{"Answer" : "Leverage Static Analysis Tools", "Score" : 0.5},
+					{"Answer" : "Code check-in validation", "Score" : 0.5}
+					]
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Security",
 				"QuestionText" : "Meeting industry best practice regarding security of application and platform?",
 				"Answers" : [
 					{"Answer" : "All regulations complied with", "Score" : 1},
@@ -180,527 +206,405 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Security",
 				"QuestionText" : "Penetration Testing passed (if required)?"			
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Security",
 				"QuestionText" : "Secret / Key Management reviewed as effective and compliant?"			
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Sys Admin Authentication reviewed as effective and compliant?"			
+				"SubCategory" : "Security",
+				"QuestionText" : "System Administrator Authentication reviewed and auditable as effective and compliant?"			
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Continuous Improvement: Obtain Peer Review / Fresh eyes. Kaizen (small, ongoing positive improvements of working practices) for architecture, code review, interviewing etc. Consider rotating developers off projects every few months to gain fresh eyes on projects. Easier when pushing small batches."
+				"SubCategory" : "Security",
+				"QuestionText" : "Continuous Improvement: Obtain Peer Review / Fresh eyes. Kaizen (small, ongoing positive improvements of working practices). Consider rotating developers off projects every few months to gain fresh eyes on projects. Easier when pushing small batches."
 			},
 			{
-				"Type" : "Option",
+				"Type" : "Checkbox",
+				"SubCategory" : "Security",
 				"QuestionText" : "Continuous Improvement for the above?",
 				"Answers" : [
-					{"Answer" : "All", "Score" : 1},
-					{"Answer" : "1", "Score" : 0.25},
-					{"Answer" : "None", "Score" : 0}
+					{"Answer" : "Peer Review code", "Score" : 1},
+					{"Answer" : "Kaizen for architecture", "Score" : 0.5},
+					{"Answer" : "Kaizen for code review", "Score" : 0.5},
+					{"Answer" : "Kaizen for Interviewing", "Score" : 0.25}
 					]
-			}
-		]
-	},
-	{
-		"SectionName" : "Monitoring",
-		"SpiderPos" : 3,
-		"Questions" : [
-			{
-				"Type" : "Option",
-				"SubCategory" : "Environments",
-				"QuestionText" : "Are development and test environments consistent with production environments?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Is the provisioning, configuration and management of infrastructure (e.g. networks, storage, etc.) automated (for example by using Infrastructure as Code)?",
-				"Answers" : [
-					{"Answer" : "Yes", "Score" : 1},
-					{"Answer" : "Partially", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Checkbox",
-				"SubCategory" : "Environments",
-				"QuestionText" : "For which of these is the configuration and management of environments automated (tick all that apply)?",
-				"Answers" : [
-					{"Answer" : "Virtual machines", "Score" : 0.5},
-					{"Answer" : "Networks", "Score" : 0.5},
-					{"Answer" : "Operating systems", "Score" : 0.5},
-					{"Answer" : "Security elements", "Score" : 0.5},
-					{"Answer" : "The application stacks", "Score" : 0.5},
-					{"Answer" : "The applications", "Score" : 0.5}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Environments",
-				"QuestionText" : "Are the required environments (e.g. dev, test, integration) available in line with demand (i.e. at the right time or in a way that doesn’t incur delay to activity)?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Environments",
-				"QuestionText" : "Is the provisioning, configuration and management of environments automated?",
-				"Answers" : [
-					{"Answer" : "Yes, and scaling is automatic", "Score" : 2},
-					{"Answer" : "Yes, but scaling is manual", "Score" : 1},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Testing",
-				"QuestionText" : "Does the team have a high degree of automated unit tests in place (testing individual modules)?",
-				"Answers" : [
-					{"Answer" : "Yes, automated tests are in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated tests are in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Testing",
-				"QuestionText" : "Does the team have a high degree of automated integration tests in place (testing the interaction of modules with each other)?",
-				"Answers" : [
-					{"Answer" : "Yes, automated tests are in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated tests are in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Testing",
-				"QuestionText" : "Does the team have a high degree of automated system tests in place (confirming overall system functionality meets requirements)?",
-				"Answers" : [
-					{"Answer" : "Yes, automated tests are in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated tests are in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Testing",
-				"QuestionText" : "Does the team have a high degree of automated performance tests in place?",
-				"Answers" : [
-					{"Answer" : "Yes, automated tests are in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated tests are in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Static Analysis",
-				"QuestionText" : "Does the team complete automated scanning of source code assets?",
-				"Answers" : [
-					{"Answer" : "Yes, automated scanning is in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated scanning is in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Static Analysis",
-				"QuestionText" : "Does the team complete automated scanning of binaries?",
-				"Answers" : [
-					{"Answer" : "Yes, automated scanning is in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated scanning is in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Static Analysis",
-				"QuestionText" : "Is code automatically scanned for quality during a build?",
-				"Answers" : [
-					{"Answer" : "Yes, automated scanning is in place and run on every build", "Score" : 1},
-					{"Answer" : "Yes, automated scanning is in place", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Does failure to meet coding standards or security rules trigger a break in the build?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Is automation code developed with the same rigor as product code (e.g. testing, source control)?"
-			}			
-		]
-	},
-	{
-		"SectionName" : "Logging",
-		"SpiderPos" : 4,
-		"Questions" : [
-			{
-				"Type" : "Option",
-				"QuestionText" : "Does the architecture of the application consist of loosely coupled components (choose the most accurate description)?",
-				"Answers" : [
-					{"Answer" : "The application is built from a number of stateless components with scaling and resilience provided at the application layer (full MicroServices)", "Score" : 3},
-					{"Answer" : "The application is made up of several separate components but relies on external solutions to provide availability and scalability", "Score" : 2},
-					{"Answer" : "The application is largely monolithic but made up of code modules that can be worked on independently and then re-compiled into a single unit", "Score" : 1},
-					{"Answer" : "The application is built up of monolithic code and can only be changed in its entirety as part of a release schedule", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Checkbox",
-				"QuestionText" : "Does the architecture enable development, testing and other QA activities to be representative and performed independently of each another without impacting production (tick all that apply)?",
-				"Answers" : [
-					{"Answer" : "There are fully separate development, test and QA environments", "Score" : 0.5},
-					{"Answer" : "Environments are regularly re-built or synchronised (at least monthly)", "Score" : 0.5},
-					{"Answer" : "The 3 environments are similar at all levels (resilience, performance, security, dependencies)", "Score" : 0.5},
-					{"Answer" : "Each environment can be torn down and rebuilt without affecting other environments", "Score" : 0.5},
-					{"Answer" : " Environment specific configuration items are decoupled from the code in order to accelerate rebuilds", "Score" : 0.5}
-					]
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Does the architecture enable the deployment of services independently of one another?",
-				"Answers" : [
-					{"Answer" : "Yes, every element of functionality can be updated individually and applied to the application", "Score" : 2},
-					{"Answer" : "Partially, some elements can be updated independently, but there are certain core components that need to be updated together in order to maintain functionality", "Score" : 1},
-					{"Answer" : "No, updates to the system need to be performed together in a formal release cycle", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Are all application logs written to a central log repository automatically with the configuration included in the environment design to allow portability between environments?"
-			}
-		]
-	},
-	{
-		"SectionName" : "Documentation",
-		"SpiderPos" : 5,
-		"Questions" : [
-			{
-				"Type" : "Checkbox",
-				"SubCategory" : "CI",
-				"QuestionText" : "Does the team manage their source code in a central source control system (tick all that apply)?",
-				"Answers" : [
-					{"Answer" : "We have a common code repository (e.g. Git based repo)", "Score" : 0.5},
-					{"Answer" : "We have a defined branching structure", "Score" : 0.5},
-					{"Answer" : "We have defined repository structure", "Score" : 0.5},
-					{"Answer" : "Our structure and branching strategy are aligned to our Dev, Test, and Prod environments (enabling a smooth flow between environments)", "Score" : 0.5}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "CI",
-				"QuestionText" : "How frequently do developers integrate their changes into a shared mainline (trunk)?",
-				"Answers" : [
-					{"Answer" : "Code is integrated at least once per day", "Score" : 2},
-					{"Answer" : "Code is integrated at least weekly", "Score" : 1},
-					{"Answer" : "Code is integrated infrequently but at least once a month", "Score" : 0.5},
-					{"Answer" : "Code is integrated on an ad hoc basis when the developer feels it is ready to share", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Code Review",
-				"QuestionText" : "Is there a defined code review and approval process?",
-				"Answers" : [
-					{"Answer" : "We have a targeted code review process that is appropriate and ensures code is published in a timely manner", "Score" : 1},
-					{"Answer" : "We have a code review process but the process incurs delays and hinders deployments", "Score" : 0.5},
-					{"Answer" : "We have no code review process and bugs can frequently be integrated into the mainline (trunk)", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "CD",
-				"QuestionText" : "Whenever code is integrated with a shared mainline (trunk), are automated processes triggered?",
-				"Answers" : [
-					{"Answer" : "Yes, an automated build of the software is triggered into a production-like environment, automated tests are then triggered and software is available to be automatically deployed into production", "Score" : 2},
-					{"Answer" : "Yes, an automated build of the software is triggered into a production-like environment, manual tests are then performed before the release is manually deployed into production", "Score" : 1},
-					{"Answer" : "Yes, an automated build of the software is triggered, however this build is then manually deployed into the relevant environments (QA and Prod)", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "CI",
-				"QuestionText" : "Is highest priority always given to fixing a broken build?",
-				"Answers" : [
-					{"Answer" : "Yes, builds are fixed / rolled back within 10 minutes", "Score" : 2},
-					{"Answer" : "Yes, builds are fixed / rolled back  within 1 hour", "Score" : 1},
-					{"Answer" : "Yes, builds are fixed / rolled back  within a day", "Score" : 0.5},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "CI",
-				"QuestionText" : "Are adequate notifications in place to communicate the build status and failures to the team (e.g. automated e-mails, slack, circuit)?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "CD",
-				"QuestionText" : "Is it possible to roll back the application cleanly and reliably?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Refactoring",
-				"QuestionText" : "Does the team practice regular refactoring of their code?",
-				"Answers" : [
-					{"Answer" : "Yes, code is often updated independently of new functions or features to ensure technical debt is minimised", "Score" : 1},
-					{"Answer" : "No, code is only updated to enable new features or functionality", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Refactoring",
-				"QuestionText" : "Is time allocated/dedicated to refactoring in order to improve code quality and reduce technical debt?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Refactoring",
-				"QuestionText" : "Are there sufficient automated tests in place to enable developers to refactor with confidence?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "TDD",
-				"QuestionText" : "How widely does the team practice Test Driven Development (TDD), ensuring that automated tests are developed in advance of new features?", 
-				"Answers" : [
-					{"Answer" : "All product code is developed using TDD", "Score" : 2},
-					{"Answer" : "Some product code is developed using TDD", "Score" : 1},
-					{"Answer" : "TDD is not used at all", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "TDD",
-				"QuestionText" : "Is a standard test framework (such as JUnit) used by the team?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "TDD",
-				"QuestionText" : "Is the refactoring step of the TDD cycle usually applied?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "TDD",
-				"QuestionText" : "Are mocks/stubs/simulators used to ensure that tests can be run quickly, frequently and repeatably?"
-			}
-		]
-	},
-	{
-		"SectionName" : "Alerting",
-		"SpiderPos" : 6,
-		"Questions" : [
-			{
-				"Type" : "Option",
-				"SubCategory" : "Organisation Structure",
-				"QuestionText" : "Is the team a cross functional delivery team comprising of development, testing and operations expertise?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Are incentives for people on the team (both financial and non-financial) aligned to overall team results?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Organisation Structure",
-				"QuestionText" : "Are those responsible for designing, developing, testing and operating the application all part of the same team?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Does the team have accountability for the product throughout its life-cycle (introduction, growth, maturity, decline)?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Culture",
-				"QuestionText" : "Does the team have a culture of experimentation and innovation?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Culture",
-				"QuestionText" : "Does the team have a high trust culture which enables autonomy?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Do people involved in developing and running the application have aligned incentives and goals?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Does the team have a say in what they work on (e.g. self selection days)?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Organisation Structure",
-				"QuestionText" : "Does the organisation's structure catalyse and support a DevOps approach?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Is there a team charter that describes how the team behaves and works together?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Is there a clear vision and purpose for the product?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Are all the product's stakeholders identified and engaged?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Is the team aligned and incentivised to a measurable business outcome?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Do management and the wider organisation see the value in protecting time for continuous improvement?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Does the team have enough time to learn new technologies, tools and practices?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Organisation Structure",
-				"QuestionText" : "How frequently is there interaction between the business and the development team?",
-				"Answers" : [
-					{"Answer" : "Business users are embedded within the team", "Score" : 2},
-					{"Answer" : "The team meets with the business at least every week", "Score" : 1},
-					{"Answer" : "The team meets with the business at least every month", "Score" : 0.5},
-					{"Answer" : "Rarely or not at all", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Culture",
-				"QuestionText" : "Do senior stakeholders buy into and support the DevOps approach?",
-				"Answers" : [
-					{"Answer" : "Yes, we rarely have issues with business cases or bureaucratic processes", "Score" : 2},
-					{"Answer" : "Yes, there is buy-in and understanding, but business processes are still too rigid", "Score" : 1},
-					{"Answer" : "No", "Score" : 0}
-					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Culture",
-				"QuestionText" : "Do members of the team practice continuous learning?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Culture",
-				"QuestionText" : "Does the team have a feedback culture (where people are happy to quickly share negative and positive feedback)?"
 			}
 		]
 	},
 	{
 		"SectionName" : "Expected Throughput",
-		"SpiderPos" : 7,
+		"SpiderPos" :3,
 		"Questions" : [
 			{
-				"Type" : "Checkbox",
-				"QuestionText" : "Has the organisation standardised on a set of tooling standards (tick all that apply)?",
-				"Answers" : [
-					{"Answer" : "We have a defined set of CI/CD tooling that is universally used", "Score" : 1},
-					{"Answer" : "We have defined code repository tooling and standardised usage processes for them (e.g. branching pattern)", "Score" : 1},
-					{"Answer" : "We have defined monitoring tooling", "Score" : 1},
-					{"Answer" : "We have defined patching/upgrade tooling and processes (e.g. immutable vs. mutable)", "Score" : 1}
-					]
+				"Type" : "Banner",
+				"QuestionText" : "Run Load Tests & Understand Limits"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Has the organisation standardised on a set of application stacks/development languages?",
-				"Answers" : [
-					{"Answer" : "Yes, with a sufficient portfolio of options to meet our development needs", "Score" : 2},
-					{"Answer" : "Yes, but with an insufficient portfolio of options to meet our development needs", "Score" : 1},
-					{"Answer" : "No, any team can choose any stack/language without constraint", "Score" : 0}
-					]
+				"QuestionText" : "Before a service goes live, you know where your breaking points are?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do you make the best use of SaaS (Software as a Service) for utility applications (i.e. ones not used for competitive advantage such as version control)?"
+				"QuestionText" : "You know the bare minimum number of instances needed to run your average throughput?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "As much as makes sense, do you use PaaS (Platform as a Service)?"
+				"QuestionText" : "You Know maximum throughput you can handle with current architecture?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "As much as makes sense, do you use IaaS (Infrastructure as a Service)?"
+				"QuestionText" : "You calculate throughput per instance ratio (scale unit) so you can accurately setup proper auto-scaling in a cost optimised way?"
 			}
 		]
 	}
 	,
 	{
-		"SectionName" : "Testing",
-		"SpiderPos" : 8,
+		"SectionName" : "Documentation",
+		"SpiderPos" : 4,
 		"Questions" : [
 			{
+				"Type" : "Banner",
+				"QuestionText" : "Documentation for your App and Platform"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Stored your documentation close to your code e.g. Readme in code and links to wiki / alternative including how to install, troubleshoot?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "What does the code do?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "How to install & run it?"
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Documentation - Standard Operating Procedures"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "How to interact with it (stop, start, restart)?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "How to configure it?"
+			},
+			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Has the organisation standardised on a set of tooling standards (tick all that apply)?",
+				"QuestionText" : "How to troubleshoot it?",
 				"Answers" : [
-					{"Answer" : "We have a defined set of CI/CD tooling that is universally used", "Score" : 1},
-					{"Answer" : "We have defined code repository tooling and standardised usage processes for them (e.g. branching pattern)", "Score" : 1},
-					{"Answer" : "We have defined monitoring tooling", "Score" : 1},
-					{"Answer" : "We have defined patching/upgrade tooling and processes (e.g. immutable vs. mutable)", "Score" : 1}
+					{"Answer" : "Standard Operating Procedures", "Score" : 0.5},
+					{"Answer" : "Application Run Books - Set actions (documentation and automated solutions for resolving issues) ", "Score" : 0.5},
+					{"Answer" : "Application Run Books - particularly for out of hours scenarios.", "Score" : 0.5}
 					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Has the organisation standardised on a set of application stacks/development languages?",
+				"QuestionText" : "Metrics and Dashboards are available?"
+			}
+		]
+	},
+	{
+		"SectionName" : "Observability",
+		"SpiderPos" : 5,
+		"Questions" : [
+
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Monitoring - Insight"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Monitoring - Insight",
+				"QuestionText" : "Visualisations - how do you know what's going on. Dashboards show the right things that may go wrong?"			
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Monitoring - Insight",
+				"QuestionText" : "Dashboard health - viable dashboard? (false positives low)"			
+			},		
+			{
+				"Type" : "Checkbox",
+				"SubCategory" : "Monitoring - Insight",
+				"QuestionText" : "Ensure Developers are, for Prod & Non-Production environments with same tools (tick all that apply)?",
 				"Answers" : [
-					{"Answer" : "Yes, with a sufficient portfolio of options to meet our development needs", "Score" : 2},
-					{"Answer" : "Yes, but with an insufficient portfolio of options to meet our development needs", "Score" : 1},
-					{"Answer" : "No, any team can choose any stack/language without constraint", "Score" : 0}
+					{"Answer" : "Able to build Dashboards", "Score" : 0.25},
+					{"Answer" : "Building Dashboards", "Score" : 0.25},
+					{"Answer" : "Early insight into what is coming to Prod", "Score" : 0.25},
+					{"Answer" : "Close Feedback loops: Site Reliability engineers / lead Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25}
+					]
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Monitoring - Customer"
+			},
+			{
+				"Type" : "Checkbox",
+				"SubCategory" : "Monitoring - Customer",
+				"QuestionText" : "Analytics / Read User Monitoring (RUM): Customer focused monitoring?  Understand how customers use software / where they fall out of process / where they get frustrated",
+				"Answers" : [
+					{"Answer" : "Tools in place", "Score" : 0.25},
+					{"Answer" : "Metrics monitored have adequate coverage", "Score" : 0.25},
+					{"Answer" : "Using percentiles to expose where users are experiencing issues (averages hide issues) e.g. have alarms for: 99, 90, 75, vs steady state e.g. mean, median as relevant?", "Score" : 0.25},
+					{"Answer" : "Close Feedback loops: Site Reliability engineers / lead Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25},
+					{"Answer" : "Real User Monitoring (RUM) active - e.g. javascript in browser reporting real user experience e.g. includes page load times, DNS issues, traffic bottlenecks etc", "Score" : 0.25}
+				]
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Monitoring - Code"
+			},
+			{
+				"Type" : "Checkbox",
+				"SubCategory" : "Monitoring - Code",
+				"QuestionText" : "STM (Synthetic Transaction Monitoring) / APM (Application Performance Monitoring) / Log Analytics (tick all that apply)?",
+				"Answers" : [
+					{"Answer" : "Tools in place", "Score" : 0.25},
+					{"Answer" : "Metrics monitored have adequate coverage", "Score" : 0.25},
+					{"Answer" : "Synthetic Monitoring - Automated testing to measure performance?", "Score" : 0.25},
+					{"Answer" : "Visibility into how app is performing internally e.g. how long are certain relevant calls to resources taking?", "Score" : 0.25},
+					{"Answer" : "Metrics trending up or down visible and alerted where relevant?", "Score" : 0.25},
+					{"Answer" : "The tools indicate what part of the app is generating the highest number of errors?", "Score" : 0.25}
+				]
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Monitoring - Code",
+				"QuestionText" : "Effective error and performance logging (instrumentation) is built into the application, noting needs above?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Monitoring - Code",
+				"QuestionText" : "Continuously improve: Learn from system under inspection - Each system should have a 'heartbeat' that appears off when unhealthy?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Monitoring - Code",
+				"QuestionText" : "Database: DBA monitoring proactive in identifying issues before they become impacting incidents?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Monitoring - Code",
+				"QuestionText" : "Configuration 'Drift Management' in place?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Monitoring - Core",
+				"QuestionText" : "Effective Service and Infrastructure monitoring in place?"
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Monitoring - Security"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Monitoring - Security",
+				"QuestionText" : "Monitoring effective for Auditing and Compliance for effective Governance, including Threat Detection?"
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Monitoring - Team / access"
+			},
+			{
+				"Type" : "Checkbox",
+				"SubCategory" : "Monitoring - Team",
+				"QuestionText" : "Teams access to each of the above (tick all that apply)?",
+				"Answers" : [
+					{"Answer" : "Insight", "Score" : 0.5},
+					{"Answer" : "Customer ", "Score" : 0.5},
+					{"Answer" : "Code", "Score" : 0.5},
+					{"Answer" : "Core", "Score" : 0.5},
+					{"Answer" : "Security", "Score" : 0.5}
+					]
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Logging"
+			},	
+			{
+				"Type" : "Option",
+				"SubCategory" : "Logging",
+				"QuestionText" : "Consistent Log Format? Consider JSON"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Logging",
+				"QuestionText" : "Log levels: User Log Levels correctly [INFO/WARN/CRIT] inc UTC & microseconds? "
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Logging",
+				"QuestionText" : "Add context for your logging? e.g. transaction / correlation ids"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Logging",
+				"QuestionText" : "Logging of behaviours? For pattern analysis such as destinations, frequency/periodicity of identified risk incidents, and/or volumes exchanged, which indicate whether the behaviour exceeds a specified baseline"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Logging",
+				"QuestionText" : "Application (and other sources of logs) are periodically reviewed to consider how analytics will be used on this data?"
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Alerting"
+			},	
+			{
+				"Type" : "Option",
+				"SubCategory" : "Alerting",
+	     		"QuestionText" : "Can you have someone else manage hosting your alerting? Non-core, leverage 3rd party managed service if possible"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Alerting",
+				"QuestionText" : "Alerts adjusted to appropriate level for application/platform? e.g. IF can auto-recover e.g. VM restarting, then do not alert (but do notify for later review)"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Alerting",
+				"QuestionText" : "Auto-scaling alert avoidance - avoiding alerts from high CPU/Memory if auto-scaling (where by design)?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Alerting",
+				"QuestionText" : "Alerts calibrated correctly e.g. Verify if needs to be fixed now and is Actionable? Avoiding getting people out of bed unless required"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Alerting",
+				"QuestionText" : "Tickets created for relevant alerts? - Implemented auto-ticket creation where relevant - including non-urgent actions?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Alerting",
+				"QuestionText" : "Build Proper Escalation Paths For Alerts? e.g. tools with built in capability (PagerDuty etc), Primary => Secondary => Team => Management"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Alerting",
+				"QuestionText" : "P1 paging escalations e.g. P1 Auto escalate where not Acknowledged?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Alerting",
+				"QuestionText" : "Review alerts/acknowledgements - Review alerts periodically that have been acknowledged or silenced beyond a tolerable threshold?"
+			},
+			{
+				"Type" : "Checkbox",
+				"SubCategory" : "Alerting",
+				"QuestionText" : "Alerting in place for:",
+				"Answers": [
+					{"Answer" : "Infrastructure ", "Score" : 1},
+					{"Answer" : "Application ", "Score" : 1},
+					{"Answer" : "Database", "Score" : 0.5},
+					{"Answer" : "Security", "Score" : 1},
+					{"Answer" : "Network", "Score" : 0.5}
 					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do you make the best use of SaaS (Software as a Service) for utility applications (i.e. ones not used for competitive advantage such as version control)?"
+				"SubCategory" : "Alerting",
+				"QuestionText" : "Team(s) responsible for each of the above clearly identified and responsible?"
+			}
+
+		]
+	},
+	
+	{
+		"SectionName" : "Testing",
+		"SpiderPos" : 6,
+		"Questions" : [
+			{
+				"Type" : "Option",
+				"QuestionText" : "Adopted Automated Testing early? e.g. Test Driven Development (TDD): Build a Test first, fails. Develop code to is passes. Refactor/optimise code. Repeat. <ul><li><div>Builds confidence in code released</div></li><li><div>Allowed more testing of app in less time</div></li><li><div>Manual testing can become error prone</div></li></ul>"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "As much as makes sense, do you use PaaS (Platform as a Service)?"
+				"QuestionText" : "Can you confirm the level of test/code coverage? e.g. how much of solution been tested?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "As much as makes sense, do you use IaaS (Infrastructure as a Service)?"
+				"QuestionText" : "Have you automated common testing tasks & integrated into build process?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Integrated UI tests automated?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Can you confirm how many critical or high-priority bugs are still open? (Watch out for the 're-prioritising bug severity downwards' trick in order to meet the quality goals!)?"
 			}
 		]
 	}
 	,
 	{
 		"SectionName" : "Deployment Strategy",
-		"SpiderPos" : 9,
+		"SpiderPos" : 7,
 		"Questions" : [
 			{
-				"Type" : "Checkbox",
-				"QuestionText" : "Has the organisation standardised on a set of tooling standards (tick all that apply)?",
+				"Type" : "Option",
+				"QuestionText" : "Artifact repository tool in use?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Automated application deployment (consider how fast to deploy, and roll back)?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Outage required for changes?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Platform Deployment tools / process confirmed?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Automated database deployment?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Understand what changes to the database are needed to support new code releases (check all that apply)?",
 				"Answers" : [
-					{"Answer" : "We have a defined set of CI/CD tooling that is universally used", "Score" : 1},
-					{"Answer" : "We have defined code repository tooling and standardised usage processes for them (e.g. branching pattern)", "Score" : 1},
-					{"Answer" : "We have defined monitoring tooling", "Score" : 1},
-					{"Answer" : "We have defined patching/upgrade tooling and processes (e.g. immutable vs. mutable)", "Score" : 1}
+					{"Answer" : "Avoid removing columns/changing type of columns, only made additions to reduce risk", "Score" : 0.5},
+					{"Answer" : "Test migrations against test copies of database", "Score" : 1},
+					{"Answer" : "Keep revision history of database migrations for reference", "Score" : 0.5},
+					{"Answer" : "Snapshot databases before doing migrations", "Score" : 1}
 					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Has the organisation standardised on a set of application stacks/development languages?",
+				"QuestionText" : "Speed up and reduce risk for deployments / experiments (check all that apply)?",
 				"Answers" : [
-					{"Answer" : "Yes, with a sufficient portfolio of options to meet our development needs", "Score" : 2},
-					{"Answer" : "Yes, but with an insufficient portfolio of options to meet our development needs", "Score" : 1},
-					{"Answer" : "No, any team can choose any stack/language without constraint", "Score" : 0}
+					{"Answer" : "Canary Pools e.g. direct % of traffic to new version of app, then increase % gradually", "Score" : 0.5},
+					{"Answer" : "Blue/Green deployments (switch from one to the other)", "Score" : 1}
 					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do you make the best use of SaaS (Software as a Service) for utility applications (i.e. ones not used for competitive advantage such as version control)?"
+				"QuestionText" : "Able to use Dark Deploys & Feature Flags (check all that apply)?",
+				"Answers" : [
+					{"Answer" : "Using 3rd party Feature Flag solution?", "Score" : 0.5},
+					{"Answer" : "Opt In - Test new features with selected users?", "Score" : 0.5},
+					{"Answer" : "Kill Switch - Disable poorly performing features?", "Score" : 0.5},
+					{"Answer" : "Scalable Roll Outs - Do % roll outs of new features?", "Score" : 1},
+					{"Answer" : "Block Users - Prevent selected users from features?", "Score" : 0.5}
+					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "As much as makes sense, do you use PaaS (Platform as a Service)?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "As much as makes sense, do you use IaaS (Infrastructure as a Service)?"
+				"QuestionText" : "Test and compare new features / Continuous usability and user experience testing?",
+				"Answers" : [
+					{"Answer" : "Run A/B Tests?", "Score" : 0.5},
+					{"Answer" : "Sunset Old Features - Safely decommission old features?", "Score" : 0.5}
+					]
 			}
 		]
 	}
