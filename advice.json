@@ -2,18 +2,23 @@
 	"//" : "Copyright 2018 Atos SE and Worldline",
 	"//" : "Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE)",
 	
-	"Service Levels" : {
-		"Advice" : "A great place to start is by reading the reading the Google SRE guides and books",
+	"Architecture Design Review" : {
+		"Advice" : "A \"Designed-for-Operability\" approach implies that operability features need to be designed into the Architecture of the application.  The right architectural decisions can make requirmenents like availability and redundancy easy or hard to implement. ",
 		"Links" : [
 			{
 				"Type" : "Website",
-				"Text" : "Google SRE Fundamentals",
-				"Href" : "https://cloud.google.com/blog/products/gcp/sre-fundamentals-slis-slas-and-slos"
+				"Text" : "Azure Cloud Design Principles",
+				"Href" : "https://docs.microsoft.com/en-us/azure/architecture/guide/design-principles/"
 			},
 			{
-				"Type" : "Video",
-				"Text" : "SLIs, SLOs, SLAs, oh my! (class SRE implements DevOps)",
-				"Href" : "https://www.youtube.com/watch?v=tEylFyxbDLE"
+				"Type" : "Website",
+				"Text" : "AWS Well-Architected Framework",
+				"Href" : "https://aws.amazon.com/architecture/well-architected/"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "12-Factor App",
+				"Href" : "https://12factor.net/"
 			},
 			{
 				"Type" : "Book",
@@ -23,32 +28,38 @@
 			}
 		]
 	},
-	"Collaboration" : {
-		"Advice" : "Consider whether you have the tools necessary to enable effective communication within and outside of the team. Also think about how effective the team's interpersonal habits are for enabling a fast, low-friction and precise exchange of ideas and emotions.",
+	"Observability" : {
+		"Advice" : "Monitoring aka \"observability\" is the key foundation to great ops - the more information you have about your applications the faster you can find what's wrong, or about to go wrong, and prevent it or fix it.",
 		"Links" : [
 			{
-				"Type" : "Blog",
-				"Text" : "Cultivate Communities of Practice by Mike Cohn",
-				"Href" : "https://www.mountaingoatsoftware.com/blog/cultivate-communities-of-practice"
+				"Type" : "Book",
+				"Text" : "The Practice of Cloud System Administration: DevOps and SRE Practices for Web Services by Thomas A. Limoncelli, Strata R. Chalup and Christina J. Hogan (Chapter 16 and 17)",
+				"Href" : "https://www.amazon.com/Practice-Cloud-System-Administration-Practices/dp/032194318X/",
+				"Paid" : "Yes"
 			},
 			{
-				"Type" : "Video",
-				"Text" : "DevOpsChat: Collaboration Tools Interview with Ryan Bryers and Adrian Hepworth (0:22)",
-				"Href" : "https://www.youtube.com/watch?v=pF8Y4amhBtA"
+				"Type" : "Website",
+				"Text" : "Azure Monitoring",
+				"Href" : "https://docs.microsoft.com/en-us/azure/azure-monitor/overview"
+			},	
+			{
+				"Type" : "Website",
+				"Text" : "Azure Monitoring Best Practices",
+				"Href" : "https://docs.microsoft.com/en-us/azure/architecture/best-practices/monitoring"
 			},
 			{
-				"Type" : "Video",
-				"Text" : "DevOpsChat: Team = Product Interview with Jim and Michele McCarthy (0:39)",
-				"Href" : "https://www.youtube.com/watch?v=Rs1tdql6Hb0"
+				"Type" : "Website",
+				"Text" : "AWS CloudWatch",
+				"Href" : "https://aws.amazon.com/cloudwatch/"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Software For Your Head by Jim and Michele McCarthy",
-				"Href" : "https://liveingreatness.com/software-for-your-head-book/"
+				"Text" : "Web Operations by John Allspaw and Jesse Robbins, (Chapter 6)",
+				"Href" : "https://www.amazon.co.uk/Web-Operations-Keeping-Data-Time/dp/1449377440"
 			}
 		]
 	},
-	"Automation" : {
+	"Logging" : {
 		"Advice" : "Automation is critical to shortening the lead time for software delivery. If quality and speed are to be transformed, automation is essential. Automation enables environments to be provisioned and configured identically every time. Automation enables application code to be built, tested, delivered, provisioned and configured easily. Automation also enables environments to be monitored and incidents (including security threats) to be responded to based upon a set of rules. Automation drives consistency, enforces quality, removes wastage and delivers speed; it is the technical backbone to any DevOps implementation.",
 		
 		"ReadMore" : "The general rule of thumb is to automate anything that you’re doing more than once, however there are diminishing returns that will be experienced and it produces a new code base to maintain. Surprisingly, adopting a clear and well communicated automation strategy is not necessarily key to successful adoption and buy-in from engineering teams, although it is certainly valuable to have one. The question is more about timing than anything else, but in certain areas (e.g. Infrastructure as Code) automation is one of those things that generally builds pace organically. Start small with engineering led experimentation as, generally, engineers see the value in automation. We suggest that you: <p />- Encourage automation of the day to day (something that may save 20 minutes but is done several times per week, as once the benefits are seen, automating things becomes addictive) <p />- Catalyse discussions of automation tooling choices via communities of interest, these will eventually generate standards in coding, practices, processes and principles <p />- Continuously review automation as part of retrospectives <p />- Communicate automation successes and failures (both can be learned from!) <p />- Follow good engineering practices: for example, maintain automation code in a version controlled code repository <p />When making the case for automation, it is not necessarily about the cost saving (almost certainly not based upon the status quo). For example, the business case for test automation based upon the current release frequency may not make sense, but if that release frequency shifts to once per day it would do. It’s not just about release frequency either, automation significantly reduces wastage within the system, measuring the mean time to recovery (MTTR) and the number of defects in production will display the benefit of automation here. Ultimately the benefits of automation are speed and consistency.",
@@ -81,7 +92,7 @@
 			}
 		]
 	},
-	"Environments" : {
+	"Documentation" : {
 		"Advice" : "Automation of the provisioning, configuration and management of environments (such as development, QA and Production) is a cornerstone of DevOps adoption. There are many tools and methodologies that can be adopted to automate the various layers involved: automated monitoring, patching, build and configuration management, as well as simple provisioning. The use of abstraction techniques, such as containerisation, is being widely adopted to simplify such automation.",
 		"Links" : [
 			{
@@ -158,7 +169,7 @@
 			}
 		]
 	},
-	"Static Analysis" : {
+	"Expected Throughput" : {
 		"Advice" : "Static code analysis is the analysis of software without executing the compiled program. In most cases the analysis is performed on a version of the source code but, in other cases, object code is used. Static analysis helps to improve code quality by reporting possible code bugs, code smells, memory leaks, software metrics and security vulnerabilities.",
 		"Links" : [
 			{
@@ -183,7 +194,7 @@
 			}
 		]
 	},
-	"Architecture and Design": {
+	"Old - Architecture Advice": {
 		"Advice" : "Navigating the many and various options for optimising architecture for DevOps can be bewildering! It is important to bear in mind that there are no \"right\" answers. The agility and functionality of Public Cloud environments make them ideal for building DevOps focused architectures and a good starting point for reading matter is the Cloud Providers’ own guides. Beyond that there are various books, videos and vendor tool documentation that are useful sources of information.",
 		"Links" : [
 			{
@@ -252,7 +263,7 @@
 			}
 		]
 	},
-	"DevOps Practices" : {
+	"Deployment Strategy" : {
 		"Advice" : "There are a number of technical practices that are core to DevOps: Continuous Integration, Continuous Deployment/Delivery, Test Driven Development, Refactoring, and Code Review. The resources here are good overviews. For more in depth results see the detailed report for DevOps Practices.",
 		"Links" : [
 			{
