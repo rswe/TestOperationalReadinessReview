@@ -35,7 +35,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Service Levels",
-				"QuestionText" : "Does the team have SLIs (Service Level Indicators)?",
+				"QuestionText" : "Does the service have SLIs (Service Level Indicators)?",
 				"Answers" : [
 					{"Answer" : "Yes, taken from monitoring, and there are actionable alerts if the service degrades", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -73,7 +73,7 @@
 				"QuestionText" : "Do Operations / Site Reliability Engineers have the ability to regulate workload e.g. TOIL (Manual, Repetitive, Automatable, reactive, Lacks enduring value)?",
 				"Answers" : [
 					{"Answer" : "Yes, TOIL bounded to <50% of Operations for Site Reliability Engineers / Key Operations staff", "Score" : 1},
-					{"Answer" : "No", "Score" : 0}
+					{"Answer" : "No or Other", "Score" : 0}
 					]
 			},
 			{
