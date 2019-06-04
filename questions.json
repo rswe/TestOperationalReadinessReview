@@ -20,16 +20,15 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the service have Service Level Agreements (either external or an internal commitment)?",
+				"QuestionText" : "Does the service have Service Level Agreements (either external or an internal commitment) e.g. contractual?",
 				"Answers" : [
-					{"Answer" : "Yes, and the SLA(s) have effective consequences", "Score" : 1},
-					{"Answer" : "Yes, but there are no consequences", "Score" : 0.5},
+					{"Answer" : "Yes", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},		
 			{
 				"Type" : "Banner",
-				"QuestionText" : "SLIs (Service Level Indicators) - Early warning before SLAs exceeded. Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
+				"QuestionText" : "SLIs (Service Level Indicators). Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes, for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
 			},
 			{
 				"Type" : "Option",
@@ -41,7 +40,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "SLOs (Service Level Objectives), with consequences give common incentives across team(s). Realistic reliability goals. <br><br>Longer timeframe than SLI’s. Define your Error Budget.<br><br>Error Budgets & Error Budget Policy (consequences) <ul><li>Must be set at the appropriate levels</li><li>Too high and costs can rise rapidly</li><li>Smaller error budget which can impede change</li><li>Too low and your customers will be unhappy</li><ul>"
+				"QuestionText" : "SLOs (Service Level Objectives), with consequences, give common incentives across team(s). Early warning before SLAs exceeded. Realistic reliability goals. <br><br>Longer timeframe than SLI’s. <br><br>Define your Error Budgets & Error Budget Policy (consequences) <ul><li>Must be set at the appropriate levels</li><li>Too high and costs can rise rapidly</li><li>Smaller error budget which can impede change</li><li>Too low and your customers will be unhappy</li><ul>"
 			},
 			{
 				"Type" : "Option",
@@ -53,14 +52,16 @@
 					]
 			},
 			{
-				"Type" : "Option",
-				"QuestionText" : "Do Operations / Site Reliability Engineers have the ability (skills) to make tomorrow better than today e.g. including consulting for Devs, contribution to application and infrastructure architecture, monitoring and CI/CD Pipelines?",
+				"Type" : "Checkbox",
+				"QuestionText" : "Do Site Reliability Engineers / key Operations staff have the ability (skills) to make tomorrow better than today e.g. including:",
 				"Answers" : [
-					{"Answer" : "Yes, all of the above", "Score" : 1},
-					{"Answer" : "Yes, but only 1 of the items above", "Score" : 0.25},
-					{"Answer" : "No", "Score" : 0}
-					]
+						{"Answer" : "Consulting for Devs", "Score" : 0.5},
+						{"Answer" : "Contribution to application and infrastructure architecture", "Score" : 0.5},
+						{"Answer" : "Monitoring", "Score" : 0.5},
+						{"Answer" : "CI/CD Pipelines", "Score" : 0.5}
+						]
 			},
+
 			{
 				"Type" : "Option",
 				"QuestionText" : "Do Operations / Site Reliability Engineers have the ability to regulate workload e.g. TOIL (Manual, Repetitive, Automatable, reactive, Lacks enduring value)?",
