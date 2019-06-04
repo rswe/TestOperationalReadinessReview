@@ -231,7 +231,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Security",
-				"QuestionText" : "Secret / Key Management reviewed as effective and compliant?"			
+				"QuestionText" : "Secret / Key Management reviewed and auditable as effective and compliant?"			
 			},
 			{
 				"Type" : "Option",
