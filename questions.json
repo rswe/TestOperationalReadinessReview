@@ -273,7 +273,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "You Know maximum throughput you can handle with current architecture?"
+				"QuestionText" : "You know maximum throughput you can handle with current architecture?"
 			},
 			{
 				"Type" : "Option",
