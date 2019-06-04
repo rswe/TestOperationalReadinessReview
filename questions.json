@@ -165,6 +165,25 @@
 					]
 			},
 			{
+				"Type" : "Checkbox",
+				"SubCategory" : "SPOF",
+				"QuestionText" : "Application Designed for the cloud? (tick all that apply). Follow these design principles to make your application more scalable, resilient, and manageable.",
+				"Answers" : [
+					{"Answer" : "Design for self healing. In a distributed system, failures happen. Design your application to be self healing when failures occur.", "Score" : 1},
+					{"Answer" : "Make all things redundant. Build redundancy into your application, to avoid having single points of failure.", "Score" : 1},
+					{"Answer" : "Minimize coordination. Minimize coordination between application services to achieve scalability.", "Score" : 1},
+					{"Answer" : "Design to scale out. Design your application so that it can scale horizontally, adding or removing new instances as demand requires.", "Score" : 1},
+					{"Answer" : "Partition around limits. Use partitioning to work around database, network, and compute limits.", "Score" : 1},
+					{"Answer" : "Design for operations. Design your application so that the operations team has the tools they need.", "Score" : 1},
+					{"Answer" : "Use managed services. When possible, use platform as a service (PaaS) rather than infrastructure as a service (IaaS).", "Score" : 1},
+					{"Answer" : "Use the best data store for the job. Pick the storage technology that is the best fit for your data and how it will be used.", "Score" : 1},
+					{"Answer" : "Design for operations. Design your application so that the operations team has the tools they need.", "Score" : 1},
+					{"Answer" : "Design for evolution. All successful applications change over time. An evolutionary design is key for continuous innovation.", "Score" : 1},
+					{"Answer" : "Build for the needs of business. Every design decision must be justified by a business requirement.", "Score" : 1}
+					]
+			},
+
+			{
 				"Type" : "Banner",
 				"QuestionText" : "On-boarding new developers"
 			},
