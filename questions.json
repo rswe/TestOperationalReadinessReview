@@ -32,7 +32,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have SLIs (Service Level Indicators) - Early warning before SLAs exceeded?",
+				"QuestionText" : "Does the team have SLIs (Service Level Indicators)?",
 				"Answers" : [
 					{"Answer" : "Yes, taken from monitoring, and there are actionable alerts if the service degrades", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -53,7 +53,7 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Do Site Reliability Engineers / key Operations staff have the ability (skills) to make tomorrow better than today e.g. including:",
+				"QuestionText" : "Do Site Reliability Engineers / key Operations staff have the ability (skills) to make tomorrow better than today (tick all that apply)?",
 				"Answers" : [
 						{"Answer" : "Consulting for Devs", "Score" : 0.5},
 						{"Answer" : "Contribution to application and infrastructure architecture", "Score" : 0.5},
