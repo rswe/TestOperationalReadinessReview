@@ -212,22 +212,27 @@
 		"Questions" : [
 			{
 				"Type" : "Banner",
+				"SubCategory" : "Expected Throughput",
 				"QuestionText" : "Run Load Tests & Understand Limits"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Expected Throughput",
 				"QuestionText" : "Before a service goes live, you know where your breaking points are?"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Expected Throughput",
 				"QuestionText" : "You know the bare minimum number of instances needed to run your average throughput?"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Expected Throughput",
 				"QuestionText" : "You Know maximum throughput you can handle with current architecture?"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Expected Throughput",
 				"QuestionText" : "You calculate throughput per instance ratio (scale unit) so you can accurately setup proper auto-scaling in a cost optimised way?"
 			}
 		]
@@ -243,33 +248,36 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Documentation",
 				"QuestionText" : "Stored your documentation close to your code e.g. Readme links to wiki / alternative including how to install, troubleshoot?"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Documentation",
 				"QuestionText" : "What does the code do?"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Documentation",
 				"QuestionText" : "How to install & run it?"
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Standard Operating Procedures"
+				"QuestionText" : "Documentation - Standard Operating Procedures"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Standard Operating Procedures",
+				"SubCategory" : "Documentation",
 				"QuestionText" : "How to interact with it (stop, start, restart)?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Standard Operating Procedures",
+				"SubCategory" : "Documentation",
 				"QuestionText" : "How to configure it?"
 			},
 			{
 				"Type" : "Checkbox",
-				"SubCategory" : "Standard Operating Procedures",
+				"SubCategory" : "Documentation",
 				"QuestionText" : "How to troubleshoot it?",
 				"Answers" : [
 					{"Answer" : "Standard Operating Procedures", "Score" : 0.5},
@@ -279,6 +287,7 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Documentation",
 				"QuestionText" : "Metrics and Dashboards are available?"
 			}
 		]
@@ -294,17 +303,17 @@
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Insight",
+				"SubCategory" : "Monitoring - Insight",
 				"QuestionText" : "Visualisations - how do you know what's going on. Dashboards show the right things that may go wrong?"			
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Insight",
+				"SubCategory" : "Monitoring - Insight",
 				"QuestionText" : "Dashboard health - viable dashboard? (false positives low)"			
 			},		
 			{
 				"Type" : "Checkbox",
-				"SubCategory" : "Insight",
+				"SubCategory" : "Monitoring - Insight",
 				"QuestionText" : "Ensure Developers are, for Prod & Non-Production environments with same tools (tick all that apply)?",
 				"Answers" : [
 					{"Answer" : "Able to build Dashboards", "Score" : 0.25},
@@ -319,7 +328,7 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"SubCategory" : "Customer",
+				"SubCategory" : "Monitoring - Customer",
 				"QuestionText" : "Analytics / Read User Monitoring (RUM): Customer focused monitoring?  Understand how customers use software / where they fall out of process / where they get frustrated",
 				"Answers" : [
 					{"Answer" : "Tools in place", "Score" : 0.25},
@@ -335,7 +344,7 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"SubCategory" : "Code",
+				"SubCategory" : "Monitoring - Code",
 				"QuestionText" : "STM (Synthetic Transaction Monitoring) / APM (Application Performance Monitoring) / Log Analytics (tick all that apply)?",
 				"Answers" : [
 					{"Answer" : "Tools in place", "Score" : 0.25},
@@ -348,27 +357,27 @@
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Code",
+				"SubCategory" : "Monitoring - Code",
 				"QuestionText" : "Effective error and performance logging (instrumentation) is built into the application, noting needs above?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Code",
+				"SubCategory" : "Monitoring - Code",
 				"QuestionText" : "Continuously improve: Learn from system under inspection - Each system should have a 'heartbeat' that appears off when unhealthy?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Code",
+				"SubCategory" : "Monitoring - Code",
 				"QuestionText" : "Database: DBA monitoring proactive in identifying issues before they become impacting incidents?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Code",
+				"SubCategory" : "Monitoring - Code",
 				"QuestionText" : "Configuration 'Drift Management' in place?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Core",
+				"SubCategory" : "Monitoring - Core",
 				"QuestionText" : "Effective Service and Infrastructure monitoring in place?"
 			},
 			{
@@ -377,7 +386,7 @@
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Security",
+				"SubCategory" : "Monitoring - Security",
 				"QuestionText" : "Monitoring effective for Auditing and Compliance for effective Governance, including Threat Detection?"
 			},
 			{
@@ -386,7 +395,7 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"SubCategory" : "Team",
+				"SubCategory" : "Monitoring - Team",
 				"QuestionText" : "Teams access to each of the above (tick all that apply)?",
 				"Answers" : [
 					{"Answer" : "Insight", "Score" : 0.5},
@@ -431,39 +440,47 @@
 			},	
 			{
 				"Type" : "Option",
+				"SubCategory" : "Alerting",
 	     		"QuestionText" : "Can you have someone else manage hosting your alerting? Non-core, leverage 3rd party managed service if possible"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Alerting",
 				"QuestionText" : "Alerts adjusted to appropriate level for application/platform? e.g. IF can auto-recover e.g. VM restarting, then do not alert (but do notify for later review)"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Alerting",
 				"QuestionText" : "Auto-scaling alert avoidance - avoiding alerts from high CPU/Memory if auto-scaling (where by design)?"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Alerting",
 				"QuestionText" : "Alerts calibrated correctly e.g. Verify if needs to be fixed now and is Actionable? Avoiding getting people out of bed unless required"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Alerting",
 				"QuestionText" : "Tickets created for relevant alerts? - Implemented auto-ticket creation where relevant - including non-urgent actions?"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Alerting",
 				"QuestionText" : "Build Proper Escalation Paths For Alerts? e.g. tools with built in capability (PagerDuty etc), Primary => Secondary => Team => Management"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Alerting",
 				"QuestionText" : "P1 paging escalations e.g. P1 Auto escalate where not Acknowledged?"
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Alerting",
 				"QuestionText" : "Review alerts/acknowledgements - Review alerts periodically that have been acknowledged or silenced beyond a tolerable threshold?"
 			},
 			{
 				"Type" : "Checkbox",
-				"SubCategory" : "Standard Operating Procedures",
+				"SubCategory" : "Alerting",
 				"QuestionText" : "Alerting in place for:",
 				"Answers": [
 					{"Answer" : "Infrastructure ", "Score" : 1},
@@ -475,9 +492,9 @@
 			},
 			{
 				"Type" : "Option",
+				"SubCategory" : "Alerting",
 				"QuestionText" : "Team(s) responsible for each of the above clearly identified and responsible?"
 			}
-
 
 		]
 	},
