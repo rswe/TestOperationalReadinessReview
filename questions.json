@@ -559,7 +559,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Can you confirm how many critical or high-priority bugs are still open? (Watch out for the 're-prioritising bug severity downwards' trick in order to meet the quality goals!)?"
+				"QuestionText" : "Can you confirm how many critical or high-priority bugs are still open - prior to release? (Watch out for the 're-prioritising bug severity downwards' trick in order to meet the quality goals!)?"
 			}
 		]
 	}
@@ -589,7 +589,7 @@
 				"QuestionText" : "Automated database deployment?"
 			},
 			{
-				"Type" : "Option",
+				"Type" : "Checkbox",
 				"QuestionText" : "Understand what changes to the database are needed to support new code releases (check all that apply)?",
 				"Answers" : [
 					{"Answer" : "Avoid removing columns/changing type of columns, only made additions to reduce risk", "Score" : 0.5},
@@ -599,7 +599,7 @@
 					]
 			},
 			{
-				"Type" : "Option",
+				"Type" : "Checkbox",
 				"QuestionText" : "Speed up and reduce risk for deployments / experiments (check all that apply)?",
 				"Answers" : [
 					{"Answer" : "Canary Pools e.g. direct % of traffic to new version of app, then increase % gradually", "Score" : 0.5},
@@ -607,7 +607,7 @@
 					]
 			},
 			{
-				"Type" : "Option",
+				"Type" : "Checkbox",
 				"QuestionText" : "Able to use Dark Deploys & Feature Flags (check all that apply)?",
 				"Answers" : [
 					{"Answer" : "Using 3rd party Feature Flag solution?", "Score" : 0.5},
@@ -618,7 +618,7 @@
 					]
 			},
 			{
-				"Type" : "Option",
+				"Type" : "Checkbox",
 				"QuestionText" : "Test and compare new features / Continuous usability and user experience testing?",
 				"Answers" : [
 					{"Answer" : "Run A/B Tests?", "Score" : 0.5},
