@@ -126,14 +126,14 @@
 				"Answers" : [
 					{"Answer" : "Alert or automated increase safely in advance with regular Load Testing identifying capacity requirements before Production (daily/weekly)", "Score" : 1},
 					{"Answer" : "Manual scheduled regular checks (monthly/quarterly)", "Score" : 0.25},
-					{"Answer" : "No", "Score" : 0}
+					{"Answer" : "Ad-hoc", "Score" : 0}
 					]
 			},
 			{
 				"Type" : "Option",
 				"QuestionText" : "How quickly can we add more capacity?",
 				"Answers" : [
-					{"Answer" : "All key dependencies automated increase on approach to capacity", "Score" : 1},
+					{"Answer" : "All key dependencies automate increase on approach to capacity", "Score" : 1},
 					{"Answer" : "Manual changes required, always completed before impact", "Score" : 0.25},
 					{"Answer" : "On occasion, capacity limits are hit before being extended", "Score" : 0}
 					]
@@ -207,153 +207,35 @@
 		]
 	},
 	{
-		"SectionName" : "Monitoring",
-		"SpiderPos" : 3,
+		"SectionName" : "Expected Throughput",
+		"SpiderPos" :3,
 		"Questions" : [
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Insight"
+				"QuestionText" : "Run Load Tests & Understand Limits"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Insight",
-				"QuestionText" : "Visualisations - how do you know what's going on. Dashboards show the right things that may go wrong?"			
+				"QuestionText" : "Before a service goes live, you know where your breaking points are?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Insight",
-				"QuestionText" : "Dashboard health - viable dashboard? (false positives low)"			
-			},		
-			{
-				"Type" : "Checkbox",
-				"SubCategory" : "Insight",
-				"QuestionText" : "Ensure Developers are, for Prod & Non-Production environments with same tools (tick all that apply)?",
-				"Answers" : [
-					{"Answer" : "Able to build Dashboards", "Score" : 0.25},
-					{"Answer" : "Building Dashboards", "Score" : 0.25},
-					{"Answer" : "Early insight into what is coming to Prod", "Score" : 0.25},
-					{"Answer" : "Close Feedback loops: Site Reliability engineers / lead Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25}
-					]
-			},
-			{
-				"Type" : "Banner",
-				"QuestionText" : "Customer"
-			},
-			{
-				"Type" : "Checkbox",
-				"SubCategory" : "Customer",
-				"QuestionText" : "Analytics / Read User Monitoring (RUM): Customer focused monitoring?  Understand how customers use software / where they fall out of process / where they get frustrated",
-				"Answers" : [
-					{"Answer" : "Tools in place", "Score" : 0.25},
-					{"Answer" : "Metrics monitored have adequate coverage", "Score" : 0.25},
-					{"Answer" : "Using percentiles to expose where users are experiencing issues (averages hide issues) e.g. have alarms for: 99, 90, 75, vs steady state e.g. mean, median as relevant?", "Score" : 0.25},
-					{"Answer" : "Close Feedback loops: Site Reliability engineers / lead Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25},
-					{"Answer" : "Real User Monitoring (RUM) active - e.g. javascript in browser reporting real user experience e.g. includes page load times, DNS issues, traffic bottlenecks etc", "Score" : 0.25}
-				]
-			},
-			{
-				"Type" : "Banner",
-				"QuestionText" : "Code"
-			},
-			{
-				"Type" : "Checkbox",
-				"SubCategory" : "Code",
-				"QuestionText" : "STM (Synthetic Transaction Monitoring) / APM (Application Performance Monitoring) / Log Analytics (tick all that apply)?",
-				"Answers" : [
-					{"Answer" : "Tools in place", "Score" : 0.25},
-					{"Answer" : "Metrics monitored have adequate coverage", "Score" : 0.25},
-					{"Answer" : "Synthetic Monitoring - Automated testing to measure performance?", "Score" : 0.25},
-					{"Answer" : "Visibility into how app is performing internally e.g. how long are certain relevant calls to resources taking?", "Score" : 0.25},
-					{"Answer" : "Metrics trending up or down visible and alerted where relevant?", "Score" : 0.25},
-					{"Answer" : "The tools indicate what part of the app is generating the highest number of errors?", "Score" : 0.25}
-				]
+				"QuestionText" : "You know the bare minimum number of instances needed to run your average throughput?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Code",
-				"QuestionText" : "Effective error and performance logging (instrumentation) is built into the application, noting needs above?"
+				"QuestionText" : "You Know maximum throughput you can handle with current architecture?"
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Code",
-				"QuestionText" : "Continuously improve: Learn from system under inspection - Each system should have a 'heartbeat' that appears off when unhealthy?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Code",
-				"QuestionText" : "Database: DBA monitoring proactive in identifying issues before they become impacting incidents?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Code",
-				"QuestionText" : "Configuration 'Drift Management' in place?"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Core",
-				"QuestionText" : "Effective Service and Infrastructure monitoring in place?"
-			},
-			{
-				"Type" : "Banner",
-				"QuestionText" : "Security"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Security",
-				"QuestionText" : "Monitoring effective for Auditing and Compliance for effective Governance, including Threat Detection?"
-			},
-			{
-				"Type" : "Banner",
-				"QuestionText" : "Team / access"
-			},
-			{
-				"Type" : "Checkbox",
-				"SubCategory" : "Team",
-				"QuestionText" : "Teams access to each of the above (tick all that apply)?",
-				"Answers" : [
-					{"Answer" : "Insight", "Score" : 0.5},
-					{"Answer" : "Customer ", "Score" : 0.5},
-					{"Answer" : "Code", "Score" : 0.5},
-					{"Answer" : "Core", "Score" : 0.5},
-					{"Answer" : "Security", "Score" : 0.5}
-					]
-			}		
-		]
-	},
-	{
-		"SectionName" : "Logging",
-		"SpiderPos" : 4,
-		"Questions" : [
-			{
-				"Type" : "Option",
-				"SubCategory" : "Logging",
-				"QuestionText" : "Consistent Log Format? Consider JSON"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Logging",
-				"QuestionText" : "Log levels: User Log Levels correctly [INFO/WARN/CRIT] inc UTC & microseconds? "
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Logging",
-				"QuestionText" : "Add context for your logging? e.g. transaction / correlation ids"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Logging",
-				"QuestionText" : "Logging of behaviours? For pattern analysis such as destinations, frequency/periodicity of identified risk incidents, and/or volumes exchanged, which indicate whether the behaviour exceeds a specified baseline"
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Logging",
-				"QuestionText" : "Application (and other sources of logs) are periodically reviewed to consider how analytics will be used on this data?"
+				"QuestionText" : "You calculate throughput per instance ratio (scale unit) so you can accurately setup proper auto-scaling in a cost optimised way?"
 			}
 		]
-	},
+	}
+	,
 	{
 		"SectionName" : "Documentation",
-		"SpiderPos" : 5,
+		"SpiderPos" : 4,
 		"Questions" : [
 			{
 				"Type" : "Banner",
@@ -402,9 +284,151 @@
 		]
 	},
 	{
-		"SectionName" : "Alerting",
-		"SpiderPos" : 6,
+		"SectionName" : "Observability",
+		"SpiderPos" : 5,
 		"Questions" : [
+
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Monitoring - Insight"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Insight",
+				"QuestionText" : "Visualisations - how do you know what's going on. Dashboards show the right things that may go wrong?"			
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Insight",
+				"QuestionText" : "Dashboard health - viable dashboard? (false positives low)"			
+			},		
+			{
+				"Type" : "Checkbox",
+				"SubCategory" : "Insight",
+				"QuestionText" : "Ensure Developers are, for Prod & Non-Production environments with same tools (tick all that apply)?",
+				"Answers" : [
+					{"Answer" : "Able to build Dashboards", "Score" : 0.25},
+					{"Answer" : "Building Dashboards", "Score" : 0.25},
+					{"Answer" : "Early insight into what is coming to Prod", "Score" : 0.25},
+					{"Answer" : "Close Feedback loops: Site Reliability engineers / lead Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25}
+					]
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Monitoring - Customer"
+			},
+			{
+				"Type" : "Checkbox",
+				"SubCategory" : "Customer",
+				"QuestionText" : "Analytics / Read User Monitoring (RUM): Customer focused monitoring?  Understand how customers use software / where they fall out of process / where they get frustrated",
+				"Answers" : [
+					{"Answer" : "Tools in place", "Score" : 0.25},
+					{"Answer" : "Metrics monitored have adequate coverage", "Score" : 0.25},
+					{"Answer" : "Using percentiles to expose where users are experiencing issues (averages hide issues) e.g. have alarms for: 99, 90, 75, vs steady state e.g. mean, median as relevant?", "Score" : 0.25},
+					{"Answer" : "Close Feedback loops: Site Reliability engineers / lead Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25},
+					{"Answer" : "Real User Monitoring (RUM) active - e.g. javascript in browser reporting real user experience e.g. includes page load times, DNS issues, traffic bottlenecks etc", "Score" : 0.25}
+				]
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Monitoring - Code"
+			},
+			{
+				"Type" : "Checkbox",
+				"SubCategory" : "Code",
+				"QuestionText" : "STM (Synthetic Transaction Monitoring) / APM (Application Performance Monitoring) / Log Analytics (tick all that apply)?",
+				"Answers" : [
+					{"Answer" : "Tools in place", "Score" : 0.25},
+					{"Answer" : "Metrics monitored have adequate coverage", "Score" : 0.25},
+					{"Answer" : "Synthetic Monitoring - Automated testing to measure performance?", "Score" : 0.25},
+					{"Answer" : "Visibility into how app is performing internally e.g. how long are certain relevant calls to resources taking?", "Score" : 0.25},
+					{"Answer" : "Metrics trending up or down visible and alerted where relevant?", "Score" : 0.25},
+					{"Answer" : "The tools indicate what part of the app is generating the highest number of errors?", "Score" : 0.25}
+				]
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Code",
+				"QuestionText" : "Effective error and performance logging (instrumentation) is built into the application, noting needs above?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Code",
+				"QuestionText" : "Continuously improve: Learn from system under inspection - Each system should have a 'heartbeat' that appears off when unhealthy?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Code",
+				"QuestionText" : "Database: DBA monitoring proactive in identifying issues before they become impacting incidents?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Code",
+				"QuestionText" : "Configuration 'Drift Management' in place?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Core",
+				"QuestionText" : "Effective Service and Infrastructure monitoring in place?"
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Monitoring - Security"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Security",
+				"QuestionText" : "Monitoring effective for Auditing and Compliance for effective Governance, including Threat Detection?"
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Monitoring - Team / access"
+			},
+			{
+				"Type" : "Checkbox",
+				"SubCategory" : "Team",
+				"QuestionText" : "Teams access to each of the above (tick all that apply)?",
+				"Answers" : [
+					{"Answer" : "Insight", "Score" : 0.5},
+					{"Answer" : "Customer ", "Score" : 0.5},
+					{"Answer" : "Code", "Score" : 0.5},
+					{"Answer" : "Core", "Score" : 0.5},
+					{"Answer" : "Security", "Score" : 0.5}
+					]
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Logging"
+			},	
+			{
+				"Type" : "Option",
+				"SubCategory" : "Logging",
+				"QuestionText" : "Consistent Log Format? Consider JSON"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Logging",
+				"QuestionText" : "Log levels: User Log Levels correctly [INFO/WARN/CRIT] inc UTC & microseconds? "
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Logging",
+				"QuestionText" : "Add context for your logging? e.g. transaction / correlation ids"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Logging",
+				"QuestionText" : "Logging of behaviours? For pattern analysis such as destinations, frequency/periodicity of identified risk incidents, and/or volumes exchanged, which indicate whether the behaviour exceeds a specified baseline"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Logging",
+				"QuestionText" : "Application (and other sources of logs) are periodically reviewed to consider how analytics will be used on this data?"
+			},
+			{
+				"Type" : "Banner",
+				"QuestionText" : "Alerting"
+			},	
 			{
 				"Type" : "Option",
 	     		"QuestionText" : "Can you have someone else manage hosting your alerting? Non-core, leverage 3rd party managed service if possible"
@@ -453,38 +477,14 @@
 				"Type" : "Option",
 				"QuestionText" : "Team(s) responsible for each of the above clearly identified and responsible?"
 			}
+
+
 		]
 	},
-	{
-		"SectionName" : "Expected Throughput",
-		"SpiderPos" : 7,
-		"Questions" : [
-			{
-				"Type" : "Banner",
-				"QuestionText" : "Run Load Tests & Understand Limits"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Before a service goes live, you know where your breaking points are?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "You know the bare minimum number of instances needed to run your average throughput?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "You Know maximum throughput you can handle with current architecture?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "You calculate throughput per instance ratio (scale unit) so you can accurately setup proper auto-scaling in a cost optimised way?"
-			}
-		]
-	}
-	,
+	
 	{
 		"SectionName" : "Testing",
-		"SpiderPos" : 8,
+		"SpiderPos" : 6,
 		"Questions" : [
 			{
 				"Type" : "Option",
@@ -511,7 +511,7 @@
 	,
 	{
 		"SectionName" : "Deployment Strategy",
-		"SpiderPos" : 9,
+		"SpiderPos" : 7,
 		"Questions" : [
 			{
 				"Type" : "Option",
