@@ -40,8 +40,8 @@
 
 			<section class="jumbotron text-center bg-dark border-primary border">
 				<div class="container">
-					<h1 class="jumbotron-heading">Improve Your Production Readiness</h1>
-					<p class="lead">This online Production Readiness Review will help you understand your current strengths and weaknesses and then recommend resources that can support you in taking the next steps on your Operational journey.</p>
+					<h1 class="jumbotron-heading">Improve Your Operational Readiness</h1>
+					<p class="lead">This online Operational Readiness Review will help you understand your current strengths and weaknesses and then recommend resources that can support you in taking the next steps on your Operational journey.</p>
 					<p>
 						<a href="<?='section-' . SectionNameToURLName($survey->sections[0]['SectionName'])?>" class="btn btn-primary">Start the Questionnaire</a>
 						<a href="https://github.com/atosorigin/DevOpsMaturityAssessment" target="_blank" class="btn btn-secondary">Fork us on GitHub</a>

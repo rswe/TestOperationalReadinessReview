@@ -6,7 +6,7 @@
 		"Questions" : [
 			{
 				"Type" : "Banner",
-				"QuestionText" : "The goal of this questionnaire is to help you assess the Production Readiness maturity of your service and to help you understand what might be the appropriate next steps for you on your Production Readiness journey.<br><br>These questions are intended to be completed for one team (typically reporting to the same line manager and usually consisting of between 5 and 15 people)."
+				"QuestionText" : "The goal of this questionnaire is to help you assess the Operational Readiness maturity of your service and to help you understand what might be the appropriate next steps for you on your Operational Readiness journey.<br><br>These questions are intended to be completed for one team (typically reporting to the same line manager and usually consisting of between 5 and 15 people)."
 			}
 		]
 	},
@@ -73,7 +73,7 @@
 				"Type" : "Option",
 				"QuestionText" : "Is a shared responsibility model successfully used to handover systems to Site Reliability Engineers / Operations?",
 				"Answers" : [
-					{"Answer" : "Yes, we ensure a Production Readiness Review is completed and the Platform is safe to operate before handover", "Score" : 1},
+					{"Answer" : "Yes, we ensure a Operational Readiness Review is completed and the Platform is safe to operate before handover", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
