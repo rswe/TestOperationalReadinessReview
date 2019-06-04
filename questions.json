@@ -152,16 +152,16 @@
 					]
 			},
 			{
-				"Type" : "Banner",
-				"QuestionText" : "Avoid Single Points of Failure (SPOF) / Ensure your system withstands component failures: <ul><li>Be sure services are running in clusters scaled across locations/AZs/Regions etc.</li><li>SSL certs?</li><li>Service dependencies:</li><li>Graceful degradation, how to avoid accidentally overrunning third-party services</li><li>Playing nice with syndicated partners, mail systems, services</li><li>Dependencies such as queuing systems, streaming systems, workflows, and load balancers are loosely coupled.</li><li>When a component's dependencies are unhealthy, the component itself does not report as unhealthy. It can continue to serve requests in a degraded manner.</li><li>Tooling if critical</li><li>Heartbeats monitored have no SPOF</li><li>Replication & Backups</li><li>etc</li></ul>"
-			},
-			{
-				"Type" : "Option",
+				"Type" : "Checkbox",
 				"SubCategory" : "SPOF",
-				"QuestionText" : "Avoid Single Points of Failure (SPOF) / Does your system withstand component failures?",
+				"QuestionText" : "Avoid Single Points of Failure (SPOF) for key dependencies that could cause SLAs / SLOs to be breached. Does your system withstand component failures?",
 				"Answers" : [
-					{"Answer" : "All relevant key dependencies have no SPOF that could cause SLAs / SLOs to be breached", "Score" : 1},
-					{"Answer" : "SPOFs exist that could impact SLAs / SLOs should they fail", "Score" : 0}
+					{"Answer" : "Services are running in clusters scaled across locations/AZs/Regions with data replication (where applicable)", "Score" : 0.5},
+					{"Answer" : "SSL cert expiry monitored", "Score" : 1},
+					{"Answer" : "When a component's dependencies are unhealthy, the component itself does not report as unhealthy. It can continue to serve requests in a degraded manner.", "Score" : 0.5},
+					{"Answer" : "Service dependencies: Graceful degradation, avoid accidentally overrunning third-party services", "Score" : 0.5},
+					{"Answer" : "Service dependencies: Playing nice with syndicated partners, mail systems, services", "Score" : 0.5},
+					{"Answer" : "Service dependencies: Queuing systems, streaming systems, workflows, and load balancers are loosely coupled.", "Score" : 1}
 					]
 			},
 			{
