@@ -167,7 +167,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "SPOF",
-				"QuestionText" : "Application Designed for the cloud? (tick all that apply). Follow these design principles to make your application more scalable, resilient, and manageable.",
+				"QuestionText" : "Application designed for the cloud? (tick all that apply). Follow these design principles to make your application more scalable, resilient, and manageable.",
 				"Answers" : [
 					{"Answer" : "Design for self healing. In a distributed system, failures happen. Design your application to be self healing when failures occur.", "Score" : 1},
 					{"Answer" : "Make all things redundant. Build redundancy into your application, to avoid having single points of failure.", "Score" : 1},
