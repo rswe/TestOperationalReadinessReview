@@ -387,7 +387,7 @@
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "Monitoring - Core",
+				"SubCategory" : "Monitoring - Service and Infrastructure",
 				"QuestionText" : "Effective Service and Infrastructure monitoring in place?"
 			},
 			{
