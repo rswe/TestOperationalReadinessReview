@@ -227,12 +227,11 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Security",
-				"QuestionText" : "Continuous Improvement for the above?",
+				"QuestionText" : "Continuous Improvement of the following?",
 				"Answers" : [
-					{"Answer" : "Peer Review code", "Score" : 1},
-					{"Answer" : "Kaizen for architecture", "Score" : 0.5},
-					{"Answer" : "Kaizen for code review", "Score" : 0.5},
-					{"Answer" : "Kaizen for Interviewing", "Score" : 0.25}
+					{"Answer" : "Code - via Peer Review", "Score" : 1},
+					{"Answer" : "Architecture", "Score" : 0.5},
+					{"Answer" : "Interviewing", "Score" : 0.25}
 					]
 			}
 		]
