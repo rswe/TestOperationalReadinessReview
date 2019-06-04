@@ -169,13 +169,14 @@
 				"QuestionText" : "On-boarding new developers: Ensure staff reacting to incidents are skilled to troubleshoot all the tech stack by: <ul>    <li>    <div>Standardise on libraries, languages for easier developer onboarding and Production troubleshooting</div>    </li>    <li>    <div>Spot duplicate code and refactor</div>    </li>    <li>    <div>Look for opportunities to implement good design patterns</div>    </li>    <li>    <div>Know your licenses - Open Source Permissive (MIT/Apache) vs Copy Left (GNU/MPL) etc</div>    </li>    </ul>"
 			},
 			{
-				"Type" : "Option",
+				"Type" : "Checkbox",
 				"SubCategory" : "On-boarding staff",
 				"QuestionText" : "Do you effectively ensure staff reacting to incidents are skilled to troubleshoot all the tech stack?",
 				"Answers" : [
-					{"Answer" : "All the above ", "Score" : 1},
-					{"Answer" : "2 or more of the above", "Score" : 0.25},
-					{"Answer" : "1 or less of the above", "Score" : 0}
+					{"Answer" : "Standardise on libraries, languages for easier developer onboarding and Production troubleshooting", "Score" : 0.5},
+					{"Answer" : "Spot duplicate code and refactor", "Score" : 0.5},
+					{"Answer" : "Look for opportunities to implement good design patterns", "Score" : 1},
+					{"Answer" : "Know your licenses - Open Source Permissive (MIT/Apache) vs Copy Left (GNU/MPL) etc", "Score" : 0.25}
 					]
 			},
 			{
@@ -186,6 +187,17 @@
 				"Type" : "Option",
 				"SubCategory" : "Security",
 				"QuestionText" : "Is Security always a top priority? e.g. all of the following as a minimum? <ul><li>Ensure no credentials stored in app</li><li><div>Ensure no credentials stored in app</div></li><li><div>Code defensively for OWASP e.g. SQL injections, XSS attacks etc</div></li><li><div>Leverage Static Analysis Tools</div></li><li>Code check-in validation</li></ul>"			
+			},
+			{
+				"Type" : "Checkbox",
+				"SubCategory" : "Security",
+				"QuestionText" : "Is Security always a top priority? e.g. all of the following as a minimum?",
+				"Answers" : [
+					{"Answer" : "Ensure no credentials stored in app", "Score" : 0.5},
+					{"Answer" : "Code defensively for OWASP e.g. SQL injections, XSS attacks etc", "Score" : 0.5},
+					{"Answer" : "Leverage Static Analysis Tools", "Score" : 0.5},
+					{"Answer" : "Code check-in validation", "Score" : 0.5}
+					]
 			},
 			{
 				"Type" : "Option",
@@ -209,21 +221,22 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Security",
-				"QuestionText" : "Sys Admin Authentication reviewed as effective and compliant?"			
+				"QuestionText" : "System Administrator Authentication reviewed and auditable as effective and compliant?"			
 			},
 			{
 				"Type" : "Banner",
 				"SubCategory" : "Security",
-				"QuestionText" : "Continuous Improvement: Obtain Peer Review / Fresh eyes. Kaizen (small, ongoing positive improvements of working practices) for architecture, code review, interviewing etc. Consider rotating developers off projects every few months to gain fresh eyes on projects. Easier when pushing small batches."
+				"QuestionText" : "Continuous Improvement: Obtain Peer Review / Fresh eyes. Kaizen (small, ongoing positive improvements of working practices). Consider rotating developers off projects every few months to gain fresh eyes on projects. Easier when pushing small batches."
 			},
 			{
-				"Type" : "Option",
+				"Type" : "Checkbox",
 				"SubCategory" : "Security",
 				"QuestionText" : "Continuous Improvement for the above?",
 				"Answers" : [
-					{"Answer" : "All", "Score" : 1},
-					{"Answer" : "1", "Score" : 0.25},
-					{"Answer" : "None", "Score" : 0}
+					{"Answer" : "Peer Review code", "Score" : 1},
+					{"Answer" : "Kaizen for architecture", "Score" : 0.5},
+					{"Answer" : "Kaizen for code review", "Score" : 0.5},
+					{"Answer" : "Kaizen for Interviewing", "Score" : 0.25}
 					]
 			}
 		]
