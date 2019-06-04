@@ -256,7 +256,7 @@
 		]
 	},
 	{
-		"SectionName" : "Expected Throughput",
+		"SectionName" : "Performance",
 		"SpiderPos" :3,
 		"Questions" : [
 			{
