@@ -70,9 +70,9 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Make tomorrow better than today",
-				"QuestionText" : "Do Operations / Site Reliability Engineers have the ability to regulate workload e.g. TOIL (Manual, Repetitive, Automatable, reactive, Lacks enduring value)?",
+				"QuestionText" : "Do Operations / Site Reliability Engineers have the ability to regulate workload e.g. TOIL (Manual, Repetitive, Automatable, reactive, Lacks enduring value) & Operations vs Engineering (building monitoring tools etc)?",
 				"Answers" : [
-					{"Answer" : "Yes, TOIL bounded to <50% of Operations for Site Reliability Engineers / Key Operations staff", "Score" : 1},
+					{"Answer" : "Yes, TOIL/Operations bounded to <50% of Operations for Site Reliability Engineers / Key Operations staff", "Score" : 1},
 					{"Answer" : "No or Other", "Score" : 0}
 					]
 			},
@@ -157,7 +157,7 @@
 				"QuestionText" : "Avoid Single Points of Failure (SPOF) for key dependencies that could cause SLAs / SLOs to be breached. Does your system withstand component failures? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Services are running in clusters scaled across locations/AZs/Regions with data replication (where applicable)", "Score" : 0.5},
-					{"Answer" : "SSL cert expiry monitored", "Score" : 1},
+					{"Answer" : "Monitoring of expiry dates in place for critical dependencies e.g. certificates, service accounts, access keys including platform and application", "Score" : 1},
 					{"Answer" : "When a component's dependencies are unhealthy, the component itself does not report as unhealthy. It can continue to serve requests in a degraded manner.", "Score" : 0.5},
 					{"Answer" : "Loose coupling of Queuing systems, streaming systems, workflows, load balancers etc", "Score" : 1},
 					{"Answer" : "Graceful degradation, avoid accidentally overrunning third-party services", "Score" : 0.5},
@@ -478,7 +478,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Alerts adjusted to appropriate level for application/platform? e.g. IF can auto-recover e.g. VM restarting, then do not alert (but do notify for later review)"
+				"QuestionText" : "Alerts calibrated correctly for application/platform - not too chatty? For example, if can auto-recover e.g. VM restarting, then do not alert (but do notify for later review)"
 			},
 			{
 				"Type" : "Option",
@@ -488,7 +488,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Alerts calibrated correctly e.g. Verify if needs to be fixed now and is Actionable? Avoiding getting people out of bed unless required"
+				"QuestionText" : "Out of hours Alerts calibrated correctly e.g. alert requires fix now and is Actionable? Avoiding getting people out of bed unless required"
 			},
 			{
 				"Type" : "Option",
