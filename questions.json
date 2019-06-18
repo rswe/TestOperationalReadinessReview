@@ -16,7 +16,7 @@
 		"Questions" : [
 			{
 				"Type" : "Banner",
-				"QuestionText" : "<B>INFORMATION:</B> Prioritise SLO/SLA appropriately. Helps identify how much effort to allocate for reliability of each service. Important for microservices for teams to reliably build dependencies on your service."
+				"QuestionText" : "<B>INFORMATION:</B> Prioritise Service Levels appropriately. Helps identify how much effort to allocate for reliability of each service. Important for microservices for teams to reliably build dependencies on your service."
 			},
 			{
 				"Type" : "Option",
