@@ -29,7 +29,7 @@
 			},		
 			{
 				"Type" : "Banner",
-				"SubCategory" : "Service Levels",
+				"SubCategory" : "<B>INFORMATION:</B> Service Levels",
 				"QuestionText" : "SLIs (Service Level Indicators). Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes, for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
 			},
 			{
@@ -43,7 +43,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "SLOs (Service Level Objectives), with consequences, give common incentives across team(s). Early warning before SLAs exceeded. Realistic reliability goals. <br><br>Longer timeframe than SLI’s. <br><br>Define your Error Budgets & Error Budget Policy (consequences) <ul><li>Must be set at the appropriate levels</li><li>Too high and costs can rise rapidly</li><li>Smaller error budget which can impede change</li><li>Too low and your customers will be unhappy</li><ul>"
+				"QuestionText" : "<B>INFORMATION:</B> SLOs (Service Level Objectives), with consequences, give common incentives across team(s). Early warning before SLAs exceeded. Realistic reliability goals. <br><br>Longer timeframe than SLI’s. <br><br>Define your Error Budgets & Error Budget Policy (consequences) <ul><li>Must be set at the appropriate levels</li><li>Too high and costs can rise rapidly</li><li>Smaller error budget which can impede change</li><li>Too low and your customers will be unhappy</li><ul>"
 			},
 			{
 				"Type" : "Option",
@@ -102,7 +102,7 @@
 		"Questions" : [
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Highly Available & Redundant"
+				"QuestionText" : "<B>INFORMATION:</B> Highly Available & Redundant"
 			},
 			{
 				"Type" : "Option",
@@ -184,7 +184,7 @@
 
 			{
 				"Type" : "Banner",
-				"QuestionText" : "On-boarding new developers"
+				"QuestionText" : "<B>INFORMATION:</B> On-boarding new developers"
 			},
 			{
 				"Type" : "Checkbox",
@@ -199,7 +199,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Security Best Practice Review"
+				"QuestionText" : "<B>INFORMATION:</B> Security Best Practice Review"
 			},
 			
 			{
@@ -240,7 +240,7 @@
 			{
 				"Type" : "Banner",
 				"SubCategory" : "Security",
-				"QuestionText" : "Continuous Improvement: Obtain Peer Review / Fresh eyes. Kaizen (small, ongoing positive improvements of working practices). Consider rotating developers off projects every few months to gain fresh eyes on projects. Easier when pushing small batches."
+				"QuestionText" : "<B>INFORMATION:</B> Continuous Improvement: Obtain Peer Review / Fresh eyes. Kaizen (small, ongoing positive improvements of working practices). Consider rotating developers off projects every few months to gain fresh eyes on projects. Easier when pushing small batches."
 			},
 			{
 				"Type" : "Checkbox",
@@ -260,7 +260,7 @@
 		"Questions" : [
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Run Load Tests & Understand Limits"
+				"QuestionText" : "<B>INFORMATION:</B> Run Load Tests & Understand Limits"
 			},
 			{
 				"Type" : "Option",
@@ -287,7 +287,7 @@
 		"Questions" : [
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Documentation for your App and Platform"
+				"QuestionText" : "<B>INFORMATION:</B> Documentation for your App and Platform"
 			},
 			{
 				"Type" : "Option",
@@ -303,7 +303,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Documentation - Standard Operating Procedures"
+				"QuestionText" : "<B>INFORMATION:</B> Documentation - Standard Operating Procedures"
 			},
 			{
 				"Type" : "Option",
@@ -336,7 +336,7 @@
 
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Monitoring - Insight"
+				"QuestionText" : "<B>INFORMATION:</B> Monitoring - Insight"
 			},
 			{
 				"Type" : "Option",
@@ -361,7 +361,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Monitoring - Customer"
+				"QuestionText" : "<B>INFORMATION:</B> Monitoring - Customer"
 			},
 			{
 				"Type" : "Checkbox",
@@ -377,7 +377,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Monitoring - Code"
+				"QuestionText" : "<B>INFORMATION:</B> Monitoring - Code"
 			},
 			{
 				"Type" : "Checkbox",
@@ -419,7 +419,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Monitoring - Security"
+				"QuestionText" : "<B>INFORMATION:</B> Monitoring - Security"
 			},
 			{
 				"Type" : "Option",
@@ -428,7 +428,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Monitoring - Team / access"
+				"QuestionText" : "<B>INFORMATION:</B> Monitoring - Team / access"
 			},
 			{
 				"Type" : "Checkbox",
@@ -444,7 +444,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Logging"
+				"QuestionText" : "<B>INFORMATION:</B> Logging"
 			},	
 			{
 				"Type" : "Option",
@@ -468,7 +468,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Alerting"
+				"QuestionText" : "<B>INFORMATION:</B> Alerting"
 			},	
 			{
 				"Type" : "Option",
