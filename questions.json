@@ -16,7 +16,7 @@
 		"Questions" : [
 			{
 				"Type" : "Banner",
-				"QuestionText" : "Prioritise SLO/SLA appropriately. Helps identify how much effort to allocate for reliability of each service. Important for microservices for teams to reliably build dependencies on your service."
+				"QuestionText" : "<B>INFORMATION:</B> Prioritise SLO/SLA appropriately. Helps identify how much effort to allocate for reliability of each service. Important for microservices for teams to reliably build dependencies on your service."
 			},
 			{
 				"Type" : "Option",
@@ -58,7 +58,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Make tomorrow better than today",
-				"QuestionText" : "Do Site Reliability Engineers / key Operations staff have the ability (skills) to make tomorrow better than today (tick all that apply)?",
+				"QuestionText" : "Do key Operations staff have the ability (skills) to make tomorrow better than today (tick all that apply)?",
 				"Answers" : [
 						{"Answer" : "Consulting for Devs", "Score" : 0.5},
 						{"Answer" : "Contribution to application and infrastructure architecture", "Score" : 0.5},
@@ -70,16 +70,16 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Make tomorrow better than today",
-				"QuestionText" : "Do Operations / Site Reliability Engineers have the ability to regulate workload e.g. TOIL (Manual, Repetitive, Automatable, reactive, Lacks enduring value) & Operations vs Engineering (building monitoring tools etc)?",
+				"QuestionText" : "Do key Operations have the ability to regulate workload e.g. TOIL (Manual, Repetitive, Automatable, reactive, Lacks enduring value) & Operations vs Engineering (building monitoring tools etc)?",
 				"Answers" : [
-					{"Answer" : "Yes, TOIL/Operations bounded to <50% of Operations for Site Reliability Engineers / Key Operations staff", "Score" : 1},
+					{"Answer" : "Yes, TOIL/Operations bounded to <50% of Operations for key Operations staff", "Score" : 1},
 					{"Answer" : "No or Other", "Score" : 0}
 					]
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Make tomorrow better than today",
-				"QuestionText" : "Is a shared responsibility model successfully used to handover systems to Site Reliability Engineers / Operations?",
+				"QuestionText" : "Is a shared responsibility model successfully used to handover systems to Operations?",
 				"Answers" : [
 					{"Answer" : "Yes, you ensure an Operational Readiness Review is completed and the Platform is safe to operate before handover", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -356,7 +356,7 @@
 					{"Answer" : "Able to build Dashboards", "Score" : 0.25},
 					{"Answer" : "Building Dashboards", "Score" : 0.25},
 					{"Answer" : "Providing Operations with early insight into what is coming to Prod", "Score" : 0.25},
-					{"Answer" : "Also - close Feedback loops: Site Reliability engineers / lead Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25}
+					{"Answer" : "Also - close Feedback loops: Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25}
 					]
 			},
 			{
@@ -371,7 +371,7 @@
 					{"Answer" : "Tools in place", "Score" : 0.25},
 					{"Answer" : "Metrics monitored have adequate coverage", "Score" : 0.25},
 					{"Answer" : "Using percentiles to expose where users are experiencing issues (averages hide issues) e.g. have alarms for: 99, 90, 75, vs steady state e.g. mean, median as relevant?", "Score" : 0.25},
-					{"Answer" : "Close Feedback loops: Site Reliability engineers / lead Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25},
+					{"Answer" : "Close Feedback loops: Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25},
 					{"Answer" : "Real User Monitoring (RUM) active - e.g. javascript in browser reporting real user experience e.g. includes page load times, DNS issues, traffic bottlenecks etc", "Score" : 0.25}
 				]
 			},
