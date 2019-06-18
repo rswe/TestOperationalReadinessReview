@@ -81,7 +81,7 @@
 				"SubCategory" : "Make tomorrow better than today",
 				"QuestionText" : "Is a shared responsibility model successfully used to handover systems to Site Reliability Engineers / Operations?",
 				"Answers" : [
-					{"Answer" : "Yes, we ensure an Operational Readiness Review is completed and the Platform is safe to operate before handover", "Score" : 1},
+					{"Answer" : "Yes, you ensure an Operational Readiness Review is completed and the Platform is safe to operate before handover", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
@@ -134,7 +134,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Highly Available and Redundant",
-				"QuestionText" : "How will we know when we need more capacity?",
+				"QuestionText" : "How will you know when you need more capacity?",
 				"Answers" : [
 					{"Answer" : "Alert or automated increase safely in advance with regular Load Testing identifying capacity requirements before Production (daily/weekly)", "Score" : 1},
 					{"Answer" : "Manual scheduled regular checks (monthly/quarterly)", "Score" : 0.25},
@@ -144,7 +144,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Highly Available and Redundant",
-				"QuestionText" : "How quickly can we add more capacity?",
+				"QuestionText" : "How quickly can you add more capacity?",
 				"Answers" : [
 					{"Answer" : "All key dependencies automate increase on approach to capacity", "Score" : 1},
 					{"Answer" : "Manual changes required, always completed before impact", "Score" : 0.25},
