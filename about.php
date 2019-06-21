@@ -44,7 +44,7 @@
 					<p class="lead">This online Operational Readiness Review will help you understand your current strengths and weaknesses and then recommend resources that can support you in taking the next steps on your Operational journey.</p>
 					<p>
 						<a href="<?='section-' . SectionNameToURLName($survey->sections[0]['SectionName'])?>" class="btn btn-primary">Start the Questionnaire</a>
-						<a href="https://github.com/atosorigin/DevOpsMaturityAssessment" target="_blank" class="btn btn-secondary">Fork us on GitHub</a>
+						<a href="https://github.com/TheOpsMgr/OperationalReadinessReview.git" target="_blank" class="btn btn-secondary">Fork us on GitHub</a>
 					</p>
 				</div>
 			</section>
@@ -78,7 +78,7 @@
 						<i class="fas fa-lock-open fa-stack-1x"></i>
 					</span>
 					<h2>Free and Open Source</h2>
-					<p class="text-justify">This tool is made available under the MIT License: you are free to use, adapt and redistribute it, both for commercial and non-commercial use. There is no obligation to share your changes, although we always appreciate feedback! Why not <a href="https://github.com/atosorigin/DevOpsMaturityAssessment" target="_blank">fork us on GitHub</a>?</p>
+					<p class="text-justify">This tool is made available under the MIT License: you are free to use, adapt and redistribute it, both for commercial and non-commercial use. There is no obligation to share your changes, although we always appreciate feedback! Why not <a href="https://github.com/TheOpsMgr/OperationalReadinessReview" target="_blank">fork us on GitHub</a>?</p>
 		
 				</div><!-- /.col-lg-4 -->
 				
