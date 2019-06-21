@@ -16,7 +16,7 @@
 		"Questions" : [
 			{
 				"Type" : "Banner",
-				"QuestionText" : "<B>INFORMATION:</B> Prioritise Service Levels appropriately. Helps identify how much effort to allocate for reliability of each service. Important for microservices for teams to reliably build dependencies on your service."
+				"QuestionText" : "<B>INFORMATION:</B> Prioritise Service Levels appropriately. This helps identify how much effort to allocate for reliability of each service. This is important for microservices so teams can reliably build dependencies on your service."
 			},
 			{
 				"Type" : "Option",
@@ -30,7 +30,7 @@
 			{
 				"Type" : "Banner",
 				"SubCategory" : "<B>INFORMATION:</B> Service Levels",
-				"QuestionText" : "SLIs (Service Level Indicators). Measurable: Taken from monitoring. Actionable alerts if service degrades. Short timeframes, for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
+				"QuestionText" : "SLIs (Service Level Indicators). Measurable: Taken from monitoring. There should be actionable alerts if service degrades. Use shorter timeframes here, for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour on a system are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
 			},
 			{
 				"Type" : "Option",
@@ -43,7 +43,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "<B>INFORMATION:</B> SLOs (Service Level Objectives), with consequences, give common incentives across team(s). Early warning before SLAs exceeded. Realistic reliability goals. <br><br>Longer timeframe than SLI’s. <br><br>Define your Error Budgets & Error Budget Policy (consequences) <ul><li>Must be set at the appropriate levels</li><li>Too high and costs can rise rapidly</li><li>Smaller error budget which can impede change</li><li>Too low and your customers will be unhappy</li><ul>"
+				"QuestionText" : "<B>INFORMATION:</B> SLOs (Service Level Objectives), with consequences, giving common incentives across team(s). This gives early warning before SLAs are exceeded and should provide Realistic reliability goals. <br><br>Longer timeframe than SLI’s. <br><br>Define your Error Budgets & Error Budget Policy (consequences) <ul><li>Must be set at the appropriate levels</li><li>Too high and costs can rise rapidly</li><li>Smaller error budget which can impede change</li><li>Too low and your customers will be unhappy</li><ul>"
 			},
 			{
 				"Type" : "Option",
@@ -240,7 +240,7 @@
 			{
 				"Type" : "Banner",
 				"SubCategory" : "Security",
-				"QuestionText" : "<B>INFORMATION:</B> Continuous Improvement: Obtain Peer Review / Fresh eyes. Kaizen (small, ongoing positive improvements of working practices). Consider rotating developers off projects every few months to gain fresh eyes on projects. Easier when pushing small batches."
+				"QuestionText" : "<B>INFORMATION:</B> Continuous Improvement: Obtain Peer Review / Fresh eyes. Use Kaizen (small, ongoing positive improvements of working practices). Consider rotating developers off projects every few months to gain fresh eyes on projects. This is easier when pushing small batches."
 			},
 			{
 				"Type" : "Checkbox",
