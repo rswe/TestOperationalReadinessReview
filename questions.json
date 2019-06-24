@@ -29,8 +29,8 @@
 			},		
 			{
 				"Type" : "Banner",
-				"SubCategory" : "<B>INFORMATION:</B> Service Levels",
-				"QuestionText" : "SLIs (Service Level Indicators). Measurable: Taken from monitoring. There should be actionable alerts if service degrades. Use shorter timeframes here, for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour for a service are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
+				"SubCategory" : "Service Levels",
+				"QuestionText" : "<B>INFORMATION:</B> SLIs (Service Level Indicators). Measurable: Taken from monitoring. There should be actionable alerts if service degrades. Use shorter timeframes here, for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour for a service are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
 			},
 			{
 				"Type" : "Option",
@@ -43,7 +43,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "<B>INFORMATION:</B> SLOs (Service Level Objectives), with consequences, giving common incentives across team(s). This gives early warning before SLAs are exceeded and should provide Realistic reliability goals. <br><br>Longer timeframe than SLI’s. <br><br>Define your Error Budgets & Error Budget Policy (consequences) <ul><li>Must be set at the appropriate levels</li><li>Too high and costs can rise rapidly</li><li>Smaller error budget which can impede change</li><li>Too low and your customers will be unhappy</li><ul>"
+				"QuestionText" : "<B>INFORMATION:</B> SLOs (Service Level Objectives), with consequences, giving common incentives across team(s). This gives early warning before SLAs are exceeded and should provide Realistic reliability goals. These are longer timeframe than SLI’s. <br><br>Define your Error Budgets & Error Budget Policy (consequences) <ul><li>Must be set at the appropriate levels</li><li>Too high and costs can rise rapidly</li><li>Smaller error budget which can impede change</li><li>Too low and your customers will be unhappy</li><ul>"
 			},
 			{
 				"Type" : "Option",
