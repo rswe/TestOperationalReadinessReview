@@ -344,7 +344,11 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Monitoring - Insight",
-				"QuestionText" : "Do your dashboards provide too much information or are there false positives obscuring real failures?"			
+				"QuestionText" : "Do your dashboards provide too much information or are there false positives obscuring real failures?",
+				"Answers" : [
+					{"Answer" : "Yes", "Score" : 0},
+					{"Answer" : "No", "Score" : 1}
+					]		
 			},		
 			{
 				"Type" : "Checkbox",
