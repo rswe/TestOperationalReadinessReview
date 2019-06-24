@@ -21,7 +21,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Service Levels",
-				"QuestionText" : "Does the service have Service Level Agreements (either external or an internal commitment) e.g. contractual?",
+				"QuestionText" : "Does the service have Service Level Agreements with internal or external users?",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -35,7 +35,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Service Levels",
-				"QuestionText" : "Does the service have SLIs (Service Level Indicators)?",
+				"QuestionText" : "Do you employ Service Level Indicators to monitor the service?",
 				"Answers" : [
 					{"Answer" : "Yes, taken from monitoring, and there are actionable alerts if the service degrades", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -58,7 +58,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Make tomorrow better than today",
-				"QuestionText" : "Do key Operations staff have the skills to make tomorrow better than today? (tick all that apply)",
+				"QuestionText" : "In which of the following areas do your Operations staff have the skills to make tomorrow better than today? (tick all that apply)",
 				"Answers" : [
 						{"Answer" : "Contribution to application and infrastructure architecture", "Score" : 0.5},
 						{"Answer" : "Monitoring", "Score" : 0.5},
@@ -79,18 +79,18 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Make tomorrow better than today",
-				"QuestionText" : "Is a shared responsibility model successfully used to handover service to Operations?",
+				"QuestionText" : "Do you follow an agreed procedure before handing a service over to Operations?",
 				"Answers" : [
-					{"Answer" : "Yes, you ensure an Operational Readiness Review is completed and the Platform is safe to operate before handover", "Score" : 1},
+					{"Answer" : "Yes, you ensure a shared responsibility model and that the Platform is safe to operate before handover", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "DR",
-				"QuestionText" : "Disaster Recovery plan is documented, and date of last and next DR Test noted?",
+				"QuestionText" : "Do you perform regular and recorded Disaster Recovery procedures for the service?",
 				"Answers" : [
-					{"Answer" : "Yes including RTO (recovery time objective) and RPO (recovery point objective)", "Score" : 1},
+					{"Answer" : "Yes, including documenting of date of last and next DR Test", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			}
@@ -107,9 +107,9 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Highly Available and Redundant",
-				"QuestionText" : "Are dependencies identified and visualised? e.g. Third-party services, monitoring, networking",
+				"QuestionText" : "Are all internal and external dependencies for your services understood, identified, and visualised?",
 				"Answers" : [
-					{"Answer" : "Yes with diagrams", "Score" : 1},
+					{"Answer" : "Yes with diagrams e.g. for Third-party services, monitoring, networking", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
@@ -129,16 +129,16 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Highly Available and Redundant",
-				"QuestionText" : "Able to handle spike of traffic? For each component, traffic volume, launch spikes.",
+				"QuestionText" : "Is your service able to automatically handle spikes in traffic or usage volumes with no impact to end users?",
 				"Answers" : [
-					{"Answer" : "Yes e.g. using relevant mitigation such as Sizing, Auto-scaling, Containers, serverless architecture etc", "Score" : 1},
+					{"Answer" : "Yes for each component and for traffic volume, launch spikes e.g. using relevant mitigation such as Sizing, Auto-scaling, Containers, serverless architecture etc", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Highly Available and Redundant",
-				"QuestionText" : "How will you know when you need more capacity?",
+				"QuestionText" : "How do you know when your service needs more capacity?",
 				"Answers" : [
 					{"Answer" : "Automated increase, with regular Load Testing identifying capacity requirements before Production (daily/weekly)", "Score" : 1},
 					{"Answer" : "Manual regular checks (monthly/quarterly)", "Score" : 0.25},
@@ -171,7 +171,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "SPOF",
-				"QuestionText" : "Application designed for the cloud? (tick all that apply). Follow these design principles to make your application more scalable, resilient, and manageable.",
+				"QuestionText" : "Which of the following design principles are followed to make your service scalable, resilient, and manageable i.e. Application designed for the cloud (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Design for self healing. In a distributed system, failures happen. Design your application to be self healing when failures occur.", "Score" : 1},
 					{"Answer" : "Make all things redundant. Build redundancy into your application, to avoid having single points of failure.", "Score" : 1},
@@ -209,7 +209,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Security",
-				"QuestionText" : "Is Security always a top priority? e.g. all of the following as a minimum? (tick all that apply)",
+				"QuestionText" : "Which of the following security measures are a top priority your teams? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Ensure no credentials stored in app", "Score" : 0.5},
 					{"Answer" : "Code defensively for OWASP e.g. SQL injections, XSS attacks etc", "Score" : 0.5},
@@ -220,7 +220,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Security",
-				"QuestionText" : "Meeting industry regulations for security of service and platform?",
+				"QuestionText" : "•	Are you meeting industry best practices regarding the security of your service?",
 				"Answers" : [
 					{"Answer" : "All regulations complied with", "Score" : 1},
 					{"Answer" : "Unsure or not demonstrated regulations are complied with", "Score" : 0}
@@ -229,17 +229,17 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Security",
-				"QuestionText" : "Penetration Testing passed (if required)?"			
+				"QuestionText" : "Do you perform regular and recorded penetration testing for the service?"			
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Security",
-				"QuestionText" : "Secret / Key Management reviewed and auditable as effective and compliant?"			
+				"QuestionText" : "Do you review and audit the management of secrets (passwords, keys, certificates) used in your service?"			
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Security",
-				"QuestionText" : "System Administrator Authentication reviewed and auditable as effective and compliant?"			
+				"QuestionText" : "Do you audit and regularly review the use of privileged administrator accounts?"			
 			},
 			{
 				"Type" : "Banner",
@@ -249,7 +249,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Security",
-				"QuestionText" : "Continuous Improvement of the following?",
+				"QuestionText" : "Do you use Continuous Improvement in any of the following areas? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Code - via Peer Review", "Score" : 1},
 					{"Answer" : "Architecture", "Score" : 0.5},
@@ -268,19 +268,19 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Before a service goes live, you know where your breaking points are?"
+				"QuestionText" : "Do you know where your performance ceilings are before your service goes live?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "You know the bare minimum number of instances needed to run your average throughput?"
+				"QuestionText" : "Do you know the minimum capacity of your environment to run your service during average load?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "You know maximum throughput you can handle with current architecture?"
+				"QuestionText" : "Do you know the maximum throughput you can handle with current architecture?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "You calculate throughput per instance ratio (scale unit) so you can accurately setup proper auto-scaling in a cost optimised way?"
+				"QuestionText" : "Do you calculate service throughput so that your auto-scaling operates in a cost optimised way?"
 			}
 		]
 	}
@@ -339,12 +339,12 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Monitoring - Insight",
-				"QuestionText" : "Visualisations - how do you know what's going on. Dashboards show the right things that may go wrong?"			
+				"QuestionText" : "Do you have visualisations and dashboards that all the information you need to assess your service's health which show the right things that may go wrong?"			
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Monitoring - Insight",
-				"QuestionText" : "Dashboard health - viable dashboard? (false positives low)"			
+				"QuestionText" : "Do your dashboards provide too much information or are there false positives obscuring real failures?"			
 			},		
 			{
 				"Type" : "Checkbox",
@@ -393,22 +393,22 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Monitoring - Code",
-				"QuestionText" : "Effective error and performance logging (instrumentation) is built into the application, noting needs above?"
+				"QuestionText" : "Is effective error and performance instrumentation built into the code of your service as standard?"
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Monitoring - Code",
-				"QuestionText" : "Continuously improve: Learn from the service under inspection - Each service has a 'heartbeat' that appears off when unhealthy?"
+				"QuestionText" : "Does your service have heartbeat monitoring or similar? To enable continuous improvement and learn from the service under inspection"
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Monitoring - Code",
-				"QuestionText" : "Database: DBA monitoring proactive in identifying issues before they become impacting incidents?"
+				"QuestionText" : "Do you use proactive monitoring of databases to flag issues before they impact a service? E.g. To provide insights into under-performing queries or plans?"
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Monitoring - Code",
-				"QuestionText" : "Configuration 'Drift Management' in place?"
+				"QuestionText" : "Do you have visibility of, and can you track, the changes in configuration for each component of your service ? (Drift Management)"
 			},
 			{
 				"Type" : "Banner",
@@ -442,22 +442,22 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Logging",
-				"QuestionText" : "Consistent Log Format? Consider JSON"
+				"QuestionText" : "Do you user a consistent format and central location for logging?"
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Logging",
-				"QuestionText" : "Log levels: User Log Levels correctly [INFO/WARN/CRIT] inc UTC & microseconds? "
+				"QuestionText" : "Do your logs contain event severity levels (e.g. informational, warning, critical) and user consistent timestamps across components including UTC & microseconds?"
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Logging",
-				"QuestionText" : "Add context for your logging? e.g. transaction / correlation ids"
+				"QuestionText" : "Is it easy to correlate transactional events across components in your service? i.e. Do you have an end-to-end view of the data flow or user journey? e.g. correlation ids"
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Logging",
-				"QuestionText" : "Service (and other sources of logs) is periodically reviewed to consider how analytics will be used on this data?"
+				"QuestionText" : "Do you review and act on your accumulated logging data to consider how analytics will be used on this?"
 			},
 			{
 				"Type" : "Banner",
@@ -471,7 +471,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Alerts calibrated correctly for service - not too chatty? For example, if can auto-recover e.g. VM restarting, then do not alert (but do notify for later review)"
+				"QuestionText" : "Are your alerts calibrated and meaningful (e.g. not too chatty)? For example, if can auto-recover e.g. VM restarting, then do not alert (but do notify for later review)"
 			},
 			{
 				"Type" : "Option",
@@ -481,17 +481,17 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Out of hours Alerts calibrated correctly e.g. alert requires fix now and is Actionable? Avoiding getting people out of bed unless required"
+				"QuestionText" : "Do you have separate calibration for business hours vs our of hours alerting, with out of hours alerting being actionable?"
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Tickets created for relevant alerts? - Implemented auto-ticket creation where relevant - including non-urgent actions?"
+				"QuestionText" : "Do your alerts integrate with a ticketing system to auto-create incidents or issues from specific alert types?"
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Build Proper Escalation Paths For Alerts? e.g. tools with built in capability (PagerDuty etc), Primary => Secondary => Team => Management"
+				"QuestionText" : "Are your escalation paths for alerts clearly defined?"
 			},
 			{
 				"Type" : "Option",
@@ -501,7 +501,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Review alerts/acknowledgements - Review alerts periodically that have been acknowledged or silenced beyond a tolerable threshold?"
+				"QuestionText" : "Do you review acknowledged or silenced alerts on a regular basis?"
 			},
 			{
 				"Type" : "Checkbox",
@@ -518,7 +518,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Team(s) responsible for each of the above clearly identified and responsible?"
+				"QuestionText" : "Are the teams responsible for the above clearly identified?"
 			}
 
 		]
@@ -530,11 +530,11 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"QuestionText" : "Adopted Automated Testing early? e.g. Test Driven Development (TDD): Build a Test first, fails. Develop code to is passes. Refactor/optimise code. Repeat. <ul><li><div>Builds confidence in code released</div></li><li><div>Allowed more testing of app in less time</div></li><li><div>Manual testing can become error prone</div></li></ul>"
+				"QuestionText" : "Do you use the test driven development (TDD) software development process?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Can you confirm the level of test coverage/code coverage? e.g. how much of solution been tested? Noting the number is very much context dependent",
+				"QuestionText" : "Roughly what percentage of your code is covered by either manual or automated testing? Noting the number is very much context dependent",
 				"Answers": [
 					{"Answer" : "70% or more", "Score" : 1},
 					{"Answer" : "20%-69%", "Score" : 1},
@@ -544,15 +544,15 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Have you automated common testing tasks & integrated into build process?"
+				"QuestionText" : "Do you use automated testing as part of your build and release process?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Integrated UI test automation into Build & Release?"
+				"QuestionText" : "Do you run automated User Interface tests?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Can you confirm how many critical or high-priority bugs are still open - prior to release? (Watch out for the 're-prioritising bug severity downwards' trick in order to meet the quality goals!)?"
+				"QuestionText" : "Do you know how many critical or high-priority bugs are open for your service?"
 			}
 		]
 	}
@@ -563,11 +563,11 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"QuestionText" : "Artifact repository tool in use?"
+				"QuestionText" : "Do you use an artifact repository tool to store and version control build artifacts?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Automated application deployment? Consider how fast to deploy, roll back (tick all that apply)",
+				"QuestionText" : "Is your deployment mechanism automated? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Fully automated with automated rollback", "Score" : 1},
 					{"Answer" : "Fully automated with manual rollback", "Score" : 0.75},
@@ -586,11 +586,11 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Automated database deployments?"
+				"QuestionText" : "Do you need to use maintenance windows to deploy changes or updates to your service?"
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Implementing guidance, where possible, on increasing flow for database changes needed to support new code releases? (tick all that apply)",
+				"QuestionText" : "Are your databases and database changes deployed using an automated mechanism? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Avoid removing columns/changing type of columns, only made additions to reduce risk", "Score" : 0.5},
 					{"Answer" : "Test migrations against test copies of Production-like database", "Score" : 1},
@@ -600,7 +600,7 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Speed up and reduce risk for deployments / experiments? (tick all that apply)",
+				"QuestionText" : "Do you use canary or blue/green techniques to reduce downtime and risk? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Canary Pools e.g. direct % of traffic to new version of app, then increase % gradually", "Score" : 0.5},
 					{"Answer" : "Blue/Green deployments (switch from one to the other)", "Score" : 1}
@@ -619,7 +619,7 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Continuous usability and user experience testing?",
+				"QuestionText" : "Which of the following deployment techniques do you employ?",
 				"Answers" : [
 					{"Answer" : "Run A/B Tests?", "Score" : 0.5},
 					{"Answer" : "Sunset Old Features - Safely decommission old features?", "Score" : 0.5}
