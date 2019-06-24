@@ -58,7 +58,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Make tomorrow better than today",
-				"QuestionText" : "Do key Operations staff have the skills to make tomorrow better than today (tick all that apply)?",
+				"QuestionText" : "Do key Operations staff have the skills to make tomorrow better than today? (tick all that apply)",
 				"Answers" : [
 						{"Answer" : "Contribution to application and infrastructure architecture", "Score" : 0.5},
 						{"Answer" : "Monitoring", "Score" : 0.5},
@@ -116,7 +116,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Highly Available and Redundant",
-				"QuestionText" : "Application Architecture: Mitigation in place for the following failure scenarios (tick all that apply)? Mitigated using relevant mitigation such as Sizing, Auto-scaling, Containers, serverless architecture etc",
+				"QuestionText" : "Application Architecture: Mitigation in place for the following failure scenarios? (tick all that apply). Mitigated using relevant mitigation such as Sizing, Auto-scaling, Containers, serverless architecture etc",
 				"Answers" : [
 					{"Answer" : "Backend server role dies", "Score" : 0.5},
 					{"Answer" : "Rack fails or cluster goes offline", "Score" : 0.5},
@@ -160,12 +160,12 @@
 				"SubCategory" : "SPOF",
 				"QuestionText" : "Does your service withstand component failures? (tick all that apply). We want to Avoid Single Points of Failure (SPOF) for key dependencies",
 				"Answers" : [
-					{"Answer" : "Yes with services running in clusters scaled across locations/AZs/Regions with data replication (where applicable)", "Score" : 0.5},
-					{"Answer" : "Yes by monitoring of expiry dates in place for critical dependencies e.g. certificates, service accounts, access keys including platform and application", "Score" : 1},
-					{"Answer" : "Yes, components can continue to serve requests in a degraded manner when dependencies are unhealthy. The component itself does not report as unhealthy. ", "Score" : 0.5},
-					{"Answer" : "Yes due to loose coupling of Queuing systems, streaming systems, workflows, load balancers etc", "Score" : 1},
+					{"Answer" : "Yes with services running in clusters scaled across locations/AZs/Regions with data replication", "Score" : 1},
+					{"Answer" : "Yes by monitoring of expiry dates in place for critical dependencies e.g. certificates, service accounts, access keys in platform and application", "Score" : 1},
+					{"Answer" : "Yes components can continue to serve requests in a degraded manner when dependencies are unhealthy. The component itself does not report as unhealthy. ", "Score" : 0.5},
+					{"Answer" : "Yes due to loose coupling of queuing systems, streaming systems, workflows, load balancers etc", "Score" : 1},
 					{"Answer" : "Yes with graceful degradation, avoiding accidentally overrunning third-party services", "Score" : 0.5},
-					{"Answer" : "Yes by playing nice with syndicated partners, mail systems, services", "Score" : 0.5}
+					{"Answer" : "Yes by playing nicely with syndicated partners, mail systems, services", "Score" : 0.5}
 					]
 			},
 			{
@@ -220,7 +220,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Security",
-				"QuestionText" : "Meeting industry best practice regarding security of service and platform?",
+				"QuestionText" : "Meeting industry regulations for security of service and platform?",
 				"Answers" : [
 					{"Answer" : "All regulations complied with", "Score" : 1},
 					{"Answer" : "Unsure or not demonstrated regulations are complied with", "Score" : 0}
@@ -294,42 +294,36 @@
 				"QuestionText" : "<B>INFORMATION:</B> Documentation for your App and Platform"
 			},
 			{
-				"Type" : "Option",
-				"QuestionText" : "Stored your documentation close to your code e.g. Readme in code and links to wiki / alternative, including how to install, troubleshoot?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "What does the code do?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "How to install & run it?"
-			},
+				"Type" : "Checkbox",
+				"QuestionText" : "Which of the following does your code documentation achieve?",
+				"Answers" : [
+					{"Answer" : "Documentation is stored close to your code e.g. Readme in code and links to wiki / alternative, including how to install, troubleshoot", "Score" : 0.5},
+					{"Answer" : "Describes what does the code does?", "Score" : 0.75},
+					{"Answer" : "How to install & run the code", "Score" : 1},
+					{"Answer" : "Application Run Books - Out of hours scenarios", "Score" : 0.75}
+					]
+			},			
 			{
 				"Type" : "Banner",
 				"QuestionText" : "<B>INFORMATION:</B> Documentation - Standard Operating Procedures"
 			},
 			{
-				"Type" : "Option",
-				"QuestionText" : "How to interact with it (stop, start, restart)?"
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "How to configure it?"
+				"Type" : "Checkbox",
+				"QuestionText" : "Which of the following does your code documentation achieve?",
+				"Answers" : [
+					{"Answer" : "How to interact with it (stop, start, restart)?", "Score" : 1},
+					{"Answer" : "How to configure it?", "Score" : 1}
+					]
 			},
 			{
 				"Type" : "Checkbox",
 				"QuestionText" : "How to troubleshoot it?",
 				"Answers" : [
-					{"Answer" : "Standard Operating Procedures", "Score" : 0.5},
+					{"Answer" : "Standard Operating Procedures", "Score" : 1},
 					{"Answer" : "Application Run Books - Set actions (documentation) for resolving issues", "Score" : 0.5},
 					{"Answer" : "Application Run Books - Set actions (automated) for resolving issues", "Score" : 0.5},
 					{"Answer" : "Application Run Books - Out of hours scenarios", "Score" : 0.5}
 					]
-			},
-			{
-				"Type" : "Option",
-				"QuestionText" : "Metrics and Dashboards are available for Application and Platform?"
 			}
 		]
 	},
@@ -355,12 +349,12 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Monitoring - Insight",
-				"QuestionText" : "In Prod & Non-Production environments with same tools, Ensure Developers are (tick all that apply)?",
+				"QuestionText" : "Are Developers empowered/encouraged/supported to build monitoring as part of the core service features in Production & Non-Production environments with same tools? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Able to build Dashboards", "Score" : 0.25},
 					{"Answer" : "Building Dashboards", "Score" : 0.25},
 					{"Answer" : "Providing Operations with early insight into what is coming to Prod", "Score" : 0.25},
-					{"Answer" : "Also - close Feedback loops: Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25}
+					{"Answer" : "Close Feedback loops: Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25}
 					]
 			},
 			{
@@ -370,9 +364,9 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Monitoring - Customer",
-				"QuestionText" : "Analytics / Read User Monitoring (RUM): Customer focused monitoring?  Understand how customers use software / where they fall out of process / where they get frustrated",
+				"QuestionText" : "For the customer focused monitoring, do you understand how customers use the software / where they fall out of process / where they get frustrated? (tick all that apply)",
 				"Answers" : [
-					{"Answer" : "Tools in place", "Score" : 0.25},
+					{"Answer" : "Tools in place for browser Analytics capturing actual customer experience", "Score" : 0.25},
 					{"Answer" : "Metrics monitored have adequate coverage", "Score" : 0.25},
 					{"Answer" : "Using percentiles to expose where users are experiencing issues (averages hide issues) e.g. have alarms for: 99, 90, 75, vs steady state e.g. mean, median as relevant?", "Score" : 0.25},
 					{"Answer" : "Close Feedback loops: Operations staff able to let Devs see how their software operates (ceremonies / information radiators)", "Score" : 0.25},
@@ -386,14 +380,14 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Monitoring - Code",
-				"QuestionText" : "STM (Synthetic Transaction Monitoring) / APM (Application Performance Monitoring) / Log Analytics (tick all that apply)?",
+				"QuestionText" : "Code monitoring is in place and effective? (tick all that apply)",
 				"Answers" : [
-					{"Answer" : "Tools in place", "Score" : 0.25},
-					{"Answer" : "Metrics monitored have adequate coverage", "Score" : 0.25},
-					{"Answer" : "Synthetic Monitoring - Automated testing to measure performance?", "Score" : 0.25},
-					{"Answer" : "Visibility into how app is performing internally e.g. how long are certain relevant calls to resources taking?", "Score" : 0.25},
-					{"Answer" : "Metrics trending up or down visible and alerted where critical?", "Score" : 0.25},
-					{"Answer" : "The tools indicate what part of the app is generating the highest number of errors?", "Score" : 0.25}
+					{"Answer" : "Synthetic Transaction Monitoring: Automated artificial testing in place to measure performance", "Score" : 0.5},
+					{"Answer" : "Tools in place for APM (Application Performance Monitoring)", "Score" : 0.5},
+					{"Answer" : "Tools in place for Log Analytics", "Score" : 0.5},
+					{"Answer" : "Visibility into how app is performing internally e.g. how long are calls to resources taking", "Score" : 0.25},
+					{"Answer" : "Metrics trending up or down visible and alerted where critical", "Score" : 0.25},
+					{"Answer" : "The tools indicate what part of the app is generating the highest number of errors", "Score" : 0.25}
 				]
 			},
 			{
@@ -417,11 +411,6 @@
 				"QuestionText" : "Configuration 'Drift Management' in place?"
 			},
 			{
-				"Type" : "Option",
-				"SubCategory" : "Monitoring - Core",
-				"QuestionText" : "Effective Service and Infrastructure monitoring in place?"
-			},
-			{
 				"Type" : "Banner",
 				"QuestionText" : "<B>INFORMATION:</B> Monitoring - Security"
 			},
@@ -437,12 +426,12 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Monitoring - Team",
-				"QuestionText" : "Teams access to each of the above monitoring (tick all that apply)?",
+				"QuestionText" : "All Teams including all Developers have at least read-access to the monitoring? (tick all that apply)",
 				"Answers" : [
-					{"Answer" : "Insight", "Score" : 0.5},
-					{"Answer" : "Customer ", "Score" : 0.5},
-					{"Answer" : "Code", "Score" : 0.5},
-					{"Answer" : "Core", "Score" : 0.5},
+					{"Answer" : "Insight (Dashboards & Visualisations)", "Score" : 0.5},
+					{"Answer" : "Customer (Browser Analytics & Real User Monitoring)", "Score" : 0.5},
+					{"Answer" : "Code (Synthetic Transaction Monitoring, Application Performance Monitoring & Log Analytics", "Score" : 0.5},
+					{"Answer" : "Core (Services & Infrastructure)", "Score" : 0.5},
 					{"Answer" : "Security", "Score" : 0.5}
 					]
 			},
@@ -477,7 +466,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-	     		"QuestionText" : "Can you have someone else manage hosting your alerting? Non-core, leverage 3rd party managed service if possible"
+	     		"QuestionText" : "3rd party manage hosting your alerting solution? Non-core so may leverage 3rd party managed service if possible"
 			},
 			{
 				"Type" : "Option",
@@ -487,7 +476,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Auto-scaling alert avoidance - avoiding alerts from high CPU/Memory if auto-scaling (where by design)?"
+				"QuestionText" : "Avoiding alerts from high CPU/Memory if auto-scaling (where by design)?"
 			},
 			{
 				"Type" : "Option",
@@ -507,7 +496,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "P1 paging escalations e.g. P1 Auto escalate where not Acknowledged?"
+				"QuestionText" : "Priority 1 alerts auto-escalate where not acknowledged within timelimits?"
 			},
 			{
 				"Type" : "Option",
@@ -549,7 +538,7 @@
 				"Answers": [
 					{"Answer" : "70% or more", "Score" : 1},
 					{"Answer" : "20%-69%", "Score" : 1},
-					{"Answer" : "< 20%", "Score" : 0.75},
+					{"Answer" : "< 20%", "Score" : 0.5},
 					{"Answer" : "Not measured", "Score" : 0}
 					]
 			},
@@ -559,7 +548,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Integrated UI tests automation?"
+				"QuestionText" : "Integrated UI test automation into Build & Release?"
 			},
 			{
 				"Type" : "Option",
@@ -578,7 +567,14 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Automated application deployment (consider how fast to deploy, and roll back)?"
+				"QuestionText" : "Automated application deployment? Consider how fast to deploy, roll back (tick all that apply)",
+				"Answers" : [
+					{"Answer" : "Fully automated with automated rollback", "Score" : 1},
+					{"Answer" : "Fully automated with manual rollback", "Score" : 0.75},
+					{"Answer" : "Fully automated with no rollback", "Score" : 1},
+					{"Answer" : "Partially automated", "Score" : 0.25},
+					{"Answer" : "Not automated", "Score" : 0}
+					]
 			},
 			{
 				"Type" : "Option",
@@ -586,25 +582,25 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Platform Deployment tools / process confirmed?"
+				"QuestionText" : "Platform Deployment tools / process documented?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Automated database deployment?"
+				"QuestionText" : "Automated database deployments?"
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Understand what changes to the database are needed to support new code releases (check all that apply)?",
+				"QuestionText" : "Implementing guidance, where possible, on increasing flow for database changes needed to support new code releases? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Avoid removing columns/changing type of columns, only made additions to reduce risk", "Score" : 0.5},
-					{"Answer" : "Test migrations against test copies of database", "Score" : 1},
+					{"Answer" : "Test migrations against test copies of Production-like database", "Score" : 1},
 					{"Answer" : "Keep revision history of database migrations for reference", "Score" : 0.5},
 					{"Answer" : "Snapshot databases before doing migrations", "Score" : 1}
 					]
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Speed up and reduce risk for deployments / experiments (check all that apply)?",
+				"QuestionText" : "Speed up and reduce risk for deployments / experiments? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Canary Pools e.g. direct % of traffic to new version of app, then increase % gradually", "Score" : 0.5},
 					{"Answer" : "Blue/Green deployments (switch from one to the other)", "Score" : 1}
@@ -612,7 +608,7 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Able to use Dark Deploys & Feature Flags (check all that apply)?",
+				"QuestionText" : "Able to use Dark Deploys & Feature Flags? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Using 3rd party Feature Flag solution?", "Score" : 0.5},
 					{"Answer" : "Opt In - Test new features with selected users?", "Score" : 0.5},
@@ -623,7 +619,7 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Test and compare new features / Continuous usability and user experience testing?",
+				"QuestionText" : "Continuous usability and user experience testing?",
 				"Answers" : [
 					{"Answer" : "Run A/B Tests?", "Score" : 0.5},
 					{"Answer" : "Sunset Old Features - Safely decommission old features?", "Score" : 0.5}
