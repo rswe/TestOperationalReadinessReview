@@ -567,7 +567,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Is your deployment mechanism automated? (tick all that apply)",
+				"QuestionText" : "Is your deployment mechanism automated?",
 				"Answers" : [
 					{"Answer" : "Fully automated with automated rollback", "Score" : 1},
 					{"Answer" : "Fully automated with manual rollback", "Score" : 0.75},
@@ -619,7 +619,7 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Which of the following deployment techniques do you employ?",
+				"QuestionText" : "Which of the following deployment techniques do you employ? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Run A/B Tests?", "Score" : 0.5},
 					{"Answer" : "Sunset Old Features - Safely decommission old features?", "Score" : 0.5}
