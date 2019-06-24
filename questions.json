@@ -353,7 +353,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Monitoring - Insight",
-				"QuestionText" : "Are Developers empowered/encouraged/supported to build monitoring as part of the core service features in Production & Non-Production environments with same tools? (tick all that apply)",
+				"QuestionText" : "Are Developers empowered/encouraged/supported to build monitoring as part of the core service features in Production & Non-Production environments with the same tools? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Able to build Dashboards", "Score" : 0.25},
 					{"Answer" : "Building Dashboards", "Score" : 0.25},
