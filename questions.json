@@ -114,7 +114,7 @@
 					]
 			},
 			{
-				"Type" : "Option",
+				"Type" : "Checkbox",
 				"SubCategory" : "Highly Available and Redundant",
 				"QuestionText" : "Application Architecture: Mitigation in place for the following failure scenarios? (tick all that apply). Mitigated using relevant mitigation such as Sizing, Auto-scaling, Containers, serverless architecture etc",
 				"Answers" : [
@@ -295,7 +295,7 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Which of the following does your code documentation achieve?",
+				"QuestionText" : "Which of the following does your code documentation achieve? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Documentation is stored close to your code e.g. Readme in code and links to wiki / alternative, including how to install, troubleshoot", "Score" : 0.5},
 					{"Answer" : "Describes what does the code does?", "Score" : 0.75},
@@ -309,7 +309,7 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Which of the following does your code documentation achieve?",
+				"QuestionText" : "Which of the following does your code documentation achieve (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "How to interact with it (stop, start, restart)?", "Score" : 1},
 					{"Answer" : "How to configure it?", "Score" : 1}
@@ -317,7 +317,7 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "How to troubleshoot it?",
+				"QuestionText" : "How to troubleshoot it? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Standard Operating Procedures", "Score" : 1},
 					{"Answer" : "Application Run Books - Set actions (documentation) for resolving issues", "Score" : 0.5},
