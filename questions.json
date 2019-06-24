@@ -61,7 +61,7 @@
 				"QuestionText" : "Do key Operations staff have the ability to regulate Operations workload (Manual, Repetitive, Automatable, Reactive, Lacks enduring value) vs Engineering (building monitoring tools for example)?",
 				"Answers" : [
 					{"Answer" : "Yes, Operations workloads above bounded to < 50% of Operations for key Operations staff", "Score" : 1},
-					{"Answer" : "No or Other", "Score" : 0}
+					{"Answer" : "No", "Score" : 0}
 					]
 			},
 			{
