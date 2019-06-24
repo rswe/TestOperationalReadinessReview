@@ -23,7 +23,7 @@
 				"SubCategory" : "Service Levels",
 				"QuestionText" : "Does the service have Service Level Agreements with internal or external users?",
 				"Answers" : [
-					{"Answer" : "Yes", "Score" : 1},
+					{"Answer" : "Yes", "Score" : 0.5},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},		
@@ -37,7 +37,7 @@
 				"SubCategory" : "Service Levels",
 				"QuestionText" : "Do you employ Service Level Indicators to monitor the service?",
 				"Answers" : [
-					{"Answer" : "Yes, taken from monitoring, and there are actionable alerts if the service degrades", "Score" : 1},
+					{"Answer" : "Yes, taken from monitoring, and there are actionable alerts if the service degrades", "Score" : 0.25},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
@@ -50,8 +50,8 @@
 				"SubCategory" : "Service Levels",
 				"QuestionText" : "Are there Service Level Objectives with consequences?",
 				"Answers" : [
-					{"Answer" : "Yes, and the consequences are effective", "Score" : 1},
-					{"Answer" : "Yes, but the consequences are not always effective", "Score" : 0.5},
+					{"Answer" : "Yes, and the consequences are effective", "Score" : 0.25},
+					{"Answer" : "Yes, but the consequences are not always effective", "Score" : 0.10},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
@@ -60,7 +60,7 @@
 				"SubCategory" : "Make tomorrow better than today",
 				"QuestionText" : "Do key Operations staff have the ability to regulate Operations workload (Manual, Repetitive, Automatable, Reactive, Lacks enduring value) vs Engineering (building monitoring tools for example)?",
 				"Answers" : [
-					{"Answer" : "Yes, Operations workloads above bounded to < 50% of Operations for key Operations staff", "Score" : 1},
+					{"Answer" : "Yes, Operations workloads above bounded to < 50% of Operations for key Operations staff", "Score" : 0.5},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
@@ -69,7 +69,7 @@
 				"SubCategory" : "Make tomorrow better than today",
 				"QuestionText" : "Do you follow an agreed procedure before handing a service over to Operations?",
 				"Answers" : [
-					{"Answer" : "Yes, you ensure a shared responsibility model and that the Platform is safe to operate before handover", "Score" : 1},
+					{"Answer" : "Yes, you ensure a shared responsibility model and that the Platform is safe to operate before handover", "Score" : 0.5},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
@@ -78,10 +78,10 @@
 				"SubCategory" : "Make tomorrow better than today",
 				"QuestionText" : "In which of the following areas do your Operations staff have the skills to make tomorrow better than today? (tick all that apply)",
 				"Answers" : [
-						{"Answer" : "Contribution to application and infrastructure architecture", "Score" : 0.5},
-						{"Answer" : "Monitoring", "Score" : 0.5},
-						{"Answer" : "CI/CD Pipelines", "Score" : 0.5},
-						{"Answer" : "Consulting to Developers to up-skill them / improve Operability early on", "Score" : 0.5}
+						{"Answer" : "Contribution to application and infrastructure architecture", "Score" : 0.25},
+						{"Answer" : "Monitoring", "Score" : 0.25},
+						{"Answer" : "CI/CD Pipelines", "Score" : 0.25},
+						{"Answer" : "Consulting to Developers to up-skill them / improve Operability early on", "Score" : 0.25}
 					]
 			},
 			{
@@ -147,12 +147,12 @@
 				"SubCategory" : "Highly Available and Redundant",
 				"QuestionText" : "Application Architecture: Mitigation in place for the following failure scenarios? (tick all that apply). Mitigated using relevant mitigation such as Sizing, Auto-scaling, Containers, serverless architecture etc",
 				"Answers" : [
-					{"Answer" : "Backend server role dies", "Score" : 0.5},
-					{"Answer" : "Rack fails or cluster goes offline", "Score" : 0.5},
-					{"Answer" : "Terminate or restart without affecting clients or users", "Score" : 0.5},
-					{"Answer" : "Load balancing, rate-limiting, timeout, retry and error handling behaviour", "Score" : 0.5},
-					{"Answer" : "Location becomes unavailable", "Score" : 0.5},
-					{"Answer" : "Region becomes unavailable", "Score" : 0.5}
+					{"Answer" : "Backend server role dies", "Score" : 1},
+					{"Answer" : "Rack fails or cluster goes offline", "Score" : 1},
+					{"Answer" : "Terminate or restart without affecting clients or users", "Score" : 1},
+					{"Answer" : "Load balancing, rate-limiting, timeout, retry and error handling behaviour", "Score" : 1},
+					{"Answer" : "Location becomes unavailable", "Score" : 1},
+					{"Answer" : "Region becomes unavailable", "Score" : 1}
 					]
 			},
 			{
