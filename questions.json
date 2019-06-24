@@ -220,7 +220,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Security",
-				"QuestionText" : "•	Are you meeting industry best practices regarding the security of your service?",
+				"QuestionText" : "Are you meeting industry best practices regarding the security of your service?",
 				"Answers" : [
 					{"Answer" : "All regulations complied with", "Score" : 1},
 					{"Answer" : "Unsure or not demonstrated regulations are complied with", "Score" : 0}
