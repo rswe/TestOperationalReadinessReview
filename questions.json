@@ -299,8 +299,7 @@
 				"Answers" : [
 					{"Answer" : "Documentation is stored close to your code e.g. Readme in code and links to wiki / alternative, including how to install, troubleshoot", "Score" : 0.5},
 					{"Answer" : "Describes what does the code does?", "Score" : 0.75},
-					{"Answer" : "How to install & run the code", "Score" : 1},
-					{"Answer" : "Application Run Books - Out of hours scenarios", "Score" : 0.75}
+					{"Answer" : "How to install & run the code", "Score" : 1}
 					]
 			},			
 			{
