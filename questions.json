@@ -87,10 +87,29 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "DR",
+				"QuestionText" : "Have you completed a successful Restore from Backup in the last 12 months?",
+				"Answers" : [
+					{"Answer" : "Yes", "Score" : 1},
+					{"Answer" : "No", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "DR",
 				"QuestionText" : "Do you perform regular and recorded Disaster Recovery procedures for the service?",
 				"Answers" : [
 					{"Answer" : "Yes, including documenting of date of last and next DR Test", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "DR",
+				"QuestionText" : "How would you rate your maturity on patching Operating Systems?",
+				"Answers" : [
+					{"Answer" : "High", "Score" : 1},
+					{"Answer" : "Medium", "Score" : 0.75},
+					{"Answer" : "Low", "Score" : 0}
 					]
 			}
 		]
