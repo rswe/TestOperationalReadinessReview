@@ -30,7 +30,7 @@
 			{
 				"Type" : "Banner",
 				"SubCategory" : "Service Levels",
-				"QuestionText" : "<B>INFORMATION:</B> SLIs (Service Level Indicators). Measurable: Taken from monitoring. There should be actionable alerts if service degrades. Use shorter timeframes here, for example hourly e.g. <ul><li>Request Latency – 99% of requests per hour for a service are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
+				"QuestionText" : "<B>INFORMATION:</B> SLIs (Service Level Indicators). SLI's should be measurable and taken from monitoring the environment. If the monitoring detects that the service degrades, this should trigger an actionable alert or automated remediation. You should use shorter timeframes here when looking for issues, for example hourly. Examples might be: <ul><li>Request Latency – 99% of requests per hour for a service are served within 300ms.</li><li>Failures per total number of requests – 99% of requests per hour are successfully completed</li></ul>"
 			},
 			{
 				"Type" : "Option",
@@ -43,7 +43,7 @@
 			},
 			{
 				"Type" : "Banner",
-				"QuestionText" : "<B>INFORMATION:</B> SLOs (Service Level Objectives), with consequences, giving common incentives across team(s). This gives early warning before SLAs are exceeded and should provide Realistic reliability goals. These are longer timeframe than SLI’s. <br><br>Define your Error Budgets & Error Budget Policy (consequences) <ul><li>Must be set at the appropriate levels</li><li>Too high and costs can rise rapidly</li><li>Smaller error budget which can impede change</li><li>Too low and your customers will be unhappy</li><ul>"
+				"QuestionText" : "<B>INFORMATION:</B> SLOs should be in place and give common incentives across teams. These should act as an early warning system to alert Operations that there is a potential issue before SLAs are exceeded, and provide realistic goals around reliability. Typically, these are measured over longer timeframes than SLIs. <br><br>Error Budgets & Error Budget Policy (consequences) should be defined within certain guidelines. For example:<ul><li>Must be set at the appropriate levels</li><li>Too high and costs can rise rapidly</li><li>Smaller error budget which can impede change</li><li>Too low and your customers will be unhappy</li><ul>"
 			},
 			{
 				"Type" : "Option",
@@ -164,7 +164,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Highly Available and Redundant",
-				"QuestionText" : "Application Architecture: Mitigation in place for the following failure scenarios? (tick all that apply). Mitigated using relevant mitigation such as Sizing, Auto-scaling, Containers, serverless architecture etc",
+				"QuestionText" : "When considering your application architecture, have you put in place mitigation for the following failure scenarios? Mitigation could include any form of high availability, scaling, the use of containers, serverless architecture, or other mitigating technology (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Backend server role dies", "Score" : 1},
 					{"Answer" : "Rack fails or cluster goes offline", "Score" : 1},
@@ -177,7 +177,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "SPOF",
-				"QuestionText" : "Does your service withstand component failures? (tick all that apply). We want to Avoid Single Points of Failure (SPOF) for key dependencies",
+				"QuestionText" : "In order to avoid SPoF (Single Points of Failure) for key dependencies, has your service been designed to withstand component failures? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Yes with services running in clusters scaled across locations/AZs/Regions with data replication", "Score" : 1},
 					{"Answer" : "Yes by monitoring of expiry dates in place for critical dependencies e.g. certificates, service accounts, access keys in platform and application", "Score" : 1},
@@ -190,7 +190,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "SPOF",
-				"QuestionText" : "Which of the following design principles are followed to make your service scalable, resilient, and manageable i.e. Application designed for the cloud (tick all that apply)",
+				"QuestionText" : "Which of the following cloud design principles have been followed to ensure that your service is scalable, resilient, and manageable (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Design for self healing. In a distributed system, failures happen. Design your application to be self healing when failures occur.", "Score" : 1},
 					{"Answer" : "Make all things redundant. Build redundancy into your application, to avoid having single points of failure.", "Score" : 1},
@@ -212,7 +212,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "On-boarding staff",
-				"QuestionText" : "Do you effectively ensure staff reacting to incidents are skilled to troubleshoot all the tech stack? (tick all that apply)",
+				"QuestionText" : "How do you effectively ensure that people reacting to incidents have the necessary skill set to troubleshoot the entire tech stack? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Standardise on libraries, languages for easier developer onboarding and Production troubleshooting", "Score" : 0.75},
 					{"Answer" : "Spot duplicate code and refactor", "Score" : 0.75},
@@ -346,10 +346,10 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Which of the following does your code documentation achieve? (tick all that apply)",
+				"QuestionText" : "Which of the following does your code documentation address? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Documentation is stored close to your code e.g. Readme in code and links to wiki / alternative, including how to install, troubleshoot", "Score" : 0.25},
-					{"Answer" : "Describes what does the code does?", "Score" : 1},
+					{"Answer" : "Describes what does the code does", "Score" : 1},
 					{"Answer" : "How to install & run the code", "Score" : 1}
 					]
 			},			
@@ -359,15 +359,15 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Which of the following does your code documentation achieve (tick all that apply)",
+				"QuestionText" : "Which Standard Operating Procedures does your documentation provide for the code and platform? (tick all that apply)",
 				"Answers" : [
-					{"Answer" : "How to interact with it (stop, start, restart)?", "Score" : 1},
-					{"Answer" : "How to configure it?", "Score" : 1}
+					{"Answer" : "How to configure it", "Score" : 1},
+					{"Answer" : "How to interact with it (stop, start, restart)", "Score" : 1}
 					]
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "How to troubleshoot it? (tick all that apply)",
+				"QuestionText" : "How do you ensure that people responding to incidents have all the necessary information available to them to effectively troubleshoot the issue? (tick all that apply)",
 				"Answers" : [
 					{"Answer" : "Standard Operating Procedures", "Score" : 1},
 					{"Answer" : "Application Run Books - Set actions (documentation) for resolving issues", "Score" : 1},
@@ -389,7 +389,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Monitoring - Insight",
-				"QuestionText" : "Do you have visualisations and dashboards that all the information you need to assess your service's health which show the right things that may go wrong?",
+				"QuestionText" : "Have you considered all of the possible failures that you may see with your service, and ensured that they are monitored for and contribute to visualisations and dashboards you can access when assessing the health of your service?",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 0.5},
 					{"Answer" : "No", "Score" : 0}
@@ -398,12 +398,21 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Monitoring - Insight",
-				"QuestionText" : "Do your dashboards avoid false positives obscuring real failures and avoid providing too much information?",
+				"QuestionText" : "As you encounter false positives through monitoring that are displayed on your dashboards (possibly obscuring real failures), do you ensure that these are continually updated and improved upon so that they won't occur in the future?",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 0.5},
 					{"Answer" : "No", "Score" : 0}
 					]		
-			},		
+			},	
+			{
+				"Type" : "Option",
+				"SubCategory" : "Monitoring - Insight",
+				"QuestionText" : "Have you considered what information needs to be easily available and displayed on your dashboards, so as to not provide too much information that can be difficult to assess at a glance?",
+				"Answers" : [
+					{"Answer" : "Yes", "Score" : 0.5},
+					{"Answer" : "No", "Score" : 0}
+					]		
+			},	
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Monitoring - Insight",
@@ -460,7 +469,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Monitoring - Code",
-				"QuestionText" : "Does your service have heartbeat monitoring or similar? To enable continuous improvement and learn from the service under inspection",
+				"QuestionText" : "To enable continuous improvement and learn from the service under inspection, does your service have monitoring that will appear 'off' when unhealthy? ",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 0.5},
 					{"Answer" : "No", "Score" : 0}
@@ -491,7 +500,16 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Monitoring - Security",
-				"QuestionText" : "Governance - Monitoring effective for Auditing and Compliance, including Threat Detection?",
+				"QuestionText" : "Have you ensured that your monitoring and logging solutions are effective for auditing and compliance, plus any governance requirements you may have?",
+				"Answers" : [
+					{"Answer" : "Yes", "Score" : 1},
+					{"Answer" : "No", "Score" : 0}
+					]	
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Monitoring - Security",
+				"QuestionText" : "Does your monitoring include threat detection?",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -520,7 +538,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Logging",
-				"QuestionText" : "Do you user a consistent format and central location for logging?",
+				"QuestionText" : "Do you use a consistent format and central location for logging?",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 0.25},
 					{"Answer" : "No", "Score" : 0}
@@ -538,7 +556,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Logging",
-				"QuestionText" : "Is it easy to correlate transactional events across components in your service? i.e. Do you have an end-to-end view of the data flow or user journey? e.g. correlation ids",
+				"QuestionText" : "Is it easy to correlate transactional events across components in your service? For example, do you have an end-to-end view of the data flow or user journey?",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 0.25},
 					{"Answer" : "No", "Score" : 0}
@@ -560,7 +578,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-	     		"QuestionText" : "3rd party manage hosting your alerting solution? Non-core so may leverage 3rd party managed service if possible",
+	     		"QuestionText" : "Does a 3rd party manage the hosting of your alerting solution? Non-core activity so you may leverage a 3rd party managed service",
 				 "Answers" : [
 					 {"Answer" : "Yes", "Score" : 0.25},
 					 {"Answer" : "No", "Score" : 0}
@@ -569,7 +587,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Are your alerts calibrated and meaningful (e.g. not too chatty)? For example, if can auto-recover e.g. VM restarting, then do not alert (but do notify for later review)",
+				"QuestionText" : "Are all of your alerts meaningful, not too chatty, and actionable by the person receiving them? For example, if there is an issue that is resolved using automation then alerting on it would be neither meaningful or actionable",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 0.25},
 					{"Answer" : "No", "Score" : 0}
@@ -578,7 +596,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Avoiding alerts from high CPU/Memory if auto-scaling (where by design)?",
+				"QuestionText" : "Where certain events are expected - for example high CPU or Memory usage surrounding an auto-scaling event - do you avoiding alerting on these events?",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 0.25},
 					{"Answer" : "No", "Score" : 0}
@@ -587,7 +605,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Do you have separate calibration for business hours vs our of hours alerting, with out of hours alerting being actionable?",
+				"QuestionText" : "Do you have procedures in place that ensures alerts will reach the right people. For example, routing alerts differently depending on whether it occurs during or outside of working hours?",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 0.5},
 					{"Answer" : "No", "Score" : 0}
@@ -614,7 +632,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Priority 1 alerts auto-escalate where not acknowledged within timelimits?",
+				"QuestionText" : "Do you have a system in place whereby Priority 1 alerts will automatically escalate when they are not acknowledged in a specific timeframe?",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
@@ -632,7 +650,7 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Alerting",
-				"QuestionText" : "Alerting in place for:",
+				"QuestionText" : "Do you have alerting in place for the following? (tick all that apply)",
 				"Answers": [
 					{"Answer" : "Infrastructure ", "Score" : 1},
 					{"Answer" : "Application ", "Score" : 1},
@@ -728,15 +746,15 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Outage required for changes?",
+				"QuestionText" : "Can you deploy changes without a maintenance window as an outage is not required?",
 				"Answers" : [
-					{"Answer" : "Yes", "Score" : 0},
-					{"Answer" : "No", "Score" : 1}
+					{"Answer" : "Yes", "Score" : 1},
+					{"Answer" : "No", "Score" : 0}
 					]	
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Platform Deployment tools / process documented?",
+				"QuestionText" : "Are the Deployment tools and process documented and available to all people that will need them?",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
