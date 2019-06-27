@@ -105,11 +105,21 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "DR",
-				"QuestionText" : "How would you rate your maturity on patching Operating Systems?",
+				"QuestionText" : "How would you rate your patching strategy maturity?",
 				"Answers" : [
 					{"Answer" : "High", "Score" : 1},
 					{"Answer" : "Medium", "Score" : 0.75},
 					{"Answer" : "Low", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "DR",
+				"QuestionText" : "What is the closest match to your availability requirements for the service?",
+				"Answers" : [
+					{"Answer" : "8/5", "Score" : 0.25},
+					{"Answer" : "24/5", "Score" : 0.25},
+					{"Answer" : "24/7", "Score" : 0.25}
 					]
 			}
 		]
