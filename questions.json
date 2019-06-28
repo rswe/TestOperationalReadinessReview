@@ -105,11 +105,11 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "DR",
-				"QuestionText" : "How would you rate your patching strategy maturity?",
+				"QuestionText" : "Which of the following best describes your patching strategy?",
 				"Answers" : [
-					{"Answer" : "High", "Score" : 1},
-					{"Answer" : "Medium", "Score" : 0.75},
-					{"Answer" : "Low", "Score" : 0}
+					{"Answer" : "Fully automated patching process", "Score" : 1},
+					{"Answer" : "Partially automated patching process", "Score" : 0.75},
+					{"Answer" : "Manual patching process", "Score" : 0}
 					]
 			},
 			{
