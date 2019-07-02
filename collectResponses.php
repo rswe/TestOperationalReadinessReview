@@ -3,7 +3,7 @@
 	 * Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE) */
 	
 	$isForm = TRUE;
-	$activePage = 'Questionaire';
+	$activePage = 'Questionnaire';
 	require 'header.php';
 ?> 
  

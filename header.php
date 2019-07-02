@@ -8,7 +8,7 @@
 	
 	// Create an array to represent the navbar buttons
 	$navBar = array (
-		'Questionaire' => array ('Url' => 'section-' . SectionNameToURLName($survey->sections[0]['SectionName']), 'Type' => 'Standard'),
+		'Questionnaire' => array ('Url' => 'section-' . SectionNameToURLName($survey->sections[0]['SectionName']), 'Type' => 'Standard'),
 		'Sections' => array ('Type' => 'Dropdown' ),
 				// Sub-menus for each page are added here (see below)
 		'Results' => array ('Url' => 'results', 'Type' => 'Standard' ),
