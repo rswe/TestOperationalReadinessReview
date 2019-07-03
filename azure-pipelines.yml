@@ -18,3 +18,14 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Visual Studio Enterprise – MPN(2d23d9c6-c9e4-4808-9106-6cdba19ebfe7)'
+    appType: 'webAppLinux'
+    WebAppName: 'cu-website-orr-rs1-azuredevopsCICD'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    RuntimeStack: 'PHP|5.6'
+
+    
