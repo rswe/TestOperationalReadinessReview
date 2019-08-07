@@ -26,18 +26,30 @@ steps:
 # - script: composer install --no-interaction --prefer-dist
 #   displayName: 'composer install'
 
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: |
+      *
+      **/css/**
+      **/fontawesome/**
+      **/fonts/**
+      **/js/**
+      **/team-photos/**
+    TargetFolder: '$(Build.SourcesDirectory)/output'
+
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.SourcesDirectory)'
-    includeRootFolder: true
+    rootFolderOrFile: '$(Build.SourcesDirectory)/output/'
+    includeRootFolder: false
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/drop-$(Build.BuildNumber).zip'
     replaceExistingArchive: true
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/drop-$(Build.BuildNumber).zip'
-    ArtifactName: 'drop-$(Build.BuildNumber)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop-$(Build.BuildNumber).zip'
     publishLocation: 'Container'
 
 
